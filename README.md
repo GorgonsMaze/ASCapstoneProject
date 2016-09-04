@@ -36,6 +36,7 @@ Documentation Site:
 ## Weekly Breakdown
 * ~~Weeks 1-7~~   
 * Week 8
+* UPDATES - checkout form html5 validation no longer works -- ajax creating problems with js validation as well
        * PHP MySQL Functions for form data
        * Create States/Months/Year Tables - Pull into select drop downs
        * Start sending form data to MySQL Database

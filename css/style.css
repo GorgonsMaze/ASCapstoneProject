@@ -1654,14 +1654,14 @@ and (max-width: 1799px) {
     margin-bottom: 100px;
 }
 /* Change the margins on large photos - will need to adjust this as it's awful on animation */
-.materialboxed.active {
-    -webkit-transition: margin-left 0.3s ease-in;
-    -moz-transition: margin-left 0.3s ease-in;
-    -ms-transition: margin-left 0.3s ease-in;
-    -o-transition: margin-left 0.3s ease-in;
-    transition: margin-left 0.3s ease-in;
-    margin-left: 160px !important;
-}
+/*.materialboxed.active {*/
+    /*-webkit-transition: margin-left 0.3s ease-in;*/
+    /*-moz-transition: margin-left 0.3s ease-in;*/
+    /*-ms-transition: margin-left 0.3s ease-in;*/
+    /*-o-transition: margin-left 0.3s ease-in;*/
+    /*transition: margin-left 0.3s ease-in;*/
+    /*margin-left: 160px !important;*/
+/*}*/
 
 
 /*******************************************
