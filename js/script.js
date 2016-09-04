@@ -396,7 +396,10 @@ var mainContent = function () {
 // Radio Button & checkbox validation -- added due to HTML5 Required not working
 var formValidation = function () {
     // On form submit click
-    $("#chkOutBtn").on('click', function () {
+
+     $("#chkOutBtn").on('click', function (event) {
+    // $("#content").on('click', '#chkOutBtn', function (event) {
+       // alert("button working");
         // if there are any validation toasts showing remove them
         $(".toast").remove();
         // If product radio btn isn't checked
@@ -479,6 +482,9 @@ var formValidation = function () {
     $("#tosAgreeBtn").on('click', function () {
         // make TOS checkbox -> checked / true
         $("input[name='terms']").prop('checked', true);
+        $(".checkbox-toast").fadeOut(function () {
+            $(this).remove();
+        });
     });
 
     //
@@ -521,7 +527,68 @@ var sideNavTransform = function () {
     });
 };
 
+var chckoutAjax = function () {
+    var content = $("#content");
+    $("#chkoutBtn").on('click', function () {
+        // window.location.hash = $(this).attr("href");
+        // $("#content").load($(this).attr("href"));
+        // alert("load works?");
+        $.ajax({
+            url: 'index.php?action=checkoutAjax',
+            type: 'POST',
+            success: function (data) {
+                console.log("IT WORKS. THE AJAX");
+                //alert("AJAX WORKS");
+                $("#content").html(data);
+                $("html, body").animate({ scrollTop: 0}, 0);
+                Materialize.updateTextFields();
+                $("select").material_select();
+                //localStorage.setItem('checkout', content.html());
+            }
+        });
+        return false;
+    });
+
+    // $('a').click(function (event)
+    // {
+    //     event.preventDefault();
+    //
+    //     var url = $(this).attr('href');
+    //     $.get(url, function(data) {
+    //         alert(data);
+    //     });
+    //
+    // });
+};
+
+// var localStore = function () {
+//     var content = $("#content");
+//     var storedBlock = localStorage.getItem('checkout');
+//     if (storedBlock !== null) {
+//         content.html(storedBlock).show();
+//     }
+// };
+// var clearStorage = function () {
+//
+//     if (sessionStorage.getItem("is_reloaded")) {
+//         alert("Reloaded!");
+//     } else {
+//         localStorage.clear();
+//     }
+//
+// };
+// window.onbeforeunload = function () {
+//     window.localStorage.removeItem(key);
+//     return '';
+// };
+
+
 $(document).ready(function () {
+
+    // sessionStorage.setItem("is_reloaded", true);
+    // clearStorage();
+    // localStore();
+   // localStorage.removeItem(key);
     /** CHANGE BACK WHEN LIVE **/
     // $(".main-section").fadeIn(10000);
 
@@ -569,12 +636,12 @@ $(document).ready(function () {
     contactForm();
     // Tabs Initialization
     $('ul.tabs').tabs();
-
     // Form Drop Doww -- CHECKOUT
     $("select").material_select();
-
     //Radio button validation
     formValidation();
+    // AJAX Function
+    //chckoutAjax();
 
     // for HTML5 "required" attribute
     $("select[required]").css({display: "inline", height: 0, padding: 0, width: 0});

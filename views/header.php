@@ -234,7 +234,7 @@
         <div class="navbar-fixed home-nav open-sans3">
             <nav id="navbar home-nav">
                 <div class="nav-wrapper nav-text-color">
-                    <a href="#!" class="brand-logo center-on-xlarge great-vibes">Protech Solutions</a>
+                    <a href="/ASCapstoneProject/index.php" class="brand-logo center-on-xlarge great-vibes">Protech Solutions</a>
                     <a href="#" data-activates="slide-out" class="button-collapse" id="hamburger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down hide-on-xlarge">
                         <li><a href="#about">About</a></li>
