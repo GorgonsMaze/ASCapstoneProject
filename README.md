@@ -1,20 +1,23 @@
 # CapstoneProject
 
-![Statys](https://img.shields.io/badge/Complete-55%25-orange.svg) [![CircleCI](https://img.shields.io/circleci/project/BrightFlair/PHP.Gt.svg?maxAge=2592000?style=flat-square)]()
+![Statys](https://img.shields.io/badge/Complete-60%25-orange.svg) [![CircleCI](https://img.shields.io/circleci/project/BrightFlair/PHP.Gt.svg?maxAge=2592000?style=flat-square)]()
 ![Statys](https://img.shields.io/badge/Team Members-Ian + Jameson-red.svg)
 ![Statys](https://img.shields.io/badge/Frameworks-Materialize CSS-blue.svg)
 
 Documentation Site:
  [Project Overview Website](https://gorgonsmaze.github.io/CapstoneOverview/)
+Javascript Site
+ [Website](https://gorgonsmaze.github.io/CapstoneProject/)
  
- This repository is for the webite portion of our teams Capstone Project.
+ 
+ This repository is for the website portion of our teams Capstone Project.
  Tools being used are HTML5 > CSS > Javascript > PHP > MySQL
 
 #To-Do's [Important]
 * Checkout system using PHP MySQL (1/2 complete - Sever Side needed)
- * Pull drop down lists from DB (State, CC Month + Year )
+ * Pull drop down lists from DB (States ~~CC Month + Year~~ )
 * Buy -> Download  
-* Order Confirmation page (Layout complete)
+* Order Confirmation page (* Working on PHP MySQL)
 * Contact form (1/2 complete - Sever Side needed)
 * Nav links on Checkout and Confirm work with index scrollspy
 * Clean page routes (last)
@@ -30,15 +33,14 @@ Documentation Site:
 * Buy - Download .exe
 * Confirmation page with order number (1/2 Complete)
 * Developer Team (1/2 complete)
- * Finalized Help chat box 
+ * Finalized Help chat box (Extra)
  
  
 ## Weekly Breakdown
 * ~~Weeks 1-7~~   
 * Week 8
-* UPDATES - checkout form html5 validation no longer works -- ajax creating problems with js validation as well
        * PHP MySQL Functions for form data
-       * Create States/Months/Year Tables - Pull into select drop downs
+       - [x] Create States/Months/Year Tables - Pull into select drop downs
        * Start sending form data to MySQL Database
 * Week 9
        * 
@@ -72,3 +74,4 @@ Documentation Site:
  - [x] Testimonials section
  - [x] Footer
   - [x] Terms of Service 
+ - [x] Populate form drop downs with PHP 

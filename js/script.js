@@ -396,10 +396,7 @@ var mainContent = function () {
 // Radio Button & checkbox validation -- added due to HTML5 Required not working
 var formValidation = function () {
     // On form submit click
-
-     $("#chkOutBtn").on('click', function (event) {
-    // $("#content").on('click', '#chkOutBtn', function (event) {
-       // alert("button working");
+     $("#chkOutBtn").on('click', function () {
         // if there are any validation toasts showing remove them
         $(".toast").remove();
         // If product radio btn isn't checked

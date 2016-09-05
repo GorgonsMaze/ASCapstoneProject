@@ -1,28 +1,18 @@
-<?php
-/**
- *<!--______ ______  ______  ______ ______  ______  __  __     ______  ______  __      __  __  ______ __  ______  __   __  ______-->
-<!--/\  == /\  == \/\  __ \/\__  _/\  ___\/\  ___\/\ \_\ \   /\  ___\/\  __ \/\ \    /\ \/\ \/\__  _/\ \/\  __ \/\ "-.\ \/\  ___\-->
-<!--\ \  _-\ \  __<\ \ \/\ \/_/\ \\ \  __\\ \ \___\ \  __ \  \ \___  \ \ \/\ \ \ \___\ \ \_\ \/_/\ \\ \ \ \ \/\ \ \ \-.  \ \___  \-->
-<!-- \ \_\  \ \_\ \_\ \_____\ \ \_\\ \_____\ \_____\ \_\ \_\  \/\_____\ \_____\ \_____\ \_____\ \ \_\\ \_\ \_____\ \_\\"\_\/\_____\-->
-<!--\/_/   \/_/ /_/\/_____/  \/_/ \/_____/\/_____/\/_/\/_/   \/_____/\/_____/\/_____/\/_____/  \/_/ \/_/\/_____/\/_/ \/_/\/_____/-->
- */
-?>
-<?php include ("header.php"); ?>
+<?php //$states = get_States($db);?>
 <!--id="maincheckout"-->
-<main id="checkoutForm">
+<main>
     <!-- CHECKOUT FORMS -->
-    <section class="section checkout-section open-sans3">
+    <div class="section checkout-section open-sans3">
         <div class="container">
             <!-- BEGIN FORM -->
-            <form class="col s12" id="checkoutForm" method="post">
-                <!--CHECKBOX - PRODUCT SECTION-->
+            <form class="col s12" role="form" id="checkoutForm" method="post" name="formCheckout" action="/ASCapstoneProject/index.php">
                 <div class="row">
                     <div class="col s12 m8 l6 offset-m2 offset-l3" id="validateAnimate">
                         <ul class="collection with-header center-align">
                             <li class="collection-header" id="chk-collection-header"><img src="/ASCapstoneProject/images/logos/logo.png" height="128" width="128"/><h4>Protech Checkout</h4></li>
                             <li class="collection-item" id="chk-collection">
                                 <p>
-                                    <input name="group1" type="radio" id="chkEHR" title="Please check off correct product" class="with-gap validate" required="" aria-required="true" value="EHR"/>
+                                    <input name="ehrproduct" type="radio" id="chkEHR" title="Please check off correct product" class="with-gap validate"  value="EHR"/>
                                     <label for="chkEHR" class="chk-ehr-label">Advanced EHR Suite - <i>$199.99 /month</i></label>
                                 </p>
                                 <p>
@@ -51,92 +41,52 @@
                                     <!-- First Name-->
                                     <div class="row">
                                         <div class="input-field col s6">
-                                            <input id="first_name" placeholder="John" type="text" name="" pattern="^[a-zA-Z'.,\s-]{2,35}$" title="Enter first name" class="validate" required="" aria-required="true">
+                                            <input id="first_name" placeholder="John" type="text" name="fName" pattern="^[a-zA-Z'.,\s-]{2,35}$" title="Enter first name" class="validate" required="required" aria-required="true">
                                             <label for="first_name"><b>First Name</b></label>
                                         </div>
                                         <!-- Last Name-->
                                         <div class="input-field col s6">
-                                            <input id="last_name" placeholder="Juggerknot" type="text" name="" pattern="^[a-zA-Z'.,\s-]{2,50}$" title="Enter last name" class="validate" required="" aria-required="true">
+                                            <input id="last_name" placeholder="Juggerknot" type="text" name="lName" pattern="^[a-zA-Z'.,\s-]{2,50}$" title="Enter last name" class="validate" required="" aria-required="true">
                                             <label for="last_name"><b>Last Name</b></label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <!-- Address 1-->
                                         <div class="input-field col s12">
-                                            <input id="address_one" placeholder="123 Holiday Lane" type="text" name=""  title="Enter your street address" class="validate" required="" aria-required="true">
+                                            <input id="address_one" placeholder="123 Holiday Lane" type="text" name="address"  title="Enter your street address" class="validate" required="" aria-required="true">
                                             <label for="address_one"><b>Address 1</b></label>
                                         </div>
                                     </div>
                                     <!-- Address 2-->
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <input id="address_two" placeholder="Apartment 2C" type="text" name="" title="Enter secondary address">
+                                            <input id="address_two" placeholder="Apartment 2C" type="text" name="address2" title="Enter secondary address">
                                             <label for="address_two"><b>Address 2</b></label>
                                         </div>
                                     </div>
                                     <!-- CITY -->
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <input id="city" placeholder="Narnia" type="text" name=""  title="Enter your city or town" class="validate" required="" aria-required="true">
+                                            <input id="city" placeholder="Narnia" type="text" name="city"  title="Enter your city or town" class="validate" required="" aria-required="true">
                                             <label for="city"><b>City</b></label>
                                         </div>
                                     </div>
                                     <!-- STATES -->
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <select id="states" title="Select a state" class="validate" required="" aria-required="true">
+                                            <select id="states" title="Select a state" name="state" class="validate" required="" aria-required="true">
                                                 <option value="None" class="grey-text" disabled selected>Select a State</option>
-                                                <option value="AL">Alabama</option>
-                                                <option value="AK">Alaska</option>
-                                                <option value="AZ">Arizona</option>
-                                                <option value="AR">Arkansas</option>
-                                                <option value="CA">California</option>
-                                                <option value="CO">Colorado</option>
-                                                <option value="CT">Connecticut</option>
-                                                <option value="DE">Delaware</option>
-                                                <option value="DC">District Of Columbia</option>
-                                                <option value="FL">Florida</option>
-                                                <option value="GA">Georgia</option>
-                                                <option value="HI">Hawaii</option>
-                                                <option value="ID">Idaho</option>
-                                                <option value="IL">Illinois</option>
-                                                <option value="IN">Indiana</option>
-                                                <option value="IA">Iowa</option>
-                                                <option value="KS">Kansas</option>
-                                                <option value="KY">Kentucky</option>
-                                                <option value="LA">Louisiana</option>
-                                                <option value="ME">Maine</option>
-                                                <option value="MD">Maryland</option>
-                                                <option value="MA">Massachusetts</option>
-                                                <option value="MI">Michigan</option>
-                                                <option value="MN">Minnesota</option>
-                                                <option value="MS">Mississippi</option>
-                                                <option value="MO">Missouri</option>
-                                                <option value="MT">Montana</option>
-                                                <option value="NE">Nebraska</option>
-                                                <option value="NV">Nevada</option>
-                                                <option value="NH">New Hampshire</option>
-                                                <option value="NJ">New Jersey</option>
-                                                <option value="NM">New Mexico</option>
-                                                <option value="NY">New York</option>
-                                                <option value="NC">North Carolina</option>
-                                                <option value="ND">North Dakota</option>
-                                                <option value="OH">Ohio</option>
-                                                <option value="OK">Oklahoma</option>
-                                                <option value="OR">Oregon</option>
-                                                <option value="PA">Pennsylvania</option>
-                                                <option value="RI">Rhode Island</option>
-                                                <option value="SC">South Carolina</option>
-                                                <option value="SD">South Dakota</option>
-                                                <option value="TN">Tennessee</option>
-                                                <option value="TX">Texas</option>
-                                                <option value="UT">Utah</option>
-                                                <option value="VT">Vermont</option>
-                                                <option value="VA">Virginia</option>
-                                                <option value="WA">Washington</option>
-                                                <option value="WV">West Virginia</option>
-                                                <option value="WI">Wisconsin</option>
-                                                <option value="WY">Wyoming</option>
+                                                <?php
+                                                $statesArray = array("AL" => "Alabama", "AK" => "Alaska", "AZ" => "Arizona", "AR" => "Arkansas", "CA" => "California", "CO" => "Colorado",
+                                                    "CT" => "Connecticut","DE" => "Delaware", "DC" => "District Of Columbia","FL" => "Florida", "GA" => "Georgia", "HI" => "Hawaii","ID" => "Idaho",
+                                                    "IL" => "Illinois", "IN" => "Indiana", "IA" => "Iowa","KS" => "Kansas", "KY" => "Kentucky", "LA" => "Louisiana","ME" => "Maine", "MD" => "Maryland",
+                                                    "MA" => "Massachusetts", "MI" => "Michigan", "MN" => "Minnesota", "MS" => "Mississippi", "MO" => "Missouri", "MT" => "Montana","NE" => "Nebraska",
+                                                    "NV" => "Nevada", "NH" => "New Hampshire", "NJ" => "New Jersey", "NM" => "New Mexico", "NY" => "New York", "NC" => "North Carolina", "ND" => "North Dakota",
+                                                    "OH" => "Ohio", "OK" => "Oklahoma", "OR" => "Oregon", "PA" => "Pennsylvania", "RI" => "Rhode Island", "SC" => "South Carolina", "SD" => "South Dakota",
+                                                    "TN" => "Tennessee", "TX" => "Texas","UT" => "Utah", "VT" => "Vermont", "VA" => "Virginia", "WA" => "Washington", "WV" => "West Virginia", "WI" => "Wisconsin","WY" => "Wyoming");
+                                                foreach($statesArray as $key => $val) { ?>
+                                                    <option value="<?php echo $key; ?>"><?php echo $val; ?></option>
+                                                <?php } ?>
                                             </select>
                                             <label for="states"><b>State</b></label>
                                         </div>
@@ -144,14 +94,14 @@
                                     <!-- ZIPCODE -->
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <input id="zipcode" placeholder="03543 or 02454-4533" type="text" name=""  pattern="^\d{5}(?:[-\s]\d{4})?$" title="Enter your zipcode" class="validate" required="" aria-required="true">
+                                            <input id="zipcode" placeholder="03543 or 02454-4533" type="text" name="zip"  pattern="^\d{5}(?:[-\s]\d{4})?$" title="Enter your zipcode" class="validate" required="" aria-required="true">
                                             <label for="zipcode"><b>Zip</b></label>
                                         </div>
                                     </div>
                                     <!-- Country -->
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <input disabled value="United States" id="country" type="text" class="validate">
+                                            <input disabled value="United States" id="country" name="country" type="text" class="validate">
                                             <label for="country"><b>Country</b></label>
                                         </div>
                                     </div>
@@ -159,7 +109,7 @@
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <!-- CHECK VALIDATION ******************* -->
-                                            <input id="phone_number" placeholder="123-456-7890" type="text" name="" pattern="^[2-9]\d{2}-\d{3}-\d{4}$" title="Enter your 10 digit phone number with dashes ex. 508-234-1233" class="validate" required="" aria-required="true">
+                                            <input id="phone_number" placeholder="1234567890" type="text" name="phoneNumber" pattern="^\d{10}$" title="Enter your 10 digit phone number with dashes ex. 508-234-1233" class="validate" required="" aria-required="true">
                                             <label for="phone_number"><b>Phone</b></label>
                                         </div>
                                     </div>
@@ -167,7 +117,7 @@
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <!-- placeholder="Name@yourdomain.com" -->
-                                            <input  id="email_of" placeholder="example@yourdomain.com" type="text" name="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Enter email address correctly" class="validate" required="" aria-required="true">
+                                            <input  id="email_of" placeholder="example@yourdomain.com" type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Enter email address correctly" class="validate" required="" aria-required="true">
                                             <label for="email_of"><b>Email</b></label>
                                         </div>
                                     </div>
@@ -186,17 +136,31 @@
                                     <div class="require hide-on-small-only center-align">* All fields required</div><br />
                                 </div>
                                 <div class="row">
+                                    <div class="row">
+                                        <!-- Credit Card Type  -->
+                                        <div class="input-field col s12">
+                                            <select id="cc_type" title="Select a Card Type" name="ccType" type="select" class="validate" required="" aria-required="true">
+                                                <option value="" disabled selected>Select a card</option>
+                                                <?php
+                                                $cards = array("AM" => "American Express", "DI" => "Discover", "MC" => "Mastercard", "VA" => "Visa");
+                                                foreach($cards as $key => $val) { ?>
+                                                    <option value="<?php echo $key; ?>"><?php echo $val; ?></option>
+                                                <?php }?>
+                                            </select>
+                                            <label for="cc_type"><b>Credit Card</b></label>
+                                        </div>
+                                    </div>
                                     <!-- Credit Card  Name-->
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <input id="cc_name" placeholder="First Last" type="text" name="cc_name" pattern="^[a-zA-Z'.,\s-]{2,50}$" title="Enter full name on card" class="validate" required="" aria-required="true">
+                                            <input id="cc_name" placeholder="First Last" type="text" name="ccName" pattern="^[a-zA-Z'.,\s-]{2,50}$" title="Enter full name on card" class="validate" required="" aria-required="true">
                                             <label for="cc_name"><b>Card Name</b></label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <!-- Credit Card Number -->
                                         <div class="input-field col s12">
-                                            <input id="cc_number" placeholder="0000000000000000" type="text" name="cc_number" pattern="^[1-9][0-9]{11,15}$" title="Enter credit card number" class="validate" required="" aria-required="true">
+                                            <input id="cc_number" placeholder="0000000000000000" type="text" name="ccNum" pattern="^[1-9][0-9]{11,15}$" title="Enter credit card number" class="validate" required="" aria-required="true">
                                             <label for="cc_number"><b>Card Number</b></label>
                                         </div>
                                     </div>
@@ -204,32 +168,25 @@
                                     <div class="row">
                                         <!-- Month Expr -->
                                         <div class="input-field col s6">
-                                            <select id="cc_month" title="Select a month" type="select" class="validate" required="" aria-required="true">
+                                            <select id="cc_month" title="Select a month" name="ccExpMo" type="select" class="validate" required="" aria-required="true">
                                                 <option value="" disabled selected>Month</option>
-                                                <option value="01">January</option>
-                                                <option value="02">February</option>
-                                                <option value="03">March</option>
-                                                <option value="04">April</option>
-                                                <option value="05">May</option>
-                                                <option value="06">June</option>
-                                                <option value="07">July</option>
-                                                <option value="08">August</option>
-                                                <option value="09">September</option>
-                                                <option value="10">October</option>
-                                                <option value="11">November</option>
-                                                <option value="12">December</option>
+                                                <?php
+                                                $monthArray = array("01" => "01 - January", "02" => "02 - February", "03" => "03 - March", "04" => "04 - April", "05" => "05 - May", "06" => "06 - June", "07" => "07 - July", "08" => "08 - August", "09" => "09 - September", "10" => "10 - October", "11" => "11 -November", "12" => "12 - December");
+                                                foreach($monthArray as $key => $val) { ?>
+                                                    <option value="<?php echo $key; ?>"><?php echo $val;?></option>
+                                                <?php } ?>
                                             </select>
                                             <label for="cc_month"><b>Month</b></label>
                                         </div>
                                         <!-- Year Expr -->
                                         <div class="input-field col s6">
-                                            <select id="cc_year" title="Select a year" type="select" class="validate" required="" aria-required="true">
+                                            <select id="cc_year" title="Select a year" name="ccExpYr" type="select" class="validate" required="" aria-required="true">
                                                 <option value="" disabled selected>Year</option>
-                                                <option value="2016">2016</option>
-                                                <option value="2017">2017</option>
-                                                <option value="2018">2018</option>
-                                                <option value="2019">2019</option>
-                                                <option value="2020">2020</option>
+                                                <?php
+                                                $year = date('Y');
+                                                for($y=$year; $y<$year+5; $y++) { ?>
+                                                    <option value="<?php echo $y;?>"><?php echo $y; ?></option>
+                                                <?php } ?>
                                             </select>
                                             <label for="cc_year"><b>Year</b></label>
                                         </div>
@@ -237,7 +194,7 @@
                                     <!-- CCV Security Code -->
                                     <div class="row">
                                         <div class="input-field col s6">
-                                            <input id="cc_ccv" placeholder="Ex: 121" type="text" name=""  pattern="^[1-9][0-9]{2,3}$" title="Enter your CCV number (3 or 4 digits)" class="validate" required="" aria-required="true">
+                                            <input id="cc_ccv" placeholder="Ex: 121" type="text" name="ccCCV"  pattern="^[1-9][0-9]{2,3}$" title="Enter your CCV number (3 or 4 digits)" class="validate" required="" aria-required="true">
                                             <label for="cc_ccv"><b>CCV</b></label>
                                         </div>
                                         <div class="col s6">
@@ -362,7 +319,7 @@
                                     </div>
                                     <!-- Purchase Button -->
                                     <div class="center-align">
-                                        <button class="btn waves-effect waves-light" type="submit" id="chkOutBtn" form="checkoutForm" name="action">Purchase
+                                        <button class="btn waves-effect waves-light" type="submit" value="completePurchase" id="chkOutBtn" form="checkoutForm" name="action">Purchase
                                             <i class="material-icons right">send</i>
                                         </button>
                                     </div>
@@ -373,8 +330,9 @@
                     <!-- END CC FORM -->
                 </div><!--END  ROW -->
             </form>
+
         </div> <!-- END CONTAINER -->
-    </section><!-- END Checkout Forms -->
+    </div><!-- END Checkout Forms -->
 
     <section class="section bottom-sec">
         <div class="checkout-banner">
@@ -392,5 +350,5 @@
 
 
 
-<?php include ("footer.php"); ?>
+<?php //include ("footer.php"); ?>
 
