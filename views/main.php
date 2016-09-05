@@ -653,7 +653,7 @@
                     <ul id="ehrCard">
                         <li>
 <!--                            <a href="/ASCapstoneProject/index.php?action=checkoutAjax" id="chkoutBtn">-->
-                            <a href="/ASCapstoneProject/views/checkout.php" id="chkoutBtn">
+                            <a href="/ASCapstoneProject/index.php?action=checkoutCart" id="chkoutBtn">
                             <div class="card" id="purchaseCard">
                                     <div class="card-image">
                                         <div class="card-img-overlay-main">
