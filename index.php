@@ -1,24 +1,22 @@
 <?php
 require_once ("models/dbConn.php");
 require_once ("models/protechFunc.php");
-
 $action = $_REQUEST['action'];
-include_once ("views/header.php");
-if ( $action == NULL || empty($action)) :
+if ($action == NULL || empty($action)):
     $action = '';
 endif;
+include_once ("views/header.php");
 switch ($action) :
     case '':
         include ("views/main.php");
         break;
     case 'checkoutCart':
-        //include ("views/test.php");
-        include ("views/checkout.php");
+        // Once form button is clicked action = completePurchase
+        include ("views/test.php");
+        //include ("views/checkout.php");
         break;
-    /*** Complete order ***/
     case 'completePurchase':
-        // Customer Information
-        $product = $_POST['ehrproduct'];
+        $product = $_POST['product'];
         $fName = $_POST['fName'];
         $lName = $_POST['lName'];
         $address = $_POST['address'];
@@ -29,13 +27,11 @@ switch ($action) :
         $country = $_POST['country'];
         $phoneNumber = $_POST['phoneNumber'];
         $email = $_POST['email'];
-        // Credit Card
-        $ccType = $_POST['ccType'];
-        $ccName = $_POST['ccName'];
-        $ccNum = $_POST['ccNum'];
-        $ccExpMo = $_POST['ccExpMo'];
-        $ccExpYr = $_POST['ccExpYr'];
-        $ccCCV = $_POST['ccCCV'];
+        // $orderID = mysql_insert_id();
+        order_Data ($db, $product, $fName, $lName, $email);
+        // Need to have orderID  from ^ table used in order_custData sql statement
+        order_custData($db, $orderID, $fName, $lName, $address, $address2, $city, $state, $zip, $country, $phoneNumber, $email);
+        include ("views/complete.php");
         break;
 //    case 'checkoutAjax':
 //        include ("views/header.php");
@@ -45,3 +41,11 @@ switch ($action) :
 endswitch;
 include_once ("views/footer.php");
 ?>
+
+<!--// Credit Card-->
+<!--        $ccType = $_POST['ccType'];-->
+<!--        $ccName = $_POST['ccName'];-->
+<!--        $ccNum = $_POST['ccNum'];-->
+<!--        $ccExpMo = $_POST['ccExpMo'];-->
+<!--        $ccExpYr = $_POST['ccExpYr'];-->
+<!--        $ccCCV = $_POST['ccCCV'];-->
