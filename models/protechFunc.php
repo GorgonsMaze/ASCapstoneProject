@@ -16,7 +16,9 @@ function order_Data($db, $product, $fName, $lName, $email) {
         $ps->bindValue(':fName', $fName);
         $ps->bindValue(':lName', $lName);
         $ps->bindValue(':email', $email);
-        return $ps->execute();
+        $ps->execute();
+        return $db->lastInsertId();
+
     } catch (PDOException $e) {
         die("Sorry, There was a problem order table.");
     }
@@ -37,7 +39,7 @@ function order_Data($db, $product, $fName, $lName, $email) {
  * @param $email
  * @return mixed
  */
-function order_custData($db, $orderID, $fName, $lName, $address, $address2, $city, $state, $zip, $country, $phoneNumber, $email) {
+function order_custData($db, $orderID , $fName, $lName, $address, $address2, $city, $state, $zip, $country, $phoneNumber, $email) {
     try {
         $sql = "INSERT INTO customers SET  orderID = :orderID, fName = :fName, lName = :lName, address = :address, address2 = :address2,city = :city, state = :state, zip = :zip, country = :country, phoneNumber = :phoneNumber, email = :email";
         $ps = $db->prepare($sql);

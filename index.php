@@ -27,8 +27,7 @@ switch ($action) :
         $country = $_POST['country'];
         $phoneNumber = $_POST['phoneNumber'];
         $email = $_POST['email'];
-        // $orderID = mysql_insert_id();
-        order_Data ($db, $product, $fName, $lName, $email);
+        $orderID = order_Data($db, $product, $fName, $lName, $email);
         // Need to have orderID  from ^ table used in order_custData sql statement
         order_custData($db, $orderID, $fName, $lName, $address, $address2, $city, $state, $zip, $country, $phoneNumber, $email);
         include ("views/complete.php");
