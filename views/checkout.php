@@ -5,14 +5,14 @@
     <div class="section checkout-section open-sans3">
         <div class="container">
             <!-- BEGIN FORM -->
-            <form class="col s12" role="form" id="checkoutForm" method="post" name="formCheckout" action="/ASCapstoneProject/index.php">
+            <form class="col s12" role="form" id="checkoutForm" method="POST" name="formCheckout" action="">
                 <div class="row">
                     <div class="col s12 m8 l6 offset-m2 offset-l3" id="validateAnimate">
                         <ul class="collection with-header center-align">
                             <li class="collection-header" id="chk-collection-header"><img src="/ASCapstoneProject/images/logos/logo.png" height="128" width="128"/><h4>Protech Checkout</h4></li>
                             <li class="collection-item" id="chk-collection">
                                 <p>
-                                    <input name="ehrproduct" type="radio" id="chkEHR" title="Please check off correct product" class="with-gap validate"  value="EHR"/>
+                                    <input name="product" type="radio" id="chkEHR" title="Please check off correct product" class="with-gap validate"  value="EHR Suite"/>
                                     <label for="chkEHR" class="chk-ehr-label">Advanced EHR Suite - <i>$199.99 /month</i></label>
                                 </p>
                                 <p>
@@ -150,18 +150,18 @@
                                             <label for="cc_type"><b>Credit Card</b></label>
                                         </div>
                                     </div>
+                                    <!-- Credit Card Number -->
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input id="cc_number" placeholder="0000000000000000" type="text" name="ccNum" pattern="^[1-9][0-9]{11,15}$" title="Enter credit card number" class="validate" required="" aria-required="true">
+                                            <label for="cc_number"><b>Card Number</b></label>
+                                        </div>
+                                    </div>
                                     <!-- Credit Card  Name-->
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <input id="cc_name" placeholder="First Last" type="text" name="ccName" pattern="^[a-zA-Z'.,\s-]{2,50}$" title="Enter full name on card" class="validate" required="" aria-required="true">
                                             <label for="cc_name"><b>Card Name</b></label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <!-- Credit Card Number -->
-                                        <div class="input-field col s12">
-                                            <input id="cc_number" placeholder="0000000000000000" type="text" name="ccNum" pattern="^[1-9][0-9]{11,15}$" title="Enter credit card number" class="validate" required="" aria-required="true">
-                                            <label for="cc_number"><b>Card Number</b></label>
                                         </div>
                                     </div>
                                     <!-- Expiration Dates -->
@@ -319,7 +319,7 @@
                                     </div>
                                     <!-- Purchase Button -->
                                     <div class="center-align">
-                                        <button class="btn waves-effect waves-light" type="submit" value="completePurchase" id="chkOutBtn" form="checkoutForm" name="action">Purchase
+                                        <button class="btn waves-effect waves-light" type="submit" name="action" value="completePurchase" id="chkOutBtn">Purchase
                                             <i class="material-icons right">send</i>
                                         </button>
                                     </div>

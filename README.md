@@ -21,6 +21,7 @@ Javascript Site
 * Contact form (1/2 complete - Sever Side needed)
 * Nav links on Checkout and Confirm work with index scrollspy
 * Clean page routes (last)
+* Fix email REGEX on checkout form - Capital letters throw error
 
 ##To-Do's
 * Navigation
