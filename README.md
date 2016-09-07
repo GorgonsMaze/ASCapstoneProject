@@ -1,6 +1,6 @@
 # CapstoneProject
 
-![Statys](https://img.shields.io/badge/Complete-60%25-orange.svg) [![CircleCI](https://img.shields.io/circleci/project/BrightFlair/PHP.Gt.svg?maxAge=2592000?style=flat-square)]()
+![Statys](https://img.shields.io/badge/Complete-65%25-orange.svg) [![CircleCI](https://img.shields.io/circleci/project/BrightFlair/PHP.Gt.svg?maxAge=2592000?style=flat-square)]()
 ![Statys](https://img.shields.io/badge/Team Members-Ian + Jameson-red.svg)
 ![Statys](https://img.shields.io/badge/Frameworks-Materialize CSS-blue.svg)
 
@@ -14,14 +14,16 @@ Javascript Site
  Tools being used are HTML5 > CSS > Javascript > PHP > MySQL
 
 #To-Do's [Important]
-* Checkout system using PHP MySQL (1/2 complete - Sever Side needed)
+* Checkout system using PHP MySQL (2/3 complete - Sever Side needed)
  * Pull drop down lists from DB (States ~~CC Month + Year~~ )
-* Buy -> Download  
+* Download Application ability
 * Order Confirmation page (* Working on PHP MySQL)
 * Contact form (1/2 complete - Sever Side needed)
 * Nav links on Checkout and Confirm work with index scrollspy
 * Clean page routes (last)
 * Fix email REGEX on checkout form - Capital letters throw error
+* Fix DB sizes for certain columns
+* hash cc numbers
 
 ##To-Do's
 * Navigation
@@ -41,10 +43,13 @@ Javascript Site
 * ~~Weeks 1-7~~   
 * Week 8
        * PHP MySQL Functions for form data
+        * Pulling data back into complete.php + credit card function
+       * Use AJAX on form submit to complete.php  
        - [x] Create States/Months/Year Tables - Pull into select drop downs
-       * Start sending form data to MySQL Database
+       - [x] Start sending form data to MySQL Database
 * Week 9
-       * 
+       * Fix MySQL DB naming conventions 
+       (instead of camel case use snake case first_name etc.)
 * Week 10
       * Clean up any dead links/page routes or missing content 
       * Overlay on parallax containers - add text or title and brief overview
@@ -76,3 +81,4 @@ Javascript Site
  - [x] Footer
   - [x] Terms of Service 
  - [x] Populate form drop downs with PHP 
+- [x] Send Checkout form data to MySQL DB using PHP

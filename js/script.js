@@ -422,12 +422,12 @@ var formValidation = function () {
 
             return false;
 
-        } else {
+        } //else {
             // Remove CSS Border if radio btn is checked
-            $(".collection").css({
-                "border": "1px solid #e0e0e0"
-            });
-        }
+        //     $(".collection").css({
+        //         "border": "1px solid #e0e0e0"
+        //     });
+        // }
 
         // If product radio btn is checked
         if (document.getElementById('chkEHR').checked) {
@@ -452,12 +452,12 @@ var formValidation = function () {
     });
 
     // Once a radio button is checked -
-    $("input[type='radio']").change(function () {
+    $("#chkEHR").change(function () {
         $(".radio-toast").fadeOut(function () {
             $(this).remove();
         });
         // If the value is for the Advanced EHR Suite
-       if ($(this).val()=='EHR') {
+       if ($(this).val()=='EHR Suite') {
            // Remove own required styling border
            $(".collection").css({
                "border": "1px solid #e0e0e0"
@@ -526,20 +526,20 @@ var sideNavTransform = function () {
 
 var chckoutAjax = function () {
     var content = $("#content");
-    $("#chkoutBtn").on('click', function () {
+    $("#checkoutForm").on('submit', function () {
         // window.location.hash = $(this).attr("href");
         // $("#content").load($(this).attr("href"));
         // alert("load works?");
         $.ajax({
-            url: 'index.php?action=checkoutAjax',
+            url: 'index.php?action=confirmation',
             type: 'POST',
             success: function (data) {
                 console.log("IT WORKS. THE AJAX");
-                //alert("AJAX WORKS");
-                $("#content").html(data);
-                $("html, body").animate({ scrollTop: 0}, 0);
-                Materialize.updateTextFields();
-                $("select").material_select();
+                alert("AJAX WORKS");
+                // $("").html(data);
+                // $("html, body").animate({ scrollTop: 0}, 0);
+                // Materialize.updateTextFields();
+                // $("select").material_select();
                 //localStorage.setItem('checkout', content.html());
             }
         });
