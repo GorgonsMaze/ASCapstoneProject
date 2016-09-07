@@ -1,5 +1,5 @@
-<?php //$states = get_States($db);?>
-<!--id="maincheckout"-->
+<?php ?>
+
 <main>
     <!-- CHECKOUT FORMS -->
     <div class="section checkout-section open-sans3">
@@ -208,6 +208,8 @@
                         </div> <!-- END CARD -->
                     </div><!-- END COL -->
 
+
+
                     <div class="col s12 m8 offset-m2 l6">
                         <!-- CARD -->
                         <div class="card chk-out-card">
@@ -327,14 +329,12 @@
                             </div>
                         </div>
                     </div>
-                    <!-- END CC FORM -->
                 </div><!--END  ROW -->
             </form>
-
         </div> <!-- END CONTAINER -->
     </div><!-- END Checkout Forms -->
 
-    <section class="section bottom-sec">
+    <div class="section bottom-sec">
         <div class="checkout-banner">
             <!--https://hd.unsplash.com/photo-1468743428993-661b9309fa2c-->
             <div class="banner-overlay">
@@ -345,10 +345,5 @@
             </div>
             <img class="checkout-bnr-img" src="/ASCapstoneProject/images/images/building-two.jpeg">
         </div>
-    </section>
+    </div>
 </main>
-
-
-
-<?php //include ("footer.php"); ?>
-

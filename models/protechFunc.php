@@ -54,27 +54,17 @@ function order_custData($db, $orderID , $fName, $lName, $address, $address2, $ci
         $ps->bindValue(':country', $country);
         $ps->bindValue(':phoneNumber', $phoneNumber);
         $ps->bindValue(':email', $email);
-        return $ps->execute();
+        $ps->execute();
+        return $db->lastInsertId();
     } catch (PDOException $e) {
         die("Sorry, There was a problem with the customer table!");
     }
 }
 
-//$product = $_POST['product'];
-//$fName = $_POST['fName'];
-//$lName = $_POST['lName'];
-//$address = $_POST['address'];
-//$address2 = $_POST['address2'];
-//$city = $_POST['city'];
-//$state = $_POST['state'];
-//$zip = $_POST['zip'];
-//$country = $_POST['country'];
-//$phoneNumber = $_POST['phoneNumber'];
-//$email = $_POST['email'];
-
-/**  Function for sending Customer Credit Card Information **/
+/** Customer Credit Card Information Function **/
 /**
  * @param $db
+ * @param $customerID
  * @param $ccType
  * @param $ccNum
  * @param $ccName
@@ -83,10 +73,11 @@ function order_custData($db, $orderID , $fName, $lName, $address, $address2, $ci
  * @param $ccCCV
  * @return mixed
  */
-function order_ccData($db, $ccType, $ccNum, $ccName, $ccExpMo, $ccExpYr, $ccCCV) {
+function order_ccData($db, $customerID, $ccType, $ccNum, $ccName, $ccExpMo, $ccExpYr, $ccCCV) {
     try {
-        $sql = "INSERT INTO ccdata SET  ccType = :ccType, ccNum = :ccNum,  ccName = :ccName, ccExpMo = :ccExpMo, ccExpYr = :ccExpYr, ccCCV = :ccCCV";
+        $sql = "INSERT INTO ccdata SET  customerID = :customerID, ccType = :ccType, ccNum = :ccNum,  ccName = :ccName, ccExpMo = :ccExpMo, ccExpYr = :ccExpYr, ccCCV = :ccCCV";
         $ps = $db->prepare($sql);
+        $ps->bindValue(':customerID', $customerID);
         $ps->bindValue(':ccType', $ccType);
         $ps->bindValue(':ccNum', $ccNum);
         $ps->bindValue(':ccName', $ccName);
