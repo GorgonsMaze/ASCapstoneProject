@@ -1,4 +1,5 @@
 <?php
+$order = get_OrderDetails($db);
 ?>
 
 
@@ -16,8 +17,9 @@
                 <div class="card complete-card open-sans3">
                     <div class="card-content">
                         <div class="center-align">
-                            <h4>Thank you _______, for your purchase!</h4><br/>
-                            <h6>Your order number is: <b>0000234sf</b></h6><br/>
+                            <!-- Thank You Notice -->
+                            <h4>Thank you <?php echo $order['fName'] . $order['lName']; ?>, for your purchase!</h4><br/>
+                            <h6>Your order number is: <b><?php echo $order['orderID']; ?>?></b></h6><br/>
                             <p class="open-sans4 order-paragraph">You will receive an email shortly with more
                                 information regarding your purchase.
                                 If you have any questions feel free to contact us through email, chat, or phone. You can
@@ -34,22 +36,29 @@
                                         <div class="collapsible-body order-det-body">
                                             <div class="row">
                                                 <div class="col s12 m5 offset-m1">
+                                                    <!-- Buyer Address -->
                                                     <h6 class="detail-title">Buyer Address</h6>
                                                     <ul>
-                                                        <li>Todd Margeret</li>
-                                                        <li>234 Broadway Boulevard</li>
-                                                        <li>Providence, Rhode Island</li>
-                                                        <li>Email: Todd324@gmail.com</li>
-                                                        <li>Phone: 342.432.2343</li>
+                                                        <li>fName lName</li>
+                                                        <li>address + address2</li>
+                                                        <li>city "," state zip</li>
+                                                        <li>country</li>
+                                                        <li>Email: email</li>
+                                                        <li>Phone: phone</li>
                                                     </ul>
                                                 </div>
                                                 <div class="col s12 m5">
+                                                    <!-- Product Details -->
                                                     <h6 class="detail-title">Product Details</h6>
                                                     <ul>
                                                         <li>Advanced EHR Suite</li>
                                                         <li>Quantity: 1</li>
-                                                        <li>Order #: 0000234sf</li>
-                                                        <li>Date: 08/28/2016 19:11pm EST</li>
+                                                        <li>Order #: order number/id</li>
+                                                        <li>Date: <?php
+                                                            $dateTime = new DateTime('now', new DateTimeZone('America/New_York'));
+                                                            echo $dateTime->format("m-d-Y  H:i A");
+                                                            ?>
+                                                        </li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -61,6 +70,7 @@
                     </div>
                     <div class="card-action">
                         <div class="center-align">
+                            <!-- .Executable File of EHR Application -->
                             <a class="btn btn-large waves-effect waves-light download-btn" href="#">Download Program</a>
                         </div>
                     </div>

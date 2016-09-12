@@ -91,8 +91,21 @@ function order_ccData($db, $customerID, $ccType, $ccNum, $ccName, $ccExpMo, $ccE
 }
 
 /** Function for getting purchase information **/
-function get_OrderDetails() {
-
+/**
+ * @param $db
+ * @return mixed
+ */
+function get_OrderDetails($db) {
+    $sql = "SELECT * FROM customers ORDER BY customerID DESC LIMIT 1";
+    try {
+        $ps = $db->prepare($sql);
+        $ps->execute();
+        $results = $ps->fetchAll(PDO::FETCH_ASSOC);
+        return $results;
+    } catch (PDOException $e) {
+        //$error = 'Error fetching order details: ' . $e.getMessage();
+        exit("There was a problem fetching the order details!");
+    }
 }
 
 /** Function to get Contact Form Information **/
