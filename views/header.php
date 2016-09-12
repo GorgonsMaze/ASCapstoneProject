@@ -279,7 +279,7 @@
                 <li><div class="divider"></div></li>
                 <li><a class="waves-effect" href="#buy" id="buySidenav"><i class="material-icons left">shopping_cart left</i>Buy</a></li>
                 <div class="hide-checkout">
-                    <li class="hidden-checkout-btn"><a class="waves-effect" href="checkout.html"><i class="material-icons left">subdirectory_arrow_right</i>Checkout</a></li>
+                    <li class="hidden-checkout-btn"><a class="waves-effect" href="/ASCapstoneProject/index.php?action=checkoutCart"><i class="material-icons left">subdirectory_arrow_right</i>Checkout</a></li>
                     <li><div class="divider"></div></li>
                     <li><a class="waves-effect" href="#contact"><i class="material-icons left">email</i>Contact</a></li>
                     <li><div class="divider"></div></li>

@@ -53,6 +53,7 @@ var scrollChange = function () {
     /*var navbar = $('.navbar-fixed');*/
     // home nav Will only change homepage navigation
     var navbar = $('.home-nav');
+    // Fixed Chat button for customer help
     var chatbtn = $("#fixChatBtn");
 
     $(window).scroll(function() {
@@ -531,12 +532,12 @@ var chckoutAjax = function () {
         // $("#content").load($(this).attr("href"));
         // alert("load works?");
         $.ajax({
-            url: 'index.php?action=confirmation',
+            url: 'index.php?action=ajaxOrderComplete',
             type: 'POST',
             success: function (data) {
                 console.log("IT WORKS. THE AJAX");
-                alert("AJAX WORKS");
-                // $("").html(data);
+                //alert("AJAX WORKS");
+                $("#content").html(data);
                 // $("html, body").animate({ scrollTop: 0}, 0);
                 // Materialize.updateTextFields();
                 // $("select").material_select();

@@ -38,6 +38,11 @@ switch ($action) :
         $customerID = order_custData($db, $orderID, $fName, $lName, $address, $address2, $city, $state, $zip, $country, $phoneNumber, $email);
         order_ccData($db, $customerID, $ccType, $ccNum, $ccName, $ccExpMo, $ccExpYr, $ccCCV);
         include ("views/complete.php");
+//        $stuff = get_OrderDetails($db);
+        //echo ($stuff);
+        break;
+    case 'ajaxOrderComplete':
+        include ("views/complete.php");
         break;
 //    case 'confirmation':
 //        include ("views/complete.php");
@@ -49,5 +54,5 @@ switch ($action) :
 //        break;
 endswitch;
 include_once ("views/footer.php");
-?>
+
 
