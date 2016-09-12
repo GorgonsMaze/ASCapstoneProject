@@ -37,6 +37,7 @@ switch ($action) :
         $orderID = order_Data($db, $product, $fName, $lName, $email);
         $customerID = order_custData($db, $orderID, $fName, $lName, $address, $address2, $city, $state, $zip, $country, $phoneNumber, $email);
         order_ccData($db, $customerID, $ccType, $ccNum, $ccName, $ccExpMo, $ccExpYr, $ccCCV);
+        $order = get_OrderDetails($db);
         include ("views/complete.php");
 //        $stuff = get_OrderDetails($db);
         //echo ($stuff);
@@ -44,9 +45,6 @@ switch ($action) :
     case 'ajaxOrderComplete':
         include ("views/complete.php");
         break;
-//    case 'confirmation':
-//        include ("views/complete.php");
-//        break;
 //    case 'checkoutAjax':
 //        include ("views/header.php");
 //        include ("views/checkout.php");

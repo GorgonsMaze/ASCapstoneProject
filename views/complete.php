@@ -1,8 +1,6 @@
 <?php
 $order = get_OrderDetails($db);
 ?>
-
-
 <!-- MAIN -->
 <main>
     <div class="container">
@@ -18,14 +16,20 @@ $order = get_OrderDetails($db);
                     <div class="card-content">
                         <div class="center-align">
                             <!-- Thank You Notice -->
-                            <h4>Thank you <?php echo $order['fName'] . $order['lName']; ?>, for your purchase!</h4><br/>
-                            <h6>Your order number is: <b><?php echo $order['orderID']; ?>?></b></h6><br/>
+<!--                            --><?php //while($row = mysqli_fetch_array($result)) {
+//                                echo $row['fName'];
+//                            }
+//                            ?>
+                            <?php foreach($order as $cust): ?>
+                            <h4>Thank you <?php echo $cust['fName'] ." " . $cust['lName']; ?>, for your purchase!</h4><br/>
+                            <h6>Your order number is: <b><?php echo $cust['orderID']; ?></b></h6><br/>
                             <p class="open-sans4 order-paragraph">You will receive an email shortly with more
                                 information regarding your purchase.
                                 If you have any questions feel free to contact us through email, chat, or phone. You can
                                 find this information
                                 at the bottom of the page.</p><br/>
                         </div>
+
                         <div class="row">
                             <div class="col s12 m10 offset-m1">
                                 <ul class="collapsible white" data-collapsible="accordion">
@@ -39,12 +43,12 @@ $order = get_OrderDetails($db);
                                                     <!-- Buyer Address -->
                                                     <h6 class="detail-title">Buyer Address</h6>
                                                     <ul>
-                                                        <li>fName lName</li>
-                                                        <li>address + address2</li>
-                                                        <li>city "," state zip</li>
-                                                        <li>country</li>
-                                                        <li>Email: email</li>
-                                                        <li>Phone: phone</li>
+                                                        <li><?php echo $cust['fName'] ." " . $cust['lName']; ?></li>
+                                                        <li><?php echo $cust['address'] ." " . $cust['address2']; ?></li>
+                                                        <li><?php echo $cust['city'] . "," . $cust['state'] . " " . $cust['zip']?></li>
+                                                        <li><?php echo $cust['country'] ?></li>
+                                                        <li>Email: <?php echo $cust['email'] ?></li>
+                                                        <li>Phone: <?php echo $cust['phoneNumber'] ?></li>
                                                     </ul>
                                                 </div>
                                                 <div class="col s12 m5">
@@ -53,12 +57,13 @@ $order = get_OrderDetails($db);
                                                     <ul>
                                                         <li>Advanced EHR Suite</li>
                                                         <li>Quantity: 1</li>
-                                                        <li>Order #: order number/id</li>
+                                                        <li>Order #: <?php echo $cust['orderID']; ?></li>
                                                         <li>Date: <?php
                                                             $dateTime = new DateTime('now', new DateTimeZone('America/New_York'));
                                                             echo $dateTime->format("m-d-Y  H:i A");
                                                             ?>
                                                         </li>
+                                                        <?php endforeach; ?>
                                                     </ul>
                                                 </div>
                                             </div>
