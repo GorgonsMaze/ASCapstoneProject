@@ -52,6 +52,4 @@ switch ($action) :
 //        break;
 endswitch;
 include_once ("views/footer.php");
-
-
 ?>
