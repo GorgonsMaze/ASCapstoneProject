@@ -1,6 +1,6 @@
 <?php
-require_once ("models/dbConn.php");
-require_once ("models/protechFunc.php");
+require ("models/dbConn.php");
+require ("models/protechFunc.php");
 $action = $_REQUEST['action'];
 if ($action == NULL || empty($action)):
     $action = '';
@@ -52,5 +52,4 @@ switch ($action) :
 //        break;
 endswitch;
 include_once ("views/footer.php");
-
-
+?>

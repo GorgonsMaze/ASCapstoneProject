@@ -1259,7 +1259,7 @@ blockquote {
 
 /* First Carousel slide */
 .one {
-    background: rgba(205, 222, 255, 0.43) url('../ASCapstoneProject/images/images/person1.png') no-repeat left center;
+    background: rgba(205, 222, 255, 0.43) url('/ASCapstoneProject/images/images/person1.png') no-repeat left center;
     width: 100%;
     position: relative;
     top: 0;
@@ -1282,7 +1282,7 @@ blockquote {
 }
 /* Second Carousel slide */
 .two {
-    background: rgba(205, 222, 255, 0.43) url('../ASCapstoneProject/images/images/person2.png') no-repeat left center;
+    background: rgba(205, 222, 255, 0.43) url('/ASCapstoneProject/images/images/person2.png') no-repeat left center;
     width: 100%;
     position: relative;
     top: 0;
@@ -1306,7 +1306,7 @@ blockquote {
 
 /* Third Carousel slide */
 .three {
-    background:rgba(205, 222, 255, 0.43) url('../ASCapstoneProject/images/images/person3.jpeg') no-repeat left center;
+    background:rgba(205, 222, 255, 0.43) url('/ASCapstoneProject/images/images/person3.jpeg') no-repeat left center;
     width: 100%;
     position: relative;
     top: 0;
@@ -1331,7 +1331,7 @@ blockquote {
 
 /* Fourth Carousel slide */
 .four {
-    background: rgba(205, 222, 255, 0.43) url('../ASCapstoneProject/images/images/person4.jpeg') no-repeat center;
+    background: rgba(205, 222, 255, 0.43) url('/ASCapstoneProject/images/images/person4.jpeg') no-repeat center;
     width: 100%;
     position: relative;
     top: 0;
@@ -1356,7 +1356,7 @@ blockquote {
 
 /* Fifth Carousel slide */
 .five {
-    background: rgba(205, 222, 255, 0.43) url('../ASCapstoneProject/images/images/person5.jpeg') no-repeat left center;
+    background: rgba(205, 222, 255, 0.43) url('/ASCapstoneProject/images/images/person5.jpeg') no-repeat left center;
     width: 100%;
     position: relative;
     top: 0;
@@ -1385,7 +1385,7 @@ blockquote {
     https://hd.unsplash.com/photo-1414265247351-4afd13a3b4e6
 
     */
-    background: rgba(205, 222, 255, 0.43) url('../ASCapstoneProject/images/images/city-testim.jpeg') no-repeat left center;
+    background: rgba(205, 222, 255, 0.43) url('/ASCapstoneProject/images/images/city-testim.jpeg') no-repeat left center;
     width: 100%;
     position: relative;
     top: 0;

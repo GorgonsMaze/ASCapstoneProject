@@ -16,10 +16,7 @@ $order = get_OrderDetails($db);
                     <div class="card-content">
                         <div class="center-align">
                             <!-- Thank You Notice -->
-<!--                            --><?php //while($row = mysqli_fetch_array($result)) {
-//                                echo $row['fName'];
-//                            }
-//                            ?>
+
                             <?php foreach($order as $cust): ?>
                             <h4>Thank you <?php echo $cust['fName'] ." " . $cust['lName']; ?>, for your purchase!</h4><br/>
                             <h6>Your order number is: <b><?php echo $cust['orderID']; ?></b></h6><br/>
