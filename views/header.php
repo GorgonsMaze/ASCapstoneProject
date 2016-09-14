@@ -234,24 +234,28 @@
         <div class="navbar-fixed home-nav open-sans3">
             <nav id="navbar home-nav">
                 <div class="nav-wrapper nav-text-color">
-                    <a href="/ASCapstoneProject/index.php" class="brand-logo center-on-xlarge great-vibes">Protech Solutions</a>
+                    <a href="index.php" class="brand-logo center-on-xlarge great-vibes">Protech Solutions</a>
                     <a href="#" data-activates="slide-out" class="button-collapse" id="hamburger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down hide-on-xlarge">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#product">Product</a></li>
-                        <li><a href="#testimonial">Testimonials</a></li>
-                        <li><a href="#demo">Demo</a></li>
-                        <li><a href="#buy">Buy</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#about";} else {echo "#about";}?>">About</a></li>
+                        <li><a href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#product";} else {echo "#product";}?>">Product</a></li>
+                        <li><a href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#testimonial";} else {echo "#testimonial";}?>">Testimonials</a></li>
+                        <li><a href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#demo";} else {echo "#demo";}?>">Demo</a></li>
+                        <li><a href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#buy";} else {echo "#buy";}?>" class="dropdown-button" data-activates="ddCheckout" data-belowOrigin="true" data-hover="true" data-constrainwidth="true ">Buy</a></li>
+                        <!-- Dropdown Structure -->
+                        <ul id="ddCheckout" class="dropdown-content">
+                            <li><a href="index.php?action=checkoutCart">Checkout</a></li>
+                        </ul>
+                        <li><a href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#product";} else {echo "#product";}?>#contact">Contact</a></li>
                         <!-- Extra Drop Down Trigger -->
                         <li><a class="dropdown-button" href="#!" data-activates="ddExtra" data-belowOrigin="true" data-alignment="right" data-gutter="-5" data-hover="true" data-constrainwidth="true "><i class="material-icons">more_vert</i></a></li>
                         <!-- Dropdown Structure -->
                         <ul id="ddExtra" class="dropdown-content">
-                            <li><a href="#location">Location</a></li>
+                            <li><a href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#location";} else {echo "#location";}?>">Location</a></li>
                             <li class="divider"></li>
-                            <li><a href="#team">Team</a>
+                            <li><a href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#team";} else {echo "#team";}?>">Team</a>
                             <li class="divider"></li>
-                            <li><a href="#social-footer">Social Media</a></li>
+                            <li><a href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#social-footer";} else {echo "#social-footer";}?>">Social Media</a></li>
                         </ul>
                     </ul>
                 </div>
@@ -265,29 +269,29 @@
                     <div class="center-align">
                         <img class="circle side-logo" src="images/logos/logo.png">
                     </div>
-                    <a href="#!name"><span class="white-text name userview-link">Protech Solutions</span></a>
+                    <a href="#!"><span class="white-text name userview-link">Protech Solutions</span></a>
                     <a href="#!email"><span class="white-text email userview-link">ProtechSolutionsRI@gmail.com</span></a>
                 </div></li>
             <ul class="main-side-links">
-                <li><a class="waves-effect" href="#about" id="sBtn1"><i class="material-icons left">description</i>About</a></li>
+                <li><a class="waves-effect" href="<?php if($action == 'checkoutCart') {echo "index.php#about";} else {echo "#about";}?>" id="sBtn1"><i class="material-icons left">description</i>About</a></li>
                 <li><div class="divider"></div></li>
-                <li><a class="waves-effect" href="#product" id="sBtn2"><i class="material-icons left">developer_board</i>Product</a></li>
+                <li><a class="waves-effect" href="<?php if($action == 'checkoutCart') {echo "index.php#product";} else {echo "#product";}?>" id="sBtn2"><i class="material-icons left">developer_board</i>Product</a></li>
                 <li><div class="divider"></div></li>
-                <li><a class="waves-effect" href="#testimonial" id="sBtn3"><i class="material-icons left">comment</i>Testimonials</a></li>
+                <li><a class="waves-effect" href="<?php if($action == 'checkoutCart') {echo "index.php#testimonial";} else {echo "#testimonial";}?>" id="sBtn3"><i class="material-icons left">comment</i>Testimonials</a></li>
                 <li><div class="divider"></div></li>
-                <li><a class="waves-effect" href="#demo" id="sBtn4"><i class="material-icons left">whatshot</i>Demo</a></li>
+                <li><a class="waves-effect" href="<?php if($action == 'checkoutCart') {echo "index.php#demo";} else {echo "#demo";}?>" id="sBtn4"><i class="material-icons left">whatshot</i>Demo</a></li>
                 <li><div class="divider"></div></li>
-                <li><a class="waves-effect" href="#buy" id="buySidenav"><i class="material-icons left">shopping_cart left</i>Buy</a></li>
+                <li><a class="waves-effect" href="<?php if($action == 'checkoutCart') {echo "index.php#buy";} else {echo "#buy";}?>" id="buySidenav"><i class="material-icons left">shopping_cart left</i>Buy</a></li>
                 <div class="hide-checkout">
                     <li class="hidden-checkout-btn"><a class="waves-effect" href="index.php?action=checkoutCart"><i class="material-icons left">subdirectory_arrow_right</i>Checkout</a></li>
                     <li><div class="divider"></div></li>
-                    <li><a class="waves-effect" href="#contact"><i class="material-icons left">email</i>Contact</a></li>
+                    <li><a class="waves-effect" href="<?php if($action == 'checkoutCart') {echo "index.php#contact";} else {echo "#contact";}?>"><i class="material-icons left">email</i>Contact</a></li>
                     <li><div class="divider"></div></li>
-                    <li><a class="waves-effect" href="#location"><i class="material-icons left">location_city</i>Location</a></li>
+                    <li><a class="waves-effect" href="<?php if($action == 'checkoutCart') {echo "index.php#location";} else {echo "#location";}?>"><i class="material-icons left">location_city</i>Location</a></li>
                     <li><div class="divider"></div></li>
-                    <li><a class="waves-effect" href="#team"><i class="material-icons left">group</i>Dev Team</a>
+                    <li><a class="waves-effect" href="<?php if($action == 'checkoutCart') {echo "index.php#team";} else {echo "#team";}?>"><i class="material-icons left">group</i>Dev Team</a>
                     <li><div class="divider"></div></li>
-                    <li><a class="waves-effect" href="#social-footer"><i class="material-icons left">share</i>Social Media</a></li>
+                    <li><a class="waves-effect" href="<?php if($action == 'checkoutCart') {echo "index.php#social-footer";} else {echo "#social-footer";}?>"><i class="material-icons left">share</i>Social Media</a></li>
                     <li><div class="divider"></div></li>
                 </div>
             </ul>

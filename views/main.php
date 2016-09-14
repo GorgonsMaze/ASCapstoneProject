@@ -119,7 +119,7 @@
                                 EHR Suite
                             </div>
                             <div class="collapsible-body">
-                                <img src="/images/images/doc-tablet.jpg" class="responsive-img"/>
+                                <img src="images/images/doc-tablet.jpg" class="responsive-img"/>
                                 <p>A intuitive, customizable, interconnected application that allows for instant
                                     information on patients. While allowing users to update records on the fly, pull
                                     patient information,
@@ -175,7 +175,7 @@
                             <div class="card" id="uniqueone">
                                 <div class="card-image">
                                     <div class="uniq-card-overlay">
-                                        <img src="/images/images/unique.jpeg">
+                                        <img src="images/images/unique.jpeg">
                                     </div>
                                     <span class="card-title"></span>
                                 </div>
@@ -220,7 +220,7 @@
                             <div class="card" id="speedcard">
                                 <div class="card-image">
                                     <div class="speed-img-overlay">
-                                        <img class="" src="/images/images/speed.jpeg">
+                                        <img class="" src="images/images/speed.jpeg">
                                     </div>
                                     <span class="card-title" id="righter"></span>
                                 </div>
@@ -260,7 +260,7 @@
                             <div class="card" id="supprt1">
                                 <div class="card-image">
                                     <div class="support-img-overlay">
-                                        <img class="image-overl-card" src="/images/images/support.jpg">
+                                        <img class="" src="images/images/support.jpg">
                                     </div>
                                     <!--<span class="card-title"><i class="material-icons tab-icon">live_help</i> Support 24/7</span>-->
                                 </div>
@@ -448,7 +448,7 @@
                             <div class="card-panel grey lighten-5 z-depth-1">
                                 <div class="row test-row valign-wrapper">
                                     <div class="col s3">
-                                        <img src="/images/images/roundtestimages/testimg1.png" alt=""
+                                        <img src="images/images/roundtestimages/testimg1.png" alt=""
                                              class="responsive-img"> <!-- notice the "circle" class -->
                                     </div>
                                     <div class="col s9">
@@ -468,7 +468,7 @@
                             <div class="card-panel grey lighten-5 z-depth-1">
                                 <div class="row test-row valign-wrapper">
                                     <div class="col s3">
-                                        <img src="/images/images/roundtestimages/testimg2.png" alt=""
+                                        <img src="images/images/roundtestimages/testimg2.png" alt=""
                                              class="responsive-img"> <!-- notice the "circle" class -->
                                     </div>
                                     <div class="col s9">
@@ -487,7 +487,7 @@
                             <div class="card-panel grey lighten-5 z-depth-1">
                                 <div class="row test-row valign-wrapper">
                                     <div class="col s3">
-                                        <img src="/images/images/roundtestimages/testimg3.png" alt=""
+                                        <img src="images/images/roundtestimages/testimg3.png" alt=""
                                              class="responsive-img"> <!-- notice the "circle" class -->
                                     </div>
                                     <div class="col s9">
@@ -506,7 +506,7 @@
                             <div class="card-panel grey lighten-5 z-depth-1">
                                 <div class="row test-row valign-wrapper">
                                     <div class="col s3">
-                                        <img src="/images/images/roundtestimages/testimg4.png" alt=""
+                                        <img src="images/images/roundtestimages/testimg4.png" alt=""
                                              class="responsive-img"> <!-- notice the "circle" class -->
                                     </div>
                                     <div class="col s9">
@@ -567,7 +567,7 @@
                                     <div class="card">
                                         <div class="card-content">
                                             <video loop class="responsive-video" controls>
-                                                <source src="/assets/appdemo2.mp4" type="video/mp4">
+                                                <source src="assets/appdemo2.mp4" type="video/mp4">
                                             </video>
                                         </div>
                                     </div>
@@ -576,7 +576,7 @@
                                     <div class="card">
                                         <div class="card-content">
                                             <video loop autoplay class="responsive-video" controls>
-                                                <source src="/assets/appdemo1.mp4" type="video/mp4">
+                                                <source src="assets/appdemo1.mp4" type="video/mp4">
                                             </video>
                                         </div>
                                     </div>
@@ -585,7 +585,7 @@
                                             <div class="card">
                                                 <div class="card-content">
                                                     <img class="responsive-img materialboxed"
-                                                         src="/images/images/backgroundoffice.jpeg">
+                                                         src="images/images/backgroundoffice.jpeg">
                                                 </div>
                                             </div>
                                         </div>
@@ -595,7 +595,7 @@
                                     <div class="card">
                                         <div class="card-content">
                                             <video loop class="responsive-video" controls>
-                                                <source src="/assets/appdemo2.mp4" type="video/mp4">
+                                                <source src="assets/appdemo2.mp4" type="video/mp4">
                                             </video>
                                         </div>
                                     </div>
@@ -636,7 +636,7 @@
                                 <div class="card-image">
                                     <div class="card-img-overlay-third">
                                         <!--http://www.freepik.com/free-photo/finger-pressing-a-social-network-button-on-a-touch-screen_903499.htm-->
-                                        <img src="/images/images/heart.jpg">
+                                        <img src="images/images/heart.jpg">
                                     </div>
                                     <div class="center-align">
                                         <div class="buy-card-price">$149.99<br/><span
@@ -653,13 +653,13 @@
                     <ul id="ehrCard">
                         <li>
 <!--                            <a href="/ASCapstoneProject/index.php?action=checkoutAjax" id="chkoutBtn">-->
-                            <a href="/index.php?action=checkoutCart" id="chkoutBtn">
+                            <a href="index.php?action=checkoutCart" id="chkoutBtn">
                             <div class="card" id="purchaseCard">
                                     <div class="card-image">
                                         <div class="card-img-overlay-main">
                                             <!--http://www.freepik.com/free-photo/doctor-using-a-modern-computer_903500.htm-->
                                             <img
-                                                src="../images/images/heart.jpg">
+                                                src="images/images/heart.jpg">
                                         </div>
                                         <div class="center-align">
                                             <div class="buy-card-price">$199.99<br/><span
@@ -679,7 +679,7 @@
                                 <div class="card-image">
                                     <div class="card-img-overlay-secondary">
                                         <img
-                                            src="/images/images/heart.jpg">
+                                            src="images/images/heart.jpg">
                                     </div>
                                     <div class="center-align">
                                         <div class="buy-card-price">$79.99<br/><span
@@ -757,7 +757,7 @@
                                         <div class="col s3">
                                             <div class="center-align">
                                                 <img height="158" width="158" class="responsive-img"
-                                                     src="/images/logos/logo.png"/>
+                                                     src="images/logos/logo.png"/>
                                             </div>
                                         </div>
                                         <div class="col s9">
@@ -800,7 +800,7 @@
                                 </div>
                                 <div class="card-action center-block">
                                     <div class="center-align">
-                                        <a href="#" class="waves-effect waves-light btn purchase-btn"><i
+                                        <a href="index.php?action=completePurchase" class="waves-effect waves-light btn purchase-btn"><i
                                                 class="material-icons left money-icon">attach_money</i>Purchase</a>
                                         <a href="#" class="waves-effect waves-light btn demo-btn"><i
                                                 class="material-icons left">collections</i>Demo</a>
