@@ -36,9 +36,9 @@
     <!-- Kristi Font -->
     <link href='https://fonts.googleapis.com/css?family=Kristi' rel='stylesheet' type='text/css'>
     <!-- Materialize css -->
-    <link type="text/css" rel="stylesheet" href="/ASCapstoneProject/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <!-- Stylesheet -->
-    <link type="text/css" rel="stylesheet" href="/ASCapstoneProject/css/style.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
     <!--  Devicons Color Version -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
     <!--<link rel="stylesheet" href="css/devicon-colors.css">-->
@@ -263,7 +263,7 @@
             <!--<li><div class="userView blue-grey lighten-2">-->
             <li><div class="userView">
                     <div class="center-align">
-                        <img class="circle side-logo" src="/ASCapstoneProject/images/logos/logo.png">
+                        <img class="circle side-logo" src="images/logos/logo.png">
                     </div>
                     <a href="#!name"><span class="white-text name userview-link">Protech Solutions</span></a>
                     <a href="#!email"><span class="white-text email userview-link">ProtechSolutionsRI@gmail.com</span></a>
@@ -279,7 +279,7 @@
                 <li><div class="divider"></div></li>
                 <li><a class="waves-effect" href="#buy" id="buySidenav"><i class="material-icons left">shopping_cart left</i>Buy</a></li>
                 <div class="hide-checkout">
-                    <li class="hidden-checkout-btn"><a class="waves-effect" href="/ASCapstoneProject/index.php?action=checkoutCart"><i class="material-icons left">subdirectory_arrow_right</i>Checkout</a></li>
+                    <li class="hidden-checkout-btn"><a class="waves-effect" href="index.php?action=checkoutCart"><i class="material-icons left">subdirectory_arrow_right</i>Checkout</a></li>
                     <li><div class="divider"></div></li>
                     <li><a class="waves-effect" href="#contact"><i class="material-icons left">email</i>Contact</a></li>
                     <li><div class="divider"></div></li>

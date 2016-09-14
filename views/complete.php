@@ -6,7 +6,7 @@ $order = get_OrderDetails($db);
     <div class="container">
         <div class="row">
             <div class="center-align">
-                <img height="256" width="256" src="/ASCapstoneProject/images/logos/logo.png" alt="Logo"/>
+                <img height="256" width="256" src="images/logos/logo.png" alt="Logo"/>
             </div>
         </div>
 

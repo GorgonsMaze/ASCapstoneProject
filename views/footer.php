@@ -265,24 +265,24 @@
             <div class="col l6 m6 s12">
                 <h5 class="center-align">Social Media</h5>
                 <div class="col s2 offset-s1">
-                    <a href="#!"><img src="/ASCapstoneProject/images/blue-circle-icons/facebook-blue.png" alt="facebook icon"
+                    <a href="#!"><img src="images/blue-circle-icons/facebook-blue.png" alt="facebook icon"
                                       class="social-icons"></a>
                 </div>
                 <div class="col s2">
-                    <a href="#!"><img src="/ASCapstoneProject/images/blue-circle-icons/google-blue.png" alt="google plus icon"
+                    <a href="#!"><img src="images/blue-circle-icons/google-blue.png" alt="google plus icon"
                                       class="social-icons"></a>
                 </div>
                 <div class="col s2">
-                    <a href="#!"><img src="/ASCapstoneProject/images/blue-circle-icons/instragram-blue.png" alt="instagram icon"
+                    <a href="#!"><img src="images/blue-circle-icons/instragram-blue.png" alt="instagram icon"
                                       class="social-icons"></a>
                 </div>
                 <div class="col s2">
-                    <a href="#!"><img src="/ASCapstoneProject/images/blue-circle-icons/linkedin-blue.png" alt="linked-in icon"
+                    <a href="#!"><img src="images/blue-circle-icons/linkedin-blue.png" alt="linked-in icon"
                                       class="social-icons"></a>
                 </div>
                 <div class="col s2">
                     <a href="https://twitter.com/Protech_RI" target="_blank"><img
-                            src="/ASCapstoneProject/images/blue-circle-icons/twitter-blue.png" alt="twitter icon" class="social-icons"></a>
+                            src="images/blue-circle-icons/twitter-blue.png" alt="twitter icon" class="social-icons"></a>
                 </div>
                 <div class="col s12 privacy-link">
                     <div class="center-align">
@@ -393,11 +393,11 @@
 </div> <!-- END MAIN CONTENT -->
 
 
-<!--<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <!--<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script type="text/javascript" src="/ASCapstoneProject/js/materialize.min.js"></script>
-<script type="text/javascript" src="/ASCapstoneProject/js/script.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src=js/script.js"></script>
 <!-- Fonts Awesome -->
 <script src="https://use.fontawesome.com/351ac21fcd.js"></script>
 </body>
