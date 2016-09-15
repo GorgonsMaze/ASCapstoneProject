@@ -275,25 +275,25 @@
                     <a href="#!email"><span class="white-text email userview-link">ProtechSolutionsRI@gmail.com</span></a>
                 </div></li>
             <ul class="main-side-links">
-                <li><a class="waves-effect" href="<?php if($action == 'checkoutCart') {echo "index.php#about";} else {echo "#about";}?>" id="sBtn1"><i class="material-icons left">description</i>About</a></li>
+                <li><a class="waves-effect" href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#about";} else {echo "#about";}?>" id="sBtn1"><i class="material-icons left">description</i>About</a></li>
                 <li><div class="divider"></div></li>
-                <li><a class="waves-effect" href="<?php if($action == 'checkoutCart') {echo "index.php#product";} else {echo "#product";}?>" id="sBtn2"><i class="material-icons left">developer_board</i>Product</a></li>
+                <li><a class="waves-effect" href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#product";} else {echo "#product";}?>" id="sBtn2"><i class="material-icons left">developer_board</i>Product</a></li>
                 <li><div class="divider"></div></li>
-                <li><a class="waves-effect" href="<?php if($action == 'checkoutCart') {echo "index.php#testimonial";} else {echo "#testimonial";}?>" id="sBtn3"><i class="material-icons left">comment</i>Testimonials</a></li>
+                <li><a class="waves-effect" href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#testimonial";} else {echo "#testimonial";}?>" id="sBtn3"><i class="material-icons left">comment</i>Testimonials</a></li>
                 <li><div class="divider"></div></li>
-                <li><a class="waves-effect" href="<?php if($action == 'checkoutCart') {echo "index.php#demo";} else {echo "#demo";}?>" id="sBtn4"><i class="material-icons left">whatshot</i>Demo</a></li>
+                <li><a class="waves-effect" href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#demo";} else {echo "#demo";}?>" id="sBtn4"><i class="material-icons left">whatshot</i>Demo</a></li>
                 <li><div class="divider"></div></li>
-                <li><a class="waves-effect" href="<?php if($action == 'checkoutCart') {echo "index.php#buy";} else {echo "#buy";}?>" id="buySidenav"><i class="material-icons left">shopping_cart left</i>Buy</a></li>
+                <li><a class="waves-effect" href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#buy";} else {echo "#buy";}?>" id="buySidenav"><i class="material-icons left">shopping_cart left</i>Buy</a></li>
                 <div class="hide-checkout">
                     <li class="hidden-checkout-btn"><a class="waves-effect" href="index.php?action=checkoutCart"><i class="material-icons left">subdirectory_arrow_right</i>Checkout</a></li>
                     <li><div class="divider"></div></li>
-                    <li><a class="waves-effect" href="<?php if($action == 'checkoutCart') {echo "index.php#contact";} else {echo "#contact";}?>"><i class="material-icons left">email</i>Contact</a></li>
+                    <li><a class="waves-effect" href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#contact";} else {echo "#contact";}?>"><i class="material-icons left">email</i>Contact</a></li>
                     <li><div class="divider"></div></li>
-                    <li><a class="waves-effect" href="<?php if($action == 'checkoutCart') {echo "index.php#location";} else {echo "#location";}?>"><i class="material-icons left">location_city</i>Location</a></li>
+                    <li><a class="waves-effect" href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#location";} else {echo "#location";}?>"><i class="material-icons left">location_city</i>Location</a></li>
                     <li><div class="divider"></div></li>
-                    <li><a class="waves-effect" href="<?php if($action == 'checkoutCart') {echo "index.php#team";} else {echo "#team";}?>"><i class="material-icons left">group</i>Dev Team</a>
+                    <li><a class="waves-effect" href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#team";} else {echo "#team";}?>"><i class="material-icons left">group</i>Dev Team</a>
                     <li><div class="divider"></div></li>
-                    <li><a class="waves-effect" href="<?php if($action == 'checkoutCart') {echo "index.php#social-footer";} else {echo "#social-footer";}?>"><i class="material-icons left">share</i>Social Media</a></li>
+                    <li><a class="waves-effect" href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#social-footer";} else {echo "#social-footer";}?>"><i class="material-icons left">share</i>Social Media</a></li>
                     <li><div class="divider"></div></li>
                 </div>
             </ul>

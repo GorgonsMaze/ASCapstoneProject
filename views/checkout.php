@@ -124,9 +124,11 @@
                                         <!-- Country -->
                                         <div class="row">
                                             <div class="input-field col s12">
-                                                <input disabled value="United States" id="country" name="country"
-                                                       type="text" class="validate">
-                                                <label for="country"><b>Country</b></label>
+                                                <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+                                                <label for="disabled">Disabled</label>
+<!--                                                <input disabled value="United States" id="country" name="country"-->
+<!--                                                       type="text" class="validate">-->
+<!--                                                <label for="country"><b>Country</b></label>-->
                                             </div>
                                         </div>
                                         <!-- PHONE -->
@@ -146,7 +148,7 @@
                                                 <!-- placeholder="Name@yourdomain.com" -->
                                                 <input id="email_of" placeholder="example@yourdomain.com" type="text"
                                                        name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                                                       title="Enter email address correctly" class="validate"
+                                                       title="Enter email address correctly ex: john@gmail.com" class="validate"
                                                        required="" aria-required="true">
                                                 <label for="email_of"><b>Email</b></label>
                                             </div>

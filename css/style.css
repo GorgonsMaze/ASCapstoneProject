@@ -2457,10 +2457,10 @@ footer.page-footer .footer-copyright {
     animation-duration: 0.5s;
 
     /* Sets the delay for the transform animation */
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    animation-delay: 6s;
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    animation-delay: 4s;
 
     /* transform: translatex(26px) translatey(-100px); */
 }
@@ -2536,10 +2536,10 @@ footer.page-footer .footer-copyright {
     animation-duration: 0.5s;
 
     /* Sets the delay for the transform animation */
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    animation-delay: 6s;
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    animation-delay: 4s;
 
     /*transform: rotate(45deg) translateX(50px) translateY(50px);
     transform-origin: left;*/
@@ -2587,9 +2587,9 @@ footer.page-footer .footer-copyright {
     height: 100%;
     background-color: #1565c0;
     border-radius: 20px;
-    -webkit-transition: width 3s;
-    -o-transition: width 3s;
-    transition: width 3s;
+    -webkit-transition: width 1s;
+    -o-transition: width 1s;
+    transition: width 1s;
 }
 /* Progress bar tranformation into X */
 .progress-middle-transform {
@@ -2626,10 +2626,10 @@ footer.page-footer .footer-copyright {
     animation-duration: 0.5s;
 
     /* Sets the delay for the transform animation */
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    animation-delay: 6s;
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    animation-delay: 4s;
 
     /*    transform-origin: left;
     transform: rotate(-45deg) translateX(10px) translatey(70px);
@@ -2677,9 +2677,9 @@ footer.page-footer .footer-copyright {
     height: 100%;
     background-color: #f3930b;
     border-radius: 20px;
-    -webkit-transition: width 3s;
-    -o-transition: width 3s;
-    transition: width 3s;
+    -webkit-transition: width 1s;
+    -o-transition: width 1s;
+    transition: width 1s;
 }
 
 /* Progress bar tranformation into X */
@@ -2716,10 +2716,10 @@ footer.page-footer .footer-copyright {
     animation-duration: 0.5s;
 
     /* Sets the delay for the transform animation */
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    animation-delay: 6s;
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    animation-delay: 4s;
 
     /*        transform: rotate(-45deg) translateX(25px) translateY(40px);
     transform-origin: left;
@@ -2768,9 +2768,9 @@ footer.page-footer .footer-copyright {
     height: 100%;
     background-color: #43a047 ;
     border-radius: 20px;
-    -webkit-transition: width 3s;
-    -o-transition: width 3s;
-    transition: width 3s;
+    -webkit-transition: width 1s;
+    -o-transition: width 1s;
+    transition: width 1s;
 }
 
 

@@ -382,7 +382,7 @@ var switchScroll = function () {
     var body = $("body");
     setTimeout(function () {
         body.removeClass("stop-scrolling");
-    }, 9000);
+    }, 5000);
 };
 
 
@@ -391,13 +391,13 @@ var mainContent = function () {
     var main = $(".main-section");
     setTimeout(function () {
         main.fadeIn();
-    }, 5000);
+    }, 1500);
 };
 
 // Radio Button & checkbox validation -- added due to HTML5 Required not working
 var formValidation = function () {
     // On form submit click
-     $("#chkOutBtn").on('click', function () {
+    $("#chkOutBtn").on('click', function () {
         // if there are any validation toasts showing remove them
         $(".toast").remove();
         // If product radio btn isn't checked
@@ -424,7 +424,7 @@ var formValidation = function () {
             return false;
 
         } //else {
-            // Remove CSS Border if radio btn is checked
+        // Remove CSS Border if radio btn is checked
         //     $(".collection").css({
         //         "border": "1px solid #e0e0e0"
         //     });
@@ -458,12 +458,12 @@ var formValidation = function () {
             $(this).remove();
         });
         // If the value is for the Advanced EHR Suite
-       if ($(this).val()=='EHR Suite') {
-           // Remove own required styling border
-           $(".collection").css({
-               "border": "1px solid #e0e0e0"
-           });
-       }
+        if ($(this).val()=='EHR Suite') {
+            // Remove own required styling border
+            $(".collection").css({
+                "border": "1px solid #e0e0e0"
+            });
+        }
     });
 
 
@@ -506,7 +506,7 @@ var formValidation = function () {
     //     }
     // });
 
-   // document.getElementById("chk_termsOfService").setCustomValidity("Please agree to the Terms of Service");
+    // document.getElementById("chk_termsOfService").setCustomValidity("Please agree to the Terms of Service");
 };
 
 // Function allows for the showing of Checkout button in side-nav
@@ -585,13 +585,15 @@ $(document).ready(function () {
     // sessionStorage.setItem("is_reloaded", true);
     // clearStorage();
     // localStore();
-   // localStorage.removeItem(key)
+    // localStorage.removeItem(key)
     /** CHANGE BACK WHEN LIVE **/
-    $(".main-section").fadeIn(10000);
+    $(".main-section").fadeIn(2500);
 
     /* Fade out overlay and loading screen */
     /** CHANGE BACK WHEN LIVE **/
-    $(".loading-overlay").fadeIn('slow').show().delay(8000).fadeOut(500);
+    // $(".loading-overlay").fadeIn('slow').show().delay(4500).fadeOut(2000);
+    $(".loading-overlay").show().delay(4500).fadeOut(2000);
+
     /** CHANGE BACK WHEN LIVE **/
     $("#fadediv").show();
     /** CHANGE BACK WHEN LIVE **/
