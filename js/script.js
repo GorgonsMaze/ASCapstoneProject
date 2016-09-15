@@ -592,7 +592,7 @@ $(document).ready(function () {
     /* Fade out overlay and loading screen */
     /** CHANGE BACK WHEN LIVE **/
     // $(".loading-overlay").fadeIn('slow').show().delay(4500).fadeOut(2000);
-    $(".loading-overlay").show().delay(4500).fadeOut(2000);
+    $(".loading-overlay").show().delay(5000).fadeOut(2500);
 
     /** CHANGE BACK WHEN LIVE **/
     $("#fadediv").show();
