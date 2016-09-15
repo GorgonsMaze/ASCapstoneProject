@@ -614,6 +614,4 @@ $(document).ready(function () {
     $("select[required]").css({display: "inline", height: 0, padding: 0, width: 0});
     //$("input['type=radio'][required]").css({display: "inline", height: 0, padding: 0, width: 0});
     //$('#chkEHR[required]').css({visibility: "visible", marginLeft: "200px"});
-
-
 });
