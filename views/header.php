@@ -204,26 +204,28 @@
 </head>
 <body class="stop-scrolling" id="topPage">
 
-<!-- LANDING SPLASH
+
+
+<!-- LANDING SPLASH -->
 <div class="loading-overlay">
     <div id="fadediv">
-        <!--  LOGO -
+        <!--  LOGO -->
         <div class="logo-land logo-transform">
-            <img height="256" width="256" src="/ASCapstoneProject/images/logos/logo.png" />
+            <img height="256" width="256" src="images/logos/logo.png" />
         </div>
-        <!-- PROGRESS BAR 1 --
+        <!-- PROGRESS BAR 1 -->
         <div class="progress progress-1-transform">
             <div class="progress-bar-1"></div>
         </div>
         <div class="progress progress-middle-transform">
             <div class="progress-bar-middle"></div>
         </div>
-        <!-- PROGRESS BAR 2 --
+        <!-- PROGRESS BAR 2 -->
         <div class="progress progress-2-transform">
             <div class="progress-bar-2"></div>
         </div>
     </div>
-</div>-->
+</div>
 <!-- End Landing Splash -->
 
 

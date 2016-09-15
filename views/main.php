@@ -800,7 +800,7 @@
                                 </div>
                                 <div class="card-action center-block">
                                     <div class="center-align">
-                                        <a href="index.php?action=completePurchase" class="waves-effect waves-light btn purchase-btn"><i
+                                        <a href="index.php?action=checkoutCart" class="waves-effect waves-light btn purchase-btn"><i
                                                 class="material-icons left money-icon">attach_money</i>Purchase</a>
                                         <a href="#" class="waves-effect waves-light btn demo-btn"><i
                                                 class="material-icons left">collections</i>Demo</a>
