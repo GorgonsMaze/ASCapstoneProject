@@ -150,12 +150,9 @@ var scrollChange = function () {
 
 // Active scroll spy functionality
 var activeScrollspy = function () {
-
-
     /** Need to update this function to get rid of active class when entering
      *   new scrollspy section - Now it activates 2 at the same time at bottom
      *   and top points **/
-
     // Scrollspy initalization
     $('.scrollspy').scrollSpy({scrollOffset: 50});
     //$(".scrollspy").scrollSpy();
@@ -290,7 +287,7 @@ var scrollfire = function () {
         {selector: '#priceOverviewCard', offset: 300, callback: function(el) {
             Materialize.showStaggeredList($(el));
         } },
-        // EHR Overivew Card table
+        // EHR Overview Card table
         {selector: '#ehrOverviewCard', offset: 300, callback: function(el) {
             Materialize.showStaggeredList($(el));
         } },
@@ -382,7 +379,7 @@ var switchScroll = function () {
     var body = $("body");
     setTimeout(function () {
         body.removeClass("stop-scrolling");
-    }, 9000);
+    }, 5000);
 };
 
 
@@ -391,13 +388,13 @@ var mainContent = function () {
     var main = $(".main-section");
     setTimeout(function () {
         main.fadeIn();
-    }, 5000);
+    }, 1500);
 };
 
 // Radio Button & checkbox validation -- added due to HTML5 Required not working
 var formValidation = function () {
     // On form submit click
-     $("#chkOutBtn").on('click', function () {
+    $("#chkOutBtn").on('click', function () {
         // if there are any validation toasts showing remove them
         $(".toast").remove();
         // If product radio btn isn't checked
@@ -423,12 +420,7 @@ var formValidation = function () {
 
             return false;
 
-        } //else {
-            // Remove CSS Border if radio btn is checked
-        //     $(".collection").css({
-        //         "border": "1px solid #e0e0e0"
-        //     });
-        // }
+        }
 
         // If product radio btn is checked
         if (document.getElementById('chkEHR').checked) {
@@ -458,12 +450,12 @@ var formValidation = function () {
             $(this).remove();
         });
         // If the value is for the Advanced EHR Suite
-       if ($(this).val()=='EHR Suite') {
-           // Remove own required styling border
-           $(".collection").css({
-               "border": "1px solid #e0e0e0"
-           });
-       }
+        if ($(this).val()=='EHR Suite') {
+            // Remove own required styling border
+            $(".collection").css({
+                "border": "1px solid #e0e0e0"
+            });
+        }
     });
 
 
@@ -485,28 +477,6 @@ var formValidation = function () {
         });
     });
 
-    //
-    // var selectColr = $('.select-dropdown');
-    // $("select").change(function () {
-    //    $(selectColr).css('color', 'red!important');
-    // });
-
-    // Select drop down color change
-    // $("#states").change(function () {
-    //    //var currentSelect = $("#states").val();
-    //     //var disabledSelect = $(".select-wrapper input.select-dropdown ");
-    //     if ($("#states").val() !==  null) {
-    //         $(".select-dropdown").css({
-    //             "color": "black !important"
-    //         });
-    //     } else {
-    //         $(".select-dropdown ").css({
-    //             "color": "#cac7c6"
-    //         });
-    //     }
-    // });
-
-   // document.getElementById("chk_termsOfService").setCustomValidity("Please agree to the Terms of Service");
 };
 
 // Function allows for the showing of Checkout button in side-nav
@@ -582,25 +552,26 @@ var chckoutAjax = function () {
 
 
 $(document).ready(function () {
-
     // sessionStorage.setItem("is_reloaded", true);
     // clearStorage();
     // localStore();
-   // localStorage.removeItem(key);
+    // localStorage.removeItem(key)
     /** CHANGE BACK WHEN LIVE **/
-    // $(".main-section").fadeIn(10000);
+    $(".main-section").fadeIn(2500);
 
     /* Fade out overlay and loading screen */
     /** CHANGE BACK WHEN LIVE **/
-    // $(".loading-overlay").fadeIn('slow').show().delay(8000).fadeOut(500);
+    // $(".loading-overlay").fadeIn('slow').show().delay(4500).fadeOut(2000);
+    $(".loading-overlay").show().delay(5000).fadeOut(2500);
+
     /** CHANGE BACK WHEN LIVE **/
-    // $("#fadediv").show();
+    $("#fadediv").show();
     /** CHANGE BACK WHEN LIVE **/
     // Delay window scroll function
-    //switchScroll();
-    //mainContent();
+    switchScroll();
+    mainContent();
 
-    // Fade in download demo section on page load 
+    // Fade in download demo section on page load
     $(".Message-Header-Top").fadeIn(5000);
     // Side-nav Initialization
     $(".button-collapse").sideNav();
@@ -621,8 +592,6 @@ $(document).ready(function () {
 
     // Side nav checkout function
     sideNavTransform();
-
-    //$('.carousel').carousel();
 
     // Landing page loading bar
     progressBar();
@@ -645,6 +614,4 @@ $(document).ready(function () {
     $("select[required]").css({display: "inline", height: 0, padding: 0, width: 0});
     //$("input['type=radio'][required]").css({display: "inline", height: 0, padding: 0, width: 0});
     //$('#chkEHR[required]').css({visibility: "visible", marginLeft: "200px"});
-
-
 });

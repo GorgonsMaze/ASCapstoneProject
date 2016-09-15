@@ -1259,7 +1259,7 @@ blockquote {
 
 /* First Carousel slide */
 .one {
-    background: rgba(205, 222, 255, 0.43) url('/ASCapstoneProject/images/images/person1.png') no-repeat left center;
+    background: rgba(205, 222, 255, 0.43) url('../images/images/person1.png') no-repeat left center;
     width: 100%;
     position: relative;
     top: 0;
@@ -1282,7 +1282,7 @@ blockquote {
 }
 /* Second Carousel slide */
 .two {
-    background: rgba(205, 222, 255, 0.43) url('/ASCapstoneProject/images/images/person2.png') no-repeat left center;
+    background: rgba(205, 222, 255, 0.43) url('../images/images/person2.png') no-repeat left center;
     width: 100%;
     position: relative;
     top: 0;
@@ -1306,7 +1306,7 @@ blockquote {
 
 /* Third Carousel slide */
 .three {
-    background:rgba(205, 222, 255, 0.43) url('/ASCapstoneProject/images/images/person3.jpeg') no-repeat left center;
+    background:rgba(205, 222, 255, 0.43) url('../images/images/person3.jpeg') no-repeat left center;
     width: 100%;
     position: relative;
     top: 0;
@@ -1331,7 +1331,7 @@ blockquote {
 
 /* Fourth Carousel slide */
 .four {
-    background: rgba(205, 222, 255, 0.43) url('/ASCapstoneProject/images/images/person4.jpeg') no-repeat center;
+    background: rgba(205, 222, 255, 0.43) url('../images/images/person4.jpeg') no-repeat center;
     width: 100%;
     position: relative;
     top: 0;
@@ -1356,7 +1356,7 @@ blockquote {
 
 /* Fifth Carousel slide */
 .five {
-    background: rgba(205, 222, 255, 0.43) url('/ASCapstoneProject/images/images/person5.jpeg') no-repeat left center;
+    background: rgba(205, 222, 255, 0.43) url('../images/images/person5.jpeg') no-repeat left center;
     width: 100%;
     position: relative;
     top: 0;
@@ -1385,7 +1385,7 @@ blockquote {
     https://hd.unsplash.com/photo-1414265247351-4afd13a3b4e6
 
     */
-    background: rgba(205, 222, 255, 0.43) url('/ASCapstoneProject/images/images/city-testim.jpeg') no-repeat left center;
+    background: rgba(205, 222, 255, 0.43) url('../images/images/city-testim.jpeg') no-repeat left center;
     width: 100%;
     position: relative;
     top: 0;
@@ -2375,17 +2375,18 @@ footer.page-footer .footer-copyright {
     z-index: 1200;
 }
 /***** CHANGE BACK WHEN LVIE!!!!!! ****************************/
-/* Entire Website
+/* Entire Website */
 .main-section {
     display: none;
 }
 
 /* Stop scrolling class for overlay div
+*/
 .stop-scrolling {
     height:100%;
     overflow: hidden;
 }
-*/
+
 #fadediv {
     display:none;
     position: relative;
@@ -2456,10 +2457,10 @@ footer.page-footer .footer-copyright {
     animation-duration: 0.5s;
 
     /* Sets the delay for the transform animation */
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    animation-delay: 6s;
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    animation-delay: 4s;
 
     /* transform: translatex(26px) translatey(-100px); */
 }
@@ -2535,10 +2536,10 @@ footer.page-footer .footer-copyright {
     animation-duration: 0.5s;
 
     /* Sets the delay for the transform animation */
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    animation-delay: 6s;
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    animation-delay: 4s;
 
     /*transform: rotate(45deg) translateX(50px) translateY(50px);
     transform-origin: left;*/
@@ -2586,9 +2587,9 @@ footer.page-footer .footer-copyright {
     height: 100%;
     background-color: #1565c0;
     border-radius: 20px;
-    -webkit-transition: width 3s;
-    -o-transition: width 3s;
-    transition: width 3s;
+    -webkit-transition: width 1s;
+    -o-transition: width 1s;
+    transition: width 1s;
 }
 /* Progress bar tranformation into X */
 .progress-middle-transform {
@@ -2625,10 +2626,10 @@ footer.page-footer .footer-copyright {
     animation-duration: 0.5s;
 
     /* Sets the delay for the transform animation */
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    animation-delay: 6s;
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    animation-delay: 4s;
 
     /*    transform-origin: left;
     transform: rotate(-45deg) translateX(10px) translatey(70px);
@@ -2676,9 +2677,9 @@ footer.page-footer .footer-copyright {
     height: 100%;
     background-color: #f3930b;
     border-radius: 20px;
-    -webkit-transition: width 3s;
-    -o-transition: width 3s;
-    transition: width 3s;
+    -webkit-transition: width 1s;
+    -o-transition: width 1s;
+    transition: width 1s;
 }
 
 /* Progress bar tranformation into X */
@@ -2715,10 +2716,10 @@ footer.page-footer .footer-copyright {
     animation-duration: 0.5s;
 
     /* Sets the delay for the transform animation */
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    animation-delay: 6s;
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    animation-delay: 4s;
 
     /*        transform: rotate(-45deg) translateX(25px) translateY(40px);
     transform-origin: left;
@@ -2767,9 +2768,9 @@ footer.page-footer .footer-copyright {
     height: 100%;
     background-color: #43a047 ;
     border-radius: 20px;
-    -webkit-transition: width 3s;
-    -o-transition: width 3s;
-    transition: width 3s;
+    -webkit-transition: width 1s;
+    -o-transition: width 1s;
+    transition: width 1s;
 }
 
 

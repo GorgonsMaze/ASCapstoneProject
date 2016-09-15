@@ -10,7 +10,7 @@
                         <div class="col s12 m8 l6 offset-m2 offset-l3" id="validateAnimate">
                             <ul class="collection with-header center-align">
                                 <li class="collection-header" id="chk-collection-header"><img
-                                        src="/ASCapstoneProject/images/logos/logo.png" height="128" width="128"/><h4>
+                                        src="images/logos/logo.png" height="128" width="128"/><h4>
                                         Protech Checkout</h4></li>
                                 <li class="collection-item" id="chk-collection">
                                     <p>
@@ -124,9 +124,11 @@
                                         <!-- Country -->
                                         <div class="row">
                                             <div class="input-field col s12">
-                                                <input disabled value="United States" id="country" name="country"
-                                                       type="text" class="validate">
-                                                <label for="country"><b>Country</b></label>
+                                                <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+                                                <label for="disabled">Disabled</label>
+<!--                                                <input disabled value="United States" id="country" name="country"-->
+<!--                                                       type="text" class="validate">-->
+<!--                                                <label for="country"><b>Country</b></label>-->
                                             </div>
                                         </div>
                                         <!-- PHONE -->
@@ -146,7 +148,7 @@
                                                 <!-- placeholder="Name@yourdomain.com" -->
                                                 <input id="email_of" placeholder="example@yourdomain.com" type="text"
                                                        name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                                                       title="Enter email address correctly" class="validate"
+                                                       title="Enter email address correctly ex: john@gmail.com" class="validate"
                                                        required="" aria-required="true">
                                                 <label for="email_of"><b>Email</b></label>
                                             </div>
@@ -463,11 +465,11 @@
                 <!--https://hd.unsplash.com/photo-1468743428993-661b9309fa2c-->
                 <div class="banner-overlay">
                     <div class="center-align">
-                        <img height="256" width="256" src="/ASCapstoneProject/images/logos/logo.png"/>
+                        <img height="256" width="256" src="images/logos/logo.png"/>
                         <p class="open-sans7 white-texxt chkout-co-name">Protech Solutions</p>
                     </div>
                 </div>
-                <img class="checkout-bnr-img" src="/ASCapstoneProject/images/images/building-two.jpeg">
+                <img class="checkout-bnr-img" src="images/images/building-two.jpeg">
             </div>
         </div>
     </main>

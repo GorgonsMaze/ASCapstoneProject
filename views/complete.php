@@ -6,7 +6,7 @@ $order = get_OrderDetails($db);
     <div class="container">
         <div class="row">
             <div class="center-align">
-                <img height="256" width="256" src="/ASCapstoneProject/images/logos/logo.png" alt="Logo"/>
+                <img height="256" width="256" src="images/logos/logo.png" alt="Logo"/>
             </div>
         </div>
 
@@ -40,9 +40,9 @@ $order = get_OrderDetails($db);
                                                     <!-- Buyer Address -->
                                                     <h6 class="detail-title">Buyer Address</h6>
                                                     <ul>
-                                                        <li><?php echo $cust['fName'] ." " . $cust['lName']; ?></li>
+                                                        <li><?php echo $cust['fName'] . " " . $cust['lName']; ?></li>
                                                         <li><?php echo $cust['address'] ." " . $cust['address2']; ?></li>
-                                                        <li><?php echo $cust['city'] . "," . $cust['state'] . " " . $cust['zip']?></li>
+                                                        <li><?php echo $cust['city'] . ", " . $cust['state'] . " " . $cust['zip']?></li>
                                                         <li><?php echo $cust['country'] ?></li>
                                                         <li>Email: <?php echo $cust['email'] ?></li>
                                                         <li>Phone: <?php echo $cust['phoneNumber'] ?></li>
