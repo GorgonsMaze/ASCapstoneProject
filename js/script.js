@@ -150,12 +150,9 @@ var scrollChange = function () {
 
 // Active scroll spy functionality
 var activeScrollspy = function () {
-
-
     /** Need to update this function to get rid of active class when entering
      *   new scrollspy section - Now it activates 2 at the same time at bottom
      *   and top points **/
-
     // Scrollspy initalization
     $('.scrollspy').scrollSpy({scrollOffset: 50});
     //$(".scrollspy").scrollSpy();
@@ -290,7 +287,7 @@ var scrollfire = function () {
         {selector: '#priceOverviewCard', offset: 300, callback: function(el) {
             Materialize.showStaggeredList($(el));
         } },
-        // EHR Overivew Card table
+        // EHR Overview Card table
         {selector: '#ehrOverviewCard', offset: 300, callback: function(el) {
             Materialize.showStaggeredList($(el));
         } },
@@ -423,12 +420,7 @@ var formValidation = function () {
 
             return false;
 
-        } //else {
-        // Remove CSS Border if radio btn is checked
-        //     $(".collection").css({
-        //         "border": "1px solid #e0e0e0"
-        //     });
-        // }
+        }
 
         // If product radio btn is checked
         if (document.getElementById('chkEHR').checked) {
@@ -485,28 +477,6 @@ var formValidation = function () {
         });
     });
 
-    //
-    // var selectColr = $('.select-dropdown');
-    // $("select").change(function () {
-    //    $(selectColr).css('color', 'red!important');
-    // });
-
-    // Select drop down color change
-    // $("#states").change(function () {
-    //    //var currentSelect = $("#states").val();
-    //     //var disabledSelect = $(".select-wrapper input.select-dropdown ");
-    //     if ($("#states").val() !==  null) {
-    //         $(".select-dropdown").css({
-    //             "color": "black !important"
-    //         });
-    //     } else {
-    //         $(".select-dropdown ").css({
-    //             "color": "#cac7c6"
-    //         });
-    //     }
-    // });
-
-    // document.getElementById("chk_termsOfService").setCustomValidity("Please agree to the Terms of Service");
 };
 
 // Function allows for the showing of Checkout button in side-nav
@@ -601,7 +571,7 @@ $(document).ready(function () {
     switchScroll();
     mainContent();
 
-    // Fade in download demo section on page load 
+    // Fade in download demo section on page load
     $(".Message-Header-Top").fadeIn(5000);
     // Side-nav Initialization
     $(".button-collapse").sideNav();
@@ -622,8 +592,6 @@ $(document).ready(function () {
 
     // Side nav checkout function
     sideNavTransform();
-
-    //$('.carousel').carousel();
 
     // Landing page loading bar
     progressBar();
