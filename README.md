@@ -1,6 +1,6 @@
 # CapstoneProject
 
-![Statys](https://img.shields.io/badge/Complete-75%25-orange.svg) [![CircleCI](https://img.shields.io/circleci/project/BrightFlair/PHP.Gt.svg?maxAge=2592000?style=flat-square)]()
+![Statys](https://img.shields.io/badge/Complete-85%25-orange.svg) [![CircleCI](https://img.shields.io/circleci/project/BrightFlair/PHP.Gt.svg?maxAge=2592000?style=flat-square)]()
 ![Statys](https://img.shields.io/badge/Team Members-Ian + Jameson-red.svg)
 ![Statys](https://img.shields.io/badge/Frameworks-Materialize CSS-blue.svg)
 
@@ -14,25 +14,19 @@ Javascript Demo Site
  Tools being used are HTML5 > CSS > Javascript > PHP > MySQL
 
 #To-Do's [Important]
-- [x] Checkout system using PHP MySQL 
- * Pull drop down lists from DB (States ~~CC Month + Year~~ )
 * Download Application ability
-- [x] Order Confirmation page 
 * Contact form (1/2 complete - Sever Side needed)
-* Nav links on Checkout and Confirm work with index scrollspy
 * Clean page routes (last)
-* Fix email REGEX on checkout form - Capital letters throw error
 * Fix DB sizes for certain columns
 * hash cc numbers
+* Contact Form -- change color of form inputs
 
 ##To-Do's
 * Navigation
  * Hamburger Icon transition on click (* Extra)
 * Parallax Jumbotron
  * Final Image + Text
-* Contact Form -- change color of form inputs
- * Form => PHP => MySQL DB 
- * Email Recipient 
+* Email Recipient 
 * Buy - Download .exe
 * Developer Team (1/2 complete)
  * Finalized Help chat box (Extra)
@@ -78,3 +72,8 @@ Javascript Demo Site
 - [x] Pull order data from db and display on complete page
 - [x] Create States/Months/Year Tables - Pull into select drop downs
 - [x] Start sending form data to MySQL Database
+- [x] Checkout system using PHP MySQL 
+- [x] Order Confirmation page 
+- [x] Nav links on Checkout and Confirm work with index scrollspy
+- [x] Pull drop down lists from DB (~~States CC Month + Year~~ )
+- [x] Fix email REGEX on checkout form - Capital letters throw error
