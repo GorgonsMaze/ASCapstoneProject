@@ -477,6 +477,24 @@ var formValidation = function () {
         });
     });
 
+    // Fixes the invalid error on Country input
+    // due to the input field being read-only
+    // an invalid error on required html5 is thrown
+    var zipcode = document.getElementById("zipcode");
+    $(zipcode).on('input', function () {
+        var countryInput = $("#country");
+        if (this.value.length == 5) {
+            countryInput.css({
+                borderBottom: "1px solid #4CAF50",
+                boxShadow: "0 1px 0 0 #4CAF50"
+            });
+        } else {
+            countryInput.css({
+                borderBottom: "1px solid #9e9e9e"
+            });
+        }
+    });
+
 };
 
 // Function allows for the showing of Checkout button in side-nav
