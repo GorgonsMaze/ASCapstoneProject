@@ -88,6 +88,7 @@
                                                 <label for="city"><b>City</b></label>
                                             </div>
                                         </div>
+
                                         <!-- STATES -->
                                         <div class="row">
                                             <div class="input-field col s12">
@@ -114,7 +115,7 @@
                                         <!-- ZIPCODE -->
                                         <div class="row">
                                             <div class="input-field col s12">
-                                                <input id="zipcode" placeholder="03543 or 02454-4533" type="text"
+                                                <input id="zipcode" placeholder="03543" type="text"
                                                        name="zip" pattern="^\d{5}(?:[-\s]\d{4})?$"
                                                        title="Enter your zipcode" class="validate" required=""
                                                        aria-required="true">
@@ -124,11 +125,9 @@
                                         <!-- Country -->
                                         <div class="row">
                                             <div class="input-field col s12">
-                                                <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-                                                <label for="disabled">Disabled</label>
-<!--                                                <input disabled value="United States" id="country" name="country"-->
-<!--                                                       type="text" class="validate">-->
-<!--                                                <label for="country"><b>Country</b></label>-->
+                                                <input disabled value="United States" id="country" name="country"
+                                                       type="text" class="validate">
+                                                <label for="country"><b>Country</b></label>
                                             </div>
                                         </div>
                                         <!-- PHONE -->
@@ -145,9 +144,9 @@
                                         <!-- EMAIL -->
                                         <div class="row">
                                             <div class="input-field col s12">
-                                                <!-- placeholder="Name@yourdomain.com" -->
-                                                <input id="email_of" placeholder="example@yourdomain.com" type="text"
-                                                       name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                                <!--[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,4}$ placeholder="Name@yourdomain.com" ^[a-zA-Z]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$-->
+                                                <input id="email_of" placeholder="example@yourdomain.com" type="email"
+                                                       name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,4}$"
                                                        title="Enter email address correctly ex: john@gmail.com" class="validate"
                                                        required="" aria-required="true">
                                                 <label for="email_of"><b>Email</b></label>
