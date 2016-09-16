@@ -4,7 +4,9 @@
  * User: Ian
  * Date: 9/2/2016
  * Time: 9:23 PM
- */?>
+ */
+$action = $_REQUEST['action'];
+?>
 <!DOCTYPE html>
 <!--
  ______ ______  ______  ______ ______  ______  __  __     ______  ______  __      __  __  ______ __  ______  __   __  ______
@@ -202,32 +204,12 @@
 
     </script>
 </head>
-<body class="stop-scrolling" id="topPage">
-
-
-
-<!-- LANDING SPLASH -->
-<div class="loading-overlay">
-    <div id="fadediv">
-        <!--  LOGO -->
-        <div class="logo-land logo-transform">
-            <img height="256" width="256" src="images/logos/logo.png" />
-        </div>
-        <!-- PROGRESS BAR 1 -->
-        <div class="progress progress-1-transform">
-            <div class="progress-bar-1"></div>
-        </div>
-        <div class="progress progress-middle-transform">
-            <div class="progress-bar-middle"></div>
-        </div>
-        <!-- PROGRESS BAR 2 -->
-        <div class="progress progress-2-transform">
-            <div class="progress-bar-2"></div>
-        </div>
-    </div>
-</div>
-<!-- End Landing Splash -->
-
+<?php if($action == 'checkoutCart' || $action == 'completePurchase')  {
+    echo "<body id=\"topPage\">";
+} else {
+    echo "<body class=\"stop-scrolling\" id=\"topPage\">";
+}
+?>
 
 <!-- MAIN CONTENT -->
 <div class="main-section">
@@ -299,4 +281,3 @@
             </ul>
         </ul> <!-- END FIXED SIDE-NAV XL -->
     </header>
-

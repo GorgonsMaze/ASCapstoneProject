@@ -8,6 +8,28 @@
  */
 ?>
 
+<!-- LANDING SPLASH -->
+<div class="loading-overlay">
+    <div id="fadediv">
+        <!--  LOGO -->
+        <div class="logo-land logo-transform">
+            <img height="256" width="256" src="images/logos/logo.png" />
+        </div>
+        <!-- PROGRESS BAR 1 -->
+        <div class="progress progress-1-transform">
+            <div class="progress-bar-1"></div>
+        </div>
+        <div class="progress progress-middle-transform">
+            <div class="progress-bar-middle"></div>
+        </div>
+        <!-- PROGRESS BAR 2 -->
+        <div class="progress progress-2-transform">
+            <div class="progress-bar-2"></div>
+        </div>
+    </div>
+</div>
+<!-- End Landing Splash -->
+
 <!-- ADDED DIV FOR AJAX CALL -- IF ISSUES ON BIG SCREENS CHANGE BACK TO MAIN -->
 <div id="content">
     <main>

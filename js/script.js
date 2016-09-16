@@ -379,7 +379,7 @@ var switchScroll = function () {
     var body = $("body");
     setTimeout(function () {
         body.removeClass("stop-scrolling");
-    }, 5000);
+    }, 5600);
 };
 
 
