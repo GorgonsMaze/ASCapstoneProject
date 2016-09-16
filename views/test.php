@@ -94,14 +94,14 @@
                                     <!-- ZIPCODE -->
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <input id="zipcode" placeholder="03543" type="text" name="zip"  pattern="^\d{5}(?:[-\s]\d{4})?$" title="Enter your zipcode" class="validate" required="" aria-required="true">
+                                            <input id="zipcode" placeholder="03543" type="text" name="zip"  pattern="^\d{5}(?:[-\s]\d{4})?$" title="Enter your zipcode ex.03246" class="validate" required="" aria-required="true">
                                             <label for="zipcode"><b>Zip</b></label>
                                         </div>
                                     </div>
                                     <!-- Country -->
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <input disabled value="United States" id="country" name="country" type="text" class="validate">
+                                            <input value="United States" id="country" name="country" type="text" class="" readonly>
                                             <label for="country"><b>Country</b></label>
                                         </div>
                                     </div>
@@ -109,7 +109,7 @@
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <!-- CHECK VALIDATION ******************* -->
-                                            <input id="phone_number" placeholder="1234567890" type="text" name="phoneNumber" pattern="^\d{10}$" title="Enter your 10 digit phone number with dashes ex. 508-234-1233" class="validate" required="" aria-required="true">
+                                            <input id="phone_number" placeholder="1234567890" type="text" name="phoneNumber" pattern="^\d{10}$" title="Enter your 10 digit phone number with dashes ex. 5082341233" class="validate" required="" aria-required="true">
                                             <label for="phone_number"><b>Phone</b></label>
                                         </div>
                                     </div>
