@@ -18,8 +18,8 @@ $action = $_REQUEST['action'];
 <html lang="en">
 <head>
     <title>Protech Solutions | Rhode Island</title>
-    <!-- Favicon logo
-    <link rel="shortcut icon" href="/images/logos/logofavicon.ico" type="image/x-icon">-->
+    <!-- Favicon logo -->
+    <link rel="shortcut icon" href="images/logos/logofavicon.ico" type="image/x-icon">
     <!--<link rel="icon" href="/images/logos/logofavicon.png" type="image/png">-->
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -225,12 +225,12 @@ $action = $_REQUEST['action'];
                         <li><a href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#product";} else {echo "#product";}?>">Product</a></li>
                         <li><a href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#testimonial";} else {echo "#testimonial";}?>">Testimonials</a></li>
                         <li><a href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#demo";} else {echo "#demo";}?>">Demo</a></li>
-                        <li><a href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#buy";} else {echo "#buy";}?>" class="dropdown-button" data-activates="ddCheckout" data-belowOrigin="true" data-hover="true" data-constrainwidth="true ">Buy</a></li>
+                        <li><a href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#buy";} else {echo "#buy";}?>" class="dropdown-button" data-activates="ddCheckout" data-belowOrigin="true" data-hover="true" data-constrainwidth="true">Buy</a></li>
                         <!-- Dropdown Structure -->
                         <ul id="ddCheckout" class="dropdown-content">
                             <li><a href="index.php?action=checkoutCart">Checkout</a></li>
                         </ul>
-                        <li><a href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#product";} else {echo "#product";}?>#contact">Contact</a></li>
+                        <li><a href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#contact";} else {echo "#contact";}?>">Contact</a></li>
                         <!-- Extra Drop Down Trigger -->
                         <li><a class="dropdown-button" href="#!" data-activates="ddExtra" data-belowOrigin="true" data-alignment="right" data-gutter="-5" data-hover="true" data-constrainwidth="true "><i class="material-icons">more_vert</i></a></li>
                         <!-- Dropdown Structure -->
@@ -266,8 +266,17 @@ $action = $_REQUEST['action'];
                 <li><a class="waves-effect" href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#demo";} else {echo "#demo";}?>" id="sBtn4"><i class="material-icons left">whatshot</i>Demo</a></li>
                 <li><div class="divider"></div></li>
                 <li><a class="waves-effect" href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#buy";} else {echo "#buy";}?>" id="buySidenav"><i class="material-icons left">shopping_cart left</i>Buy</a></li>
-                <div class="hide-checkout">
-                    <li class="hidden-checkout-btn"><a class="waves-effect" href="index.php?action=checkoutCart"><i class="material-icons left">subdirectory_arrow_right</i>Checkout</a></li>
+                <?php
+                if ($action == '') {
+                    echo "<div class=\"hide-checkout\">";
+                    echo "<li class=\"hidden-checkout-btn\"><a class=\"waves-effect\" href=\"index.php?action=checkoutCart\"><i class=\"material-icons left\">subdirectory_arrow_right</i>Checkout</a></li>";
+                } else {
+                    echo "<div>";
+                    echo "<li><a class=\"waves-effect\" href=\"index.php?action=checkoutCart\"><i class=\"material-icons left red-text\">subdirectory_arrow_right</i>Checkout</a></li>";
+                }
+                ?>
+<!--                <div class="hide-checkout">-->
+<!--                    <li class="hidden-checkout-btn"><a class="waves-effect" href="index.php?action=checkoutCart"><i class="material-icons left">subdirectory_arrow_right</i>Checkout</a></li>-->
                     <li><div class="divider"></div></li>
                     <li><a class="waves-effect" href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#contact";} else {echo "#contact";}?>"><i class="material-icons left">email</i>Contact</a></li>
                     <li><div class="divider"></div></li>
@@ -277,7 +286,10 @@ $action = $_REQUEST['action'];
                     <li><div class="divider"></div></li>
                     <li><a class="waves-effect" href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#social-footer";} else {echo "#social-footer";}?>"><i class="material-icons left">share</i>Social Media</a></li>
                     <li><div class="divider"></div></li>
-                </div>
+                <?php
+                echo "</div>";
+                ?>
+
             </ul>
         </ul> <!-- END FIXED SIDE-NAV XL -->
     </header>

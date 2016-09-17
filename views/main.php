@@ -44,7 +44,7 @@
         <div class="Message-Header-Top">
             <div class="row" id="topDemo">
                 <div class="center-align"><span class="title-top">Latest Demo Here!&nbsp;</span>
-                    <a class="download-demo-btn" href="#!"><i
+                    <a class="download-demo-btn" href="#demo"><i
                             class="fa fa-download green-text text-lighten-1 fa-2x top-dl-btn"
                             aria-hidden="true"></i></a>
                 </div>
@@ -824,7 +824,7 @@
                                     <div class="center-align">
                                         <a href="index.php?action=checkoutCart" class="waves-effect waves-light btn purchase-btn"><i
                                                 class="material-icons left money-icon">attach_money</i>Purchase</a>
-                                        <a href="#" class="waves-effect waves-light btn demo-btn"><i
+                                        <a href="#demo" class="waves-effect waves-light btn demo-btn"><i
                                                 class="material-icons left">collections</i>Demo</a>
                                     </div>
                                 </div>

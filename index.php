@@ -12,8 +12,8 @@ switch ($action) :
         break;
     case 'checkoutCart':
         // Once form button is clicked action = completePurchase
-        include ("views/test.php");
-        //include ("views/checkout.php");
+        //include ("views/test.php");
+        include ("views/checkout.php");
         break;
     case 'completePurchase':
         $product = $_POST['product'];
