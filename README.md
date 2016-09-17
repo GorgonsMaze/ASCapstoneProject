@@ -11,7 +11,7 @@ Javascript Demo Site
  
  
  This repository is for the website portion of our teams Capstone Project.
- Tools being used are HTML5 > CSS > Javascript > PHP > MySQL
+ Tools being used are Javascript > PHP > MySQL
 
 #To-Do's [Important]
 * Download Application ability
@@ -33,10 +33,7 @@ Javascript Demo Site
  
  
 ## Weekly Breakdown
-* ~~Weeks 1-8~~ 
-* Week 9
-       * Fix MySQL DB naming conventions 
-       (instead of camel case use snake case first_name etc.)
+* ~~Weeks 1-9~~ 
 * Week 10
       * Clean up any dead links/page routes or missing content 
       * Overlay on parallax containers - add text or title and brief overview
