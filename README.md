@@ -16,8 +16,8 @@ Javascript Demo Site
 #To-Do's [Important]
 * Download Application ability
 * Contact form (1/2 complete - Sever Side needed)
-* Clean page routes (last)
-* Fix DB sizes for certain columns
+- [x] Clean page routes (last)
+- [x] Fix DB sizes for certain columns
 * hash cc numbers
 * Contact Form -- change color of form inputs
 
