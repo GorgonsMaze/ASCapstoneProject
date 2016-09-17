@@ -253,8 +253,8 @@ $action = $_REQUEST['action'];
                     <div class="center-align">
                         <img class="circle side-logo" src="images/logos/logo.png">
                     </div>
-                    <a href="#!"><span class="white-text name userview-link">Protech Solutions</span></a>
-                    <a href="#!email"><span class="white-text email userview-link">ProtechSolutionsRI@gmail.com</span></a>
+                    <a href="#topPage"><span class="white-text name userview-link">Protech Solutions</span></a>
+                    <a href="mailto:protechsolutionsri@gmail.com?Subject=Hello%20Protech%20Solutions"><span class="white-text email userview-link">ProtechSolutionsRI@gmail.com</span></a>
                 </div></li>
             <ul class="main-side-links">
                 <li><a class="waves-effect" href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#about";} else {echo "#about";}?>" id="sBtn1"><i class="material-icons left">description</i>About</a></li>
