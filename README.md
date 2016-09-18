@@ -16,9 +16,7 @@ Javascript Demo Site
 #To-Do's [Important]
 * Download Application ability
 * Contact form (1/2 complete - Sever Side needed)
-- [x] Clean page routes (last)
-- [x] Fix DB sizes for certain columns
-* hash cc numbers
+* ~~hash cc numbers~~ added to future updates of project
 * Contact Form -- change color of form inputs
 
 ##To-Do's
@@ -74,3 +72,5 @@ Javascript Demo Site
 - [x] Nav links on Checkout and Confirm work with index scrollspy
 - [x] Pull drop down lists from DB (~~States CC Month + Year~~ )
 - [x] Fix email REGEX on checkout form - Capital letters throw error
+- [x] Clean page routes (last)
+- [x] Fix DB sizes for certain columns
