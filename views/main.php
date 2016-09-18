@@ -14,7 +14,7 @@
  *  TODO: ADD CONTACT PHP MYSQL SECTION
  */
 $action = $_REQUEST['action'];
-if ($action == 'Send-Message') {
+if ($action == 'sendMessage') {
     // Make scroll point back to contact us form
     /***STILL TESTING GOOGLE.COM REDIRECT ***/
     echo "<script> relocate();</script>";
@@ -942,7 +942,7 @@ if ($action == 'Send-Message') {
                                 <!-- Submit -->
                                 <div class="center-align">
                                     <button class="btn waves-effect waves-light send-mail-btn" id="sendMailBtn"
-                                            type="submit" name="action" value="Send-Message">Send
+                                            type="submit" name="action" value="sendMessage">Send
                                         <i class="material-icons right">send</i>
                                     </button>
                                 </div>
