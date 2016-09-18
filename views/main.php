@@ -1,3 +1,10 @@
+<!-- Script for redirect on contact form submission -->
+<script type="text/javascript">
+    function relocate() {
+        // Redirect to url location
+        window.location.href = "https://www.google.com";
+    }
+</script>
 <?php
 /**
  * Created by Ian Arsenault.
@@ -10,7 +17,7 @@ $action = $_REQUEST['action'];
 if ($action == 'Send-Message') {
     // Make scroll point back to contact us form
     /***STILL TESTING GOOGLE.COM REDIRECT ***/
-    echo "relocate();";
+    echo "<script> relocate();</script>";
 }
 ?>
 
@@ -900,14 +907,14 @@ if ($action == 'Send-Message') {
                                 <div class="row">
                                     <div class="input-field col s12 m6">
                                         <!--placeholder="Mr. Reynolds"-->
-                                        <input id="name_of" placeholder="Mr. Reynolds" type="text" name="full-name"
+                                        <input id="name_of" placeholder="Mr. Reynolds" type="text" name="fullname"
                                                pattern="^[a-zA-Z'.,\s-]{4,150}$" title="Enter first and last name"
                                                class="validate" required="" aria-required="true">
                                         <label for="name_of"><b>Name</b></label>
                                     </div>
                                     <div class="input-field col l6 m6 s12">
                                         <!--placeholder="123-456-7890"-->
-                                        <input placeholder="123-456-7890" id="phone" name="phone-number" type="text"
+                                        <input placeholder="123-456-7890" id="phone" name="phonenumber" type="text"
                                                pattern="^(1\s*[-\/\.]?)?(\((\d{3})\)|(\d{3}))\s*[-\/\.]?\s*(\d{3})\s*[-\/\.]?\s*(\d{4})\s*(([xX]|[eE][xX][tT])\.?\s*(\d+))*$"
                                                title="Include area code | Numbers only" required minlength=10>
                                         <label for="phone"><b>Phone Number</b></label>
@@ -916,7 +923,7 @@ if ($action == 'Send-Message') {
                                 <div class="row">
                                     <div class="input-field col s12">
                                         <!-- placeholder="Name@yourdomain.com" -->
-                                        <input id="email_of" placeholder="Name@yourdomain.com" type="text" name="email-of"
+                                        <input id="email_of" placeholder="Name@yourdomain.com" type="text" name="emailfrom"
                                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                                                title="Enter email address correctly" class="validate" required=""
                                                aria-required="true">
@@ -926,7 +933,7 @@ if ($action == 'Send-Message') {
                                 <div class="row">
                                     <div class="input-field col s12">
                                         <!-- placeholder="Write your message here!" -->
-                                        <textarea id="message" placeholder="Write your message here!" name="message"
+                                        <textarea id="message" placeholder="Write your message here!" name="messagefrom"
                                                   class="materialize-textarea validate" required=""
                                                   aria-required="true"></textarea>
                                         <label for="message"><b>Message</b></label>
