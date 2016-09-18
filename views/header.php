@@ -207,7 +207,7 @@ $action = $_REQUEST['action'];
     <script type="text/javascript">
         $(document).ready(function () {
             function relocate() {
-                window.location.href = "www.google.com";
+                window.location.href = "https://www.google.com";
             }
         });
     </script>
