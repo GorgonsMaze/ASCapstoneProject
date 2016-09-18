@@ -602,7 +602,7 @@ if ($action == 'sendMessage') {
                                     <div class="card">
                                         <div class="card-content">
                                             <video loop class="responsive-video" controls>
-                                                <source src="/assets/appdemo2.mp4" type="video/mp4">
+                                                <source src="assets/appdemo2.mp4" type="video/mp4">
                                             </video>
                                         </div>
                                     </div>
@@ -611,7 +611,7 @@ if ($action == 'sendMessage') {
                                     <div class="card">
                                         <div class="card-content">
                                             <video loop autoplay class="responsive-video" controls>
-                                                <source src="/assets/appdemo1.mp4" type="video/mp4">
+                                                <source src="assets/appdemo1.mp4" type="video/mp4">
                                             </video>
                                         </div>
                                     </div>
