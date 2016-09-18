@@ -204,12 +204,12 @@ $action = $_REQUEST['action'];
         google.maps.event.addDomListener(window, 'load', init);
 
     </script>
+    <!-- Script for redirect on contact form submission -->
     <script type="text/javascript">
-        $(document).ready(function () {
-            function relocate() {
-                window.location.href = "https://www.google.com";
-            }
-        });
+        function relocate() {
+            // Redirect to url location
+            window.location.href = "https://www.google.com";
+        }
     </script>
 </head>
 <?php if($action == 'checkoutCart' || $action == 'completePurchase')  {
