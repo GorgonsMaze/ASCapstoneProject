@@ -14,6 +14,7 @@ Javascript Demo Site
  Tools being used are Javascript > PHP > MySQL
 
 #To-Do's [Important]
+* Get rid of redirect url for contact form - not working
 * Download Application ability
 * Contact form (1/2 complete - Sever Side needed)
 * ~~hash cc numbers~~ added to future updates of project
