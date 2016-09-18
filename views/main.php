@@ -6,6 +6,12 @@
  *
  *  TODO: ADD CONTACT PHP MYSQL SECTION
  */
+$action = $_REQUEST['action'];
+if ($action == 'Send-Message') {
+    // Make scroll point back to contact us form
+    /***STILL TESTING GOOGLE.COM REDIRECT ***/
+    echo "relocate();";
+}
 ?>
 
 <!-- LANDING SPLASH -->
@@ -886,7 +892,7 @@
                     <ul id="contactFrm">
                         <li>
                             <!-- <div class="card white card-form z-depth-2">-->
-                            <form class="col s12 contact-form">
+                            <form class="col s12 contact-form" role="form" method="POST" name="contactForm" action="">
                                 <div class="row">
                                     <h5>Send us a message <span
                                             class="require hide-on-small-only">* All fields required</span></h5>
@@ -894,14 +900,14 @@
                                 <div class="row">
                                     <div class="input-field col s12 m6">
                                         <!--placeholder="Mr. Reynolds"-->
-                                        <input id="name_of" placeholder="Mr. Reynolds" type="text" name=""
+                                        <input id="name_of" placeholder="Mr. Reynolds" type="text" name="full-name"
                                                pattern="^[a-zA-Z'.,\s-]{4,150}$" title="Enter first and last name"
                                                class="validate" required="" aria-required="true">
                                         <label for="name_of"><b>Name</b></label>
                                     </div>
                                     <div class="input-field col l6 m6 s12">
                                         <!--placeholder="123-456-7890"-->
-                                        <input placeholder="123-456-7890" id="phone" name="" type="text"
+                                        <input placeholder="123-456-7890" id="phone" name="phone-number" type="text"
                                                pattern="^(1\s*[-\/\.]?)?(\((\d{3})\)|(\d{3}))\s*[-\/\.]?\s*(\d{3})\s*[-\/\.]?\s*(\d{4})\s*(([xX]|[eE][xX][tT])\.?\s*(\d+))*$"
                                                title="Include area code | Numbers only" required minlength=10>
                                         <label for="phone"><b>Phone Number</b></label>
@@ -910,7 +916,7 @@
                                 <div class="row">
                                     <div class="input-field col s12">
                                         <!-- placeholder="Name@yourdomain.com" -->
-                                        <input id="email_of" placeholder="Name@yourdomain.com" type="text" name=""
+                                        <input id="email_of" placeholder="Name@yourdomain.com" type="text" name="email-of"
                                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                                                title="Enter email address correctly" class="validate" required=""
                                                aria-required="true">
@@ -920,7 +926,7 @@
                                 <div class="row">
                                     <div class="input-field col s12">
                                         <!-- placeholder="Write your message here!" -->
-                                        <textarea id="message" placeholder="Write your message here!" name=""
+                                        <textarea id="message" placeholder="Write your message here!" name="message"
                                                   class="materialize-textarea validate" required=""
                                                   aria-required="true"></textarea>
                                         <label for="message"><b>Message</b></label>
@@ -929,7 +935,7 @@
                                 <!-- Submit -->
                                 <div class="center-align">
                                     <button class="btn waves-effect waves-light send-mail-btn" id="sendMailBtn"
-                                            type="submit" name="action">Send
+                                            type="submit" name="action" value="Send-Message">Send
                                         <i class="material-icons right">send</i>
                                     </button>
                                 </div>

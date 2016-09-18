@@ -42,6 +42,20 @@ switch ($action) :
         // Completed Order Page
         include ("views/complete.php");
         break;
+    case 'Send-Message':
+        $fullName = $_POST['full-name'];
+        $phone = $_POST['phone-number'];
+        $emailOf = $_POST['email-of'];
+        $message = $_POST['message'];
+        $to = 'protechsolutionsri@gmail.com';
+        $subject = 'Hello Protech';
+        $from = "From: $fullName";
+        $body = "From: $fullName\n Phone Number: $phone\n Email: $emailOf\n Message: $message\n";
+        if (!empty($_POST)) {
+            mail($to, $subject, $body, $from);
+        }
+        include ("views/main.php");
+        break;
     case 'ajaxOrderComplete':
         include ("views/complete.php");
         break;

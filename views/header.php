@@ -7,6 +7,7 @@
  */
 $action = $_REQUEST['action'];
 ?>
+
 <!DOCTYPE html>
 <!--
  ______ ______  ______  ______ ______  ______  __  __     ______  ______  __      __  __  ______ __  ______  __   __  ______
@@ -202,6 +203,13 @@ $action = $_REQUEST['action'];
         // When the window has finished loading create our google map below
         google.maps.event.addDomListener(window, 'load', init);
 
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            function relocate() {
+                window.location.href = "https://www.google.com";
+            }
+        });
     </script>
 </head>
 <?php if($action == 'checkoutCart' || $action == 'completePurchase')  {
