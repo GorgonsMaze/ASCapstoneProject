@@ -1,6 +1,6 @@
 # CapstoneProject
 
-![Statys](https://img.shields.io/badge/Complete-85%25-orange.svg) [![CircleCI](https://img.shields.io/circleci/project/BrightFlair/PHP.Gt.svg?maxAge=2592000?style=flat-square)]()
+![Statys](https://img.shields.io/badge/Complete-90%25-orange.svg) [![CircleCI](https://img.shields.io/circleci/project/BrightFlair/PHP.Gt.svg?maxAge=2592000?style=flat-square)]()
 ![Statys](https://img.shields.io/badge/Team Members-Ian + Jameson-red.svg)
 ![Statys](https://img.shields.io/badge/Frameworks-Materialize CSS-blue.svg)
 
@@ -19,8 +19,7 @@ Javascript Demo Site
 * ~~hash cc numbers~~ added to future updates of project
 * Change responsiveness on complete.php
 * Get working demo video of ehr application
-- [x] Upload screenshots of application to demo section
-- [x] Update team developer summaries
+* Finalized Help chat box (Extra)
 
 
 ##To-Do's
@@ -30,17 +29,12 @@ Javascript Demo Site
  * Final Image + Text
 - [x] Email Recipient 
 * Buy - Download .exe
-* Developer Team (1/2 complete)
- * Finalized Help chat box (Extra)
  
  
 ## Weekly Breakdown
 * ~~Weeks 1-9~~ 
 * Week 10
       * Clean up any dead links/page routes or missing content 
-      * Overlay on parallax containers - add text or title and brief overview
-      * Final Reviews and testing before due date
-
 
 ## Deadline: September 21, 2016
 
@@ -78,3 +72,4 @@ Javascript Demo Site
 - [x] Fix email REGEX on checkout form - Capital letters throw error
 - [x] Clean page routes (last)
 - [x] Fix DB sizes for certain columns
+- [x] Developer Team Summaries and social media
