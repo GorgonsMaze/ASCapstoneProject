@@ -14,18 +14,17 @@ Javascript Demo Site
  Tools being used are Javascript > PHP > MySQL
 
 #To-Do's [Important]
-* Get rid of redirect url for contact form - not working
 * Download Application ability
-* Contact form (1/2 complete - Sever Side needed)
+ - [x] Contact form - need SMTP Server 
 * ~~hash cc numbers~~ added to future updates of project
-* Contact Form -- change color of form inputs
+
 
 ##To-Do's
 * Navigation
  * Hamburger Icon transition on click (* Extra)
 * Parallax Jumbotron
  * Final Image + Text
-* Email Recipient 
+- [x] Email Recipient 
 * Buy - Download .exe
 * Developer Team (1/2 complete)
  * Finalized Help chat box (Extra)

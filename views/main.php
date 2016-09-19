@@ -633,7 +633,7 @@ if ($action == 'sendMessage') {
                                             <div class="card">
                                                 <div class="card-content">
                                                     <img class="responsive-img materialboxed"
-                                                         src="images/images/backgroundoffice.jpeg">
+                                                         src="assets/patientdemo.png">
                                                 </div>
                                             </div>
                                         </div>
