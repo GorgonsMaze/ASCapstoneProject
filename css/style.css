@@ -1466,6 +1466,7 @@ blockquote {
         height: 500px !important;
     }
 }
+/** CSS for testimonial quotes in slider **/
 /* Slide One Quote - Testimonial */
 .test-titles {
     font-size: 10vw !important;
@@ -1930,6 +1931,7 @@ and (max-width: 600px){
     padding: 30px;
     overflow: auto;
 }
+/* Contact Collection Box */
 .collection {
     -webkit-transition: border 0.28s ease-in-out;
     -moz-transition: border 0.28s ease-in-out;
@@ -1948,7 +1950,7 @@ and (max-width: 600px){
 .topper {
     border-bottom: 1px solid #e0e0e0 !important;
 }
-
+/* required text  */
 .require {
     font-size: 11px;
     font-weight: 700;
@@ -1957,6 +1959,7 @@ and (max-width: 600px){
     color: #ff5555;
     padding-left:10px;
 }
+/* Contact Uss Button */
 .send-mail-btn {
     background-color: #388e3c ;
     -webkit-transition: all 1s ease-in-out;
@@ -2042,6 +2045,7 @@ textarea.materialize-textarea:focus:-ms-input-placeholder {
     background-color: #ffffff;
     padding: 30px 0 60px 0;
 }
+
 /* Dev Team  - Scrollfire */
 #devTitle li, #devOne li, #devTwo li  {
     opacity:0;

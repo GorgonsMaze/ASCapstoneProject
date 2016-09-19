@@ -616,17 +616,35 @@ if ($action == 'sendMessage') {
                                                         src="https://www.youtube.com/embed/nj7F8rcrW_Y?rel=0&amp;showinfo=0&modestbranding=1"
                                                         frameborder="0" allowfullscreen></iframe>
                                             </div>
-<!--                                            <video loop autoplay class="responsive-video" controls>-->
-<!--                                                <source src="assets/appdemo1.mp4" type="video/mp4">-->
-<!--                                            </video>-->
+                                            <!--                                            <video loop autoplay class="responsive-video" controls>-->
+                                            <!--                                                <source src="assets/appdemo1.mp4" type="video/mp4">-->
+                                            <!--                                            </video>-->
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col s12">
                                             <div class="card">
                                                 <div class="card-content">
-                                                    <img class="responsive-img materialboxed"
-                                                         src="assets/patientdemo.png">
+                                                    <div class="row">
+                                                        <div class="col s12 m6 l6">
+                                                            <img class="responsive-img materialboxed"
+                                                                 src="images/images/login.png">
+                                                        </div>
+                                                        <div class="col s12 m6 l6">
+                                                            <img class="responsive-img materialboxed"
+                                                                 src="images/images/loggedin.png">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col s12 m6 l6">
+                                                            <img class="responsive-img materialboxed"
+                                                                 src="assets/patientdemo.png">
+                                                        </div>
+                                                        <div class="col s12 m6 l6">
+                                                            <img class="responsive-img materialboxed"
+                                                                 src="images/images/search.png">
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1041,22 +1059,23 @@ if ($action == 'sendMessage') {
                             <div class="card">
                                 <div class="card-content black-text open-sans3">
                                     <div class="center-align">
-                                        <img class="responsive-img" src="http://i.imgur.com/kSnJSMb.png"/>
+                                        <!--                                        <img class="responsive-img" src="http://i.imgur.com/kSnJSMb.png"/>-->
+                                        <img class="responsive-img" src="images/images/ianround.jpg"/>
                                     </div>
                                     <h3 class="card-title center-align">Ian Arsenault</h3>
                                     <p class="team-titles center-align">Co-Founder + Software Engineer</p>
                                     <hr class="team-hr"/>
                                     <div class="center-align team-social-icons">
                                         <!--#ff2c06-->
-                                        <a href="#!"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-                                        <a href="#!"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
+                                        <a href="https://github.com/GorgonsMaze" target="_blank"><i
+                                                class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+                                        <a href="https://www.linkedin.com/in/ian-arsenault-074a54b7" target="_blank"><i
+                                                class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
                                         <a href="#!"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
                                     </div>
-                                    <p class="">Born in Southern Massachusetts, Ian has travelled across the country
-                                        playing hockey for 15 years, and has lived
-                                        in Providence, Rhode Island for the past 5 years. He is majoring in IT -
+                                    <p class="">From the Greater Providence area, Ian is currently majoring in IT -
                                         Software Engineering at New England Institute of Technology,
-                                        concentrating on web development and database management. He has a deep passion
+                                        concentrating on web development and database management. Ian has a deep passion
                                         for technology, learning new languages, and trying out
                                         new developer tools. In his off-time he enjoys playing video games on his PS4,
                                         watching hockey, and going hiking.
@@ -1072,23 +1091,31 @@ if ($action == 'sendMessage') {
                         <li>
                             <div class="card">
                                 <div class="card-content black-text open-sans3">
-                                    <div class="center-align">
-                                        <img class="responsive-img"
-                                             src="http://www.piedpiper.com/app/themes/pied-piper/dist/images/bighead.png"/>
+                                    <div class="center-align dev-img">
+                                        <!--                                        <img class="responsive-img"-->
+                                        <!--                                             src="http://www.piedpiper.com/app/themes/pied-piper/dist/images/bighead.png"/>-->
+                                        <img class="responsive-img" style="height: 256px;"
+                                             src="images/images/jamieround.jpg"/>
                                     </div>
                                     <h3 class="card-title center-align">Jameson Arsenault</h3>
                                     <p class="team-titles  center-align">Co-Founder + Software Engineer</p>
                                     <hr class="team-hr"/>
                                     <div class="center-align team-social-icons">
                                         <!--#ff2c06-->
-                                        <a href="#!"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-                                        <a href="#!"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
+                                        <a href="https://github.com/OverlordZoltron" target="_blank"><i
+                                                class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+                                        <a href="https://www.linkedin.com/in/jameson-arsenault-85836b117"
+                                           target="_blank"><i class="fa fa-linkedin-square fa-lg"
+                                                              aria-hidden="true"></i></a>
                                         <a href="#!"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
                                     </div>
-                                    <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Sed libero metus, commodo
-                                        sed arcu sed,
-                                        pretium fermentum metus. Nullam semper nec justo vel tincidunt. Maecenas sed
-                                        augue euismod, viverra
+                                    <p>Jameson is from Southern New England, and is currently majoring in IT - Software
+                                        Engineering
+                                        at New England Institute of Technology, concentrating on C Sharp Window Forms
+                                        and database management.
+                                        Jameson has a love for different technologies, and learning new programming
+                                        languages. In his spare time
+                                        he enjoys watching sports, and hanging with his dogs.
                                     </p>
                                 </div>
                                 <div class="card-action center-align"></div>
