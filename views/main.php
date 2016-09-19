@@ -1,7 +1,7 @@
 <!-- Script for redirect on contact form submission -->
 <?php
 /**
- * Created by Ian Arsenault.
+ * Protech Solutions.
  * Section: MAIN - Homepages
  *
  */
@@ -603,7 +603,7 @@ if ($action == 'sendMessage') {
                                     <div class="card">
                                         <div class="card-content">
                                             <video loop class="responsive-video" controls>
-                                                <source src="../assets/appdemo2.mp4" type="video/mp4">
+                                                <source src="assets/appdemo2.mp4" type="video/mp4">
                                             </video>
                                         </div>
                                     </div>
@@ -611,14 +611,14 @@ if ($action == 'sendMessage') {
                                 <div id="test2" class="col s12 m12 offset-m1 l8 offset-l2">
                                     <div class="card">
                                         <div class="card-content">
-                                            <div class="video-container">
-                                                <iframe width="640" height="360"
-                                                        src="https://www.youtube.com/embed/nj7F8rcrW_Y?rel=0&amp;showinfo=0&modestbranding=1"
-                                                        frameborder="0" allowfullscreen></iframe>
-                                            </div>
-                                            <!--                                            <video loop autoplay class="responsive-video" controls>-->
-                                            <!--                                                <source src="assets/appdemo1.mp4" type="video/mp4">-->
-                                            <!--                                            </video>-->
+                                            <!--                                            <div class="video-container">-->
+                                            <!--                                                <iframe width="640" height="360"-->
+                                            <!--                                                        src="https://www.youtube.com/embed/nj7F8rcrW_Y?rel=0&amp;showinfo=0&modestbranding=1"-->
+                                            <!--                                                        frameborder="0" allowfullscreen></iframe>-->
+                                            <!--                                            </div>-->
+                                            <video loop autoplay class="responsive-video" controls>
+                                                <source src="assets/appdemo1.mp4" type="video/mp4">
+                                            </video>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -636,7 +636,7 @@ if ($action == 'sendMessage') {
                                     <div class="card">
                                         <div class="card-content">
                                             <video loop class="responsive-video" controls>
-                                                <source src="ASCapstoneProject/assets/appdemo2.mp4" type="video/mp4">
+                                                <source src="assets/appdemo2.mp4" type="video/mp4">
                                             </video>
                                         </div>
                                     </div>
