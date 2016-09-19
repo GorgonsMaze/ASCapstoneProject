@@ -141,6 +141,17 @@ var scrollChange = function () {
             }, 500);
         }
 
+        // // If window width is small or less than 600px
+        // if ($(window).width() < 600) {
+        //     // Add center align class to customer complete detail report
+        //     $("#left-complete").addClass("center-align");
+        //     $("#right-complete").addClass("center-align");
+        // } else {
+        //     // Remove center align class to customer complete detail report
+        //     $("#left-complete").removeClass("center-align");
+        //     $("#right-complete").removeClass("center-align");
+        // }
+
 
         // Displays scrollTop in console (Showing when user reached bottom of page)
         console.log($(window).scrollTop() == ($(document).height() - $(window).height()));
@@ -480,11 +491,11 @@ var formValidation = function () {
                     // Fire toast with error message
                     Materialize.toast('Please agree to the Terms of Service', 50000, 'green darken-1 checkbox-toast');
                     // Add animation class
-                    $("#tocBox").addClass("animated shake");
+                    $("#tocBox").addClass("shake");
                     // Set timeout for 1 second
                     setTimeout(function () {
                         // then remove animation class
-                        $("#tocBox").removeClass("animated shake");
+                        $("#tocBox").removeClass("shake");
                     }, 1000);
                 }
             }
