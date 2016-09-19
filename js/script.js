@@ -180,7 +180,7 @@ var activeScrollspy = function () {
     });
 };
 
-// ELement fire function
+// Element fire function
 var scrollfire = function () {
     var options = [
         // About card image
@@ -347,23 +347,26 @@ var contactForm = function () {
     var textMessage = document.getElementById("message");
     $(textMessage).on('input', function () {
         var submitBtn = $("#sendMailBtn");
+        // If the value length of message is greater than 3 - "hey"
         if(this.value.length > 3) {
-            //alert("Someone entered something!");
-            //submitBtn.css("background-color", "red");
+            // Change color
             submitBtn.css({
                 backgroundColor: "#5e35b1"
             });
+            // on hover transition between light and dark colors
             $(submitBtn).hover(function () {
                 $(this).css("background-color", "#7B46E9");
             }, function () {
                 $(this).css("background-color", "#5e35b1");
             });
         } else {
+            // else transition back to color
             submitBtn.css({
                 transition: "all 1s ease-in-out",
                 backgroundColor: "#388e3c"
 
             });
+            // on hover transition between light and dark colors
             $(submitBtn).hover(function () {
                 $(this).css("background-color", "#41B145");
             }, function () {
@@ -374,9 +377,11 @@ var contactForm = function () {
     });
 };
 
-// Enables scrolling after 9 seconds -- loading screen
+// Enables scrolling after 5.6 seconds -- loading screen
 var switchScroll = function () {
     var body = $("body");
+    // Timed function that allows scrolling to
+    // activate after 5.6 seconds
     setTimeout(function () {
         body.removeClass("stop-scrolling");
     }, 5600);
@@ -386,6 +391,7 @@ var switchScroll = function () {
 // Show main content after landing div loads first
 var mainContent = function () {
     var main = $(".main-section");
+    // Timed function that fades in main.php content
     setTimeout(function () {
         main.fadeIn();
     }, 1500);
@@ -409,7 +415,7 @@ var validSelect = function () {
         }
     });
 
-    //
+
     // $(states).on('change', function () {
     //     if (statesValue.value == "MA") {
     //         $(".select-wrapper input.select-dropdown").css({
