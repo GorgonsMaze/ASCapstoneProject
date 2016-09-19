@@ -392,8 +392,8 @@ var mainContent = function () {
 };
 
 var validSelect = function () {
-    var states = document.getElementById("states");
-    var statesValue = states.options[states.selectedIndex].value;
+    // var states = document.getElementById("states");
+    // var statesValue = states.options[states.selectedIndex].value;
 
 
     var ccv = document.getElementById("cc_ccv");
