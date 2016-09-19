@@ -42,19 +42,19 @@
                                     <div class="row">
                                         <div class="input-field col s6">
                                             <input id="first_name" placeholder="John" type="text" name="fName" pattern="^[a-zA-Z'.,\s-]{2,35}$" title="Enter first name" class="validate" required="required" aria-required="true">
-                                            <label for="first_name"><b>First Name</b></label>
+                                            <label for="first_name" data-error="Must fill out a first name"><b>First Name</b></label>
                                         </div>
                                         <!-- Last Name-->
                                         <div class="input-field col s6">
                                             <input id="last_name" placeholder="Juggerknot" type="text" name="lName" pattern="^[a-zA-Z'.,\s-]{2,50}$" title="Enter last name" class="validate" required="" aria-required="true">
-                                            <label for="last_name"><b>Last Name</b></label>
+                                            <label for="last_name" data-error="Must fill out a last name"><b>Last Name</b></label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <!-- Address 1-->
                                         <div class="input-field col s12">
-                                            <input id="address_one" placeholder="123 Holiday Lane" type="text" name="address"  title="Enter your street address" class="validate" required="" aria-required="true">
-                                            <label for="address_one"><b>Address 1</b></label>
+                                            <input id="address_one" placeholder="123 Holiday Lane" type="text" pattern="^\s*\S+(?:\s+\S+){2}" name="address"  title="Enter your street address" class="validate" required="" aria-required="true">
+                                            <label for="address_one" data-error="Please fill in your address"><b>Address 1</b></label>
                                         </div>
                                     </div>
                                     <!-- Address 2-->
@@ -67,8 +67,8 @@
                                     <!-- CITY -->
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <input id="city" placeholder="Narnia" type="text" name="city"  title="Enter your city or town" class="validate" required="" aria-required="true">
-                                            <label for="city"><b>City</b></label>
+                                            <input id="city" placeholder="Narnia" type="text" name="city" pattern="^[a-zA-Z'.,\s-]{3,50}$" title="Enter your city or town" class="validate" required="" aria-required="true">
+                                            <label for="city" data-error="Please fill in your city or town"><b>City</b></label>
                                         </div>
                                     </div>
                                     <!-- STATES -->
@@ -88,14 +88,14 @@
                                                     <option value="<?php echo $key; ?>"><?php echo $val; ?></option>
                                                 <?php } ?>
                                             </select>
-                                            <label for="states"><b>State</b></label>
+                                            <label for="states" data-error="Please select a state"><b>State</b></label>
                                         </div>
                                     </div>
                                     <!-- ZIPCODE -->
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <input id="zipcode" placeholder="03543" type="text" name="zip"  pattern="^\d{5}(?:[-\s]\d{4})?$" title="Enter your zipcode ex.03246" class="validate" required="" aria-required="true">
-                                            <label for="zipcode"><b>Zip</b></label>
+                                            <input id="zipcode" placeholder="03543 or 03543-1944" type="text" name="zip"  pattern="^\d{5}(?:[-\s]\d{4})?$" title="Enter your zipcode ex.03246" class="validate" required="" aria-required="true">
+                                            <label for="zipcode" data-error="Please fill in your zipcode"><b>Zip</b></label>
                                         </div>
                                     </div>
                                     <!-- Country -->
@@ -109,16 +109,16 @@
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <!-- CHECK VALIDATION ******************* ^[\d]{3}-[\d]{3}-[\d]{4}$  ^\d{10}$-->
-                                            <input id="phone_number" placeholder="123-456-7890" type="text" name="phoneNumber" pattern="^[\d]{3}-[\d]{3}-[\d]{4}$" title="Enter your 10 digit phone number with dashes ex. 5082341233" class="validate" required="" aria-required="true">
-                                            <label for="phone_number"><b>Phone</b></label>
+                                            <input id="phone_number" placeholder="123-456-7890" type="text" name="phoneNumber" pattern="^[\d]{3}-[\d]{3}-[\d]{4}$" title="Enter your 10 digit phone number with dashes ex. 508-234-1233" class="validate" required="" aria-required="true">
+                                            <label for="phone_number" data-error="Please fill in your phone number correctly"><b>Phone</b></label>
                                         </div>
                                     </div>
                                     <!-- EMAIL -->
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <!-- placeholder="Name@yourdomain.com" -->
-                                            <input  id="email_of" placeholder="example@yourdomain.com" type="text" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,4}$" title="Enter email address correctly" class="validate" required="" aria-required="true">
-                                            <label for="email_of"><b>Email</b></label>
+                                            <input  id="email_of" placeholder="example@yourdomain.com" type="text" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,4}$" title="Enter email address correctly ex. name@domain.com" class="validate" required="" aria-required="true">
+                                            <label for="email_of" data-erorr="Please fill in your email correctly"><b>Email</b></label>
                                         </div>
                                     </div>
                                 </div><!-- END ROW -->
@@ -154,14 +154,15 @@
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <input id="cc_number" placeholder="0000000000000000" type="text" name="ccNum" pattern="^[1-9][0-9]{11,15}$" title="Enter credit card number" class="validate" required="" aria-required="true">
-                                            <label for="cc_number"><b>Card Number</b></label>
+                                            <label for="cc_number" data-error="Your card number must be between 12-16 digits"><b>Card Number</b></label>
                                         </div>
                                     </div>
                                     <!-- Credit Card  Name-->
                                     <div class="row">
                                         <div class="input-field col s12">
+                                            <!-- /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u  or ^[a-zA-Z'.,\s-]{2,50}$ -->
                                             <input id="cc_name" placeholder="First Last" type="text" name="ccName" pattern="^[a-zA-Z'.,\s-]{2,50}$" title="Enter full name on card" class="validate" required="" aria-required="true">
-                                            <label for="cc_name"><b>Card Name</b></label>
+                                            <label for="cc_name" data-error="Please fill in the name on your card"><b>Card Name</b></label>
                                         </div>
                                     </div>
                                     <!-- Expiration Dates -->
@@ -195,7 +196,7 @@
                                     <div class="row">
                                         <div class="input-field col s6">
                                             <input id="cc_ccv" placeholder="Ex: 121" type="text" name="ccCCV"  pattern="^[1-9][0-9]{2,3}$" title="Enter your CCV number (3 or 4 digits)" class="validate" required="" aria-required="true">
-                                            <label for="cc_ccv"><b>CCV</b></label>
+                                            <label for="cc_ccv" data-error="Please fill in the security code ex: 121"><b>CCV</b></label>
                                         </div>
                                         <div class="col s6">
                                             <div class="whats-CCV">

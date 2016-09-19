@@ -2,7 +2,8 @@
 <script type="text/javascript">
     function relocate() {
         // Redirect to url location
-        window.location.href = "https://www.google.com";
+        window.location.href = "http://ict.neit.edu/001241129/public_html/ASCapstoneProject/index.php#contact";
+        Materialize.toast('Your message was sent! Thank you!', 6000, 'orange darken-4 white-text');
     }
 </script>
 <?php
@@ -10,37 +11,44 @@
  * Created by Ian Arsenault.
  * Section: MAIN - Homepages
  *
- *
- *  TODO: ADD CONTACT PHP MYSQL SECTION
  */
 $action = $_REQUEST['action'];
 if ($action == 'sendMessage') {
     // Make scroll point back to contact us form
-    /***STILL TESTING GOOGLE.COM REDIRECT ***/
     echo "<script> relocate();</script>";
+} else {
+    echo "<div class=\"loading-overlay\">";
+    echo "<div id=\"fadediv\">";
+    echo "<div class=\"logo-land logo-transform\">";
+    echo "<img height=\"256\" width=\"256\" src=\"images/logos/logo.png\"/></div>";
+    echo "<div class=\"progress progress-1-transform\"> <div class=\"progress-bar-1\"></div></div>";
+    echo "<div class=\"progress progress-middle-transform\"><div class=\"progress-bar-middle\"></div></div>";
+    echo "<div class=\"progress progress-2-transform\"><div class=\"progress-bar-2\"></div></div>";
+    echo "</div>";
+    echo "</div>";
 }
 ?>
 
-<!-- LANDING SPLASH -->
-<div class="loading-overlay">
-    <div id="fadediv">
-        <!--  LOGO -->
-        <div class="logo-land logo-transform">
-            <img height="256" width="256" src="images/logos/logo.png" />
-        </div>
-        <!-- PROGRESS BAR 1 -->
-        <div class="progress progress-1-transform">
-            <div class="progress-bar-1"></div>
-        </div>
-        <div class="progress progress-middle-transform">
-            <div class="progress-bar-middle"></div>
-        </div>
-        <!-- PROGRESS BAR 2 -->
-        <div class="progress progress-2-transform">
-            <div class="progress-bar-2"></div>
-        </div>
-    </div>
-</div>
+<!--<!-- LANDING SPLASH -->
+<!--<div class="loading-overlay">-->
+<!--    <div id="fadediv">-->
+<!--        <!--  LOGO -->
+<!--        <div class="logo-land logo-transform">-->
+<!--            <img height="256" width="256" src="images/logos/logo.png"/>-->
+<!--        </div>-->
+<!--        <!-- PROGRESS BAR 1 -->
+<!--        <div class="progress progress-1-transform">-->
+<!--            <div class="progress-bar-1"></div>-->
+<!--        </div>-->
+<!--        <div class="progress progress-middle-transform">-->
+<!--            <div class="progress-bar-middle"></div>-->
+<!--        </div>-->
+<!--        <!-- PROGRESS BAR 2 -->
+<!--        <div class="progress progress-2-transform">-->
+<!--            <div class="progress-bar-2"></div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 <!-- End Landing Splash -->
 
 <!-- ADDED DIV FOR AJAX CALL -- IF ISSUES ON BIG SCREENS CHANGE BACK TO MAIN -->
@@ -602,17 +610,22 @@ if ($action == 'sendMessage') {
                                     <div class="card">
                                         <div class="card-content">
                                             <video loop class="responsive-video" controls>
-                                                <source src="assets/appdemo2.mp4" type="video/mp4">
+                                                <source src="../assets/appdemo2.mp4" type="video/mp4">
                                             </video>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="test2" class="col s12 m10 offset-m1 l8 offset-l2">
+                                <div id="test2" class="col s12 m12 offset-m1 l8 offset-l2">
                                     <div class="card">
                                         <div class="card-content">
-                                            <video loop autoplay class="responsive-video" controls>
-                                                <source src="assets/appdemo1.mp4" type="video/mp4">
-                                            </video>
+                                            <div class="video-container">
+                                                <iframe width="640" height="360"
+                                                        src="https://www.youtube.com/embed/nj7F8rcrW_Y?rel=0&amp;showinfo=0&modestbranding=1"
+                                                        frameborder="0" allowfullscreen></iframe>
+                                            </div>
+                                            <!--                                            <video loop autoplay class="responsive-video" controls>-->
+                                            <!--                                                <source src="assets/appdemo1.mp4" type="video/mp4">-->
+                                            <!--                                            </video>-->
                                         </div>
                                     </div>
                                     <div class="row">
@@ -620,7 +633,7 @@ if ($action == 'sendMessage') {
                                             <div class="card">
                                                 <div class="card-content">
                                                     <img class="responsive-img materialboxed"
-                                                         src="images/images/backgroundoffice.jpeg">
+                                                         src="assets/patientdemo.png">
                                                 </div>
                                             </div>
                                         </div>
@@ -630,7 +643,7 @@ if ($action == 'sendMessage') {
                                     <div class="card">
                                         <div class="card-content">
                                             <video loop class="responsive-video" controls>
-                                                <source src="assets/appdemo2.mp4" type="video/mp4">
+                                                <source src="ASCapstoneProject/assets/appdemo2.mp4" type="video/mp4">
                                             </video>
                                         </div>
                                     </div>
@@ -687,9 +700,9 @@ if ($action == 'sendMessage') {
                 <div class="col s12 m4">
                     <ul id="ehrCard">
                         <li>
-<!--                            <a href="/ASCapstoneProject/index.php?action=checkoutAjax" id="chkoutBtn">-->
+                            <!--                            <a href="/ASCapstoneProject/index.php?action=checkoutAjax" id="chkoutBtn">-->
                             <a href="index.php?action=checkoutCart" id="chkoutBtn">
-                            <div class="card" id="purchaseCard">
+                                <div class="card" id="purchaseCard">
                                     <div class="card-image">
                                         <div class="card-img-overlay-main">
                                             <!--http://www.freepik.com/free-photo/doctor-using-a-modern-computer_903500.htm-->
@@ -835,7 +848,8 @@ if ($action == 'sendMessage') {
                                 </div>
                                 <div class="card-action center-block">
                                     <div class="center-align">
-                                        <a href="index.php?action=checkoutCart" class="waves-effect waves-light btn purchase-btn"><i
+                                        <a href="index.php?action=checkoutCart"
+                                           class="waves-effect waves-light btn purchase-btn"><i
                                                 class="material-icons left money-icon">attach_money</i>Purchase</a>
                                         <a href="#demo" class="waves-effect waves-light btn demo-btn"><i
                                                 class="material-icons left">collections</i>Demo</a>
@@ -908,26 +922,30 @@ if ($action == 'sendMessage') {
                                     <div class="input-field col s12 m6">
                                         <!--placeholder="Mr. Reynolds"-->
                                         <input id="name_of" placeholder="Mr. Reynolds" type="text" name="fullname"
-                                               pattern="^[a-zA-Z'.,\s-]{4,150}$" title="Enter first and last name"
+                                               pattern="^[a-zA-Z'.,\s-]{2,50}$" title="Enter first and last name"
                                                class="validate" required="" aria-required="true">
-                                        <label for="name_of"><b>Name</b></label>
+                                        <label for="name_of" data-error="Please fill in your name"><b>Name</b></label>
                                     </div>
                                     <div class="input-field col l6 m6 s12">
-                                        <!--placeholder="123-456-7890"-->
+                                        <!--placeholder="123-456-7890"-->   <!--^[\d]{3}-[\d]{3}-[\d]{4}$ -->
                                         <input placeholder="123-456-7890" id="phone" name="phonenumber" type="text"
-                                               pattern="^(1\s*[-\/\.]?)?(\((\d{3})\)|(\d{3}))\s*[-\/\.]?\s*(\d{3})\s*[-\/\.]?\s*(\d{4})\s*(([xX]|[eE][xX][tT])\.?\s*(\d+))*$"
-                                               title="Include area code | Numbers only" required minlength=10>
-                                        <label for="phone"><b>Phone Number</b></label>
+                                               pattern="^[\d]{3}-[\d]{3}-[\d]{4}$" class="validate"
+                                               title="Include area code Ex. 774-234-6654" required=""
+                                               aria-required="true">
+                                        <label for="phone" data-error="Please fill in your phone number"><b>Phone
+                                                Number</b></label>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="input-field col s12">
                                         <!-- placeholder="Name@yourdomain.com" -->
-                                        <input id="email_of" placeholder="Name@yourdomain.com" type="text" name="emailfrom"
-                                               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                        <input id="email_of" placeholder="Name@yourdomain.com" type="text"
+                                               name="emailfrom"
+                                               pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,4}$"
                                                title="Enter email address correctly" class="validate" required=""
                                                aria-required="true">
-                                        <label for="email_of"><b>Email</b></label>
+                                        <label for="email_of"
+                                               data-error="Please fill in your email address"><b>Email</b></label>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -935,8 +953,9 @@ if ($action == 'sendMessage') {
                                         <!-- placeholder="Write your message here!" -->
                                         <textarea id="message" placeholder="Write your message here!" name="messagefrom"
                                                   class="materialize-textarea validate" required=""
-                                                  aria-required="true"></textarea>
-                                        <label for="message"><b>Message</b></label>
+                                                  aria-required="true" minlength="3"></textarea>
+                                        <label for="message"
+                                               data-error="Please type in your message!"><b>Message</b></label>
                                     </div>
                                 </div>
                                 <!-- Submit -->
@@ -958,8 +977,9 @@ if ($action == 'sendMessage') {
                                 <h5>Contact Info</h5>
                             </div>
                             <ul class="collection">
-                                <li class="collection-item"><span>Email: </span>ProtechSolutionsRI@gmail.com<a href="#!"
-                                                                                                               class="secondary-content"><i
+                                <li class="collection-item"><span>Email: </span>ProtechSolutionsRI@gmail.com<a
+                                        href="mailto:protechsolutionsri@gmail.com?Subject=Hello%20Protech%20Solutions"
+                                        target="_top" class="secondary-content"><i
                                             class="material-icons">send</i></a></li>
                                 <li class="collection-item"><span>Phone: </span>1.401.555.5555</li>
                             </ul>

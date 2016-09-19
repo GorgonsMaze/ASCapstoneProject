@@ -391,6 +391,48 @@ var mainContent = function () {
     }, 1500);
 };
 
+var validSelect = function () {
+    var states = document.getElementById("states");
+    var statesValue = states.options[states.selectedIndex].value;
+
+
+    var ccv = document.getElementById("cc_ccv");
+    $(ccv).on('input', function () {
+        if (this.value.length == 3) {
+            $(".select-wrapper input.select-dropdown").css({
+                "border-bottom": "2px solid #4CAF50"
+            });
+        } else {
+            $(".select-wrapper input.select-dropdown").css({
+                "border-bottom": "1px solid black"
+            });
+        }
+    });
+
+    //
+    // $(states).on('change', function () {
+    //     if (statesValue.value == "MA") {
+    //         $(".select-wrapper input.select-dropdown").css({
+    //             "border-bottom": "2px solid #4CAF50"
+    //         });
+    //     } else {
+    //         $(".select-wrapper input.select-dropdown").css({
+    //             "border-bottom": "1px solid black"
+    //         });
+    //     }
+    // });
+    // $(statesValue).on('change', function () {
+    //     $(".select-wrapper input.select-dropdown").css({
+    //         "border-bottom": "2px solid #4CAF50"
+    //     });
+    // });
+    // if (statesValue != "None") {
+    //     $(".select-wrapper input.select-dropdown").css({
+    //         "border-bottom": "2px solid #4CAF50"
+    //     });
+    // }
+};
+
 // Radio Button & checkbox validation -- added due to HTML5 Required not working
 var formValidation = function () {
     // On form submit click
@@ -627,6 +669,8 @@ $(document).ready(function () {
     formValidation();
     // AJAX Function
     //chckoutAjax();
+
+    validSelect();
 
     // for HTML5 "required" attribute
     $("select[required]").css({display: "inline", height: 0, padding: 0, width: 0});

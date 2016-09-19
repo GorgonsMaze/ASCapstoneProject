@@ -1,13 +1,10 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: Ian
- * Date: 9/2/2016
- * Time: 9:23 PM
+ * Protech Solutions
+ * Section: Header
  */
 $action = $_REQUEST['action'];
 ?>
-
 <!DOCTYPE html>
 <!--
  ______ ______  ______  ______ ______  ______  __  __     ______  ______  __      __  __  ______ __  ______  __   __  ______
@@ -205,7 +202,7 @@ $action = $_REQUEST['action'];
 
     </script>
 </head>
-<?php if($action == 'checkoutCart' || $action == 'completePurchase')  {
+<?php if($action == 'checkoutCart' || $action == 'completePurchase' || $action == 'sendMessage')  {
     echo "<body id=\"topPage\">";
 } else {
     echo "<body class=\"stop-scrolling\" id=\"topPage\">";
@@ -255,7 +252,7 @@ $action = $_REQUEST['action'];
                         <img class="circle side-logo" src="images/logos/logo.png">
                     </div>
                     <a href="#topPage"><span class="white-text name userview-link">Protech Solutions</span></a>
-                    <a href="mailto:protechsolutionsri@gmail.com?Subject=Hello%20Protech%20Solutions"><span class="white-text email userview-link">ProtechSolutionsRI@gmail.com</span></a>
+                    <a href="mailto:protechsolutionsri@gmail.com?Subject=Hello%20Protech%20Solutions" target="_top"><span class="white-text email userview-link">ProtechSolutionsRI@gmail.com</span></a>
                 </div></li>
             <ul class="main-side-links">
                 <li><a class="waves-effect" href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#about";} else {echo "#about";}?>" id="sBtn1"><i class="material-icons left">description</i>About</a></li>
