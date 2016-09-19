@@ -1949,16 +1949,6 @@ and (max-width: 600px){
     border-bottom: 1px solid #e0e0e0 !important;
 }
 
-.select-wrapper.error input.select-dropdown {
-    border-bottom: 1px solid #F44336;
-}
-.select-wrapper.success input.select-dropdown {
-    border-bottom: 1px solid #4CAF50;
-}
-
-.ytp-play-progress {
-    color: #00a0e8;
-}
 .require {
     font-size: 11px;
     font-weight: 700;

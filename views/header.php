@@ -201,6 +201,18 @@ $action = $_REQUEST['action'];
         google.maps.event.addDomListener(window, 'load', init);
 
     </script>
+
+    <script type="text/javascript">
+        function relocate() {
+            // Redirect to url location
+            window.location.href = "http://ict.neit.edu/001241129/public_html/ASCapstoneProject/index.php#contact";
+            setTimeout(function () {
+                Materialize.toast('Your message was sent! Thank you!', 6000, 'orange darken-4 white-text');
+            }, 4500);
+        }
+    </script>
+
+
 </head>
 <?php if($action == 'checkoutCart' || $action == 'completePurchase' || $action == 'sendMessage')  {
     echo "<body id=\"topPage\">";

@@ -1,11 +1,4 @@
 <!-- Script for redirect on contact form submission -->
-<script type="text/javascript">
-    function relocate() {
-        // Redirect to url location
-        window.location.href = "http://ict.neit.edu/001241129/public_html/ASCapstoneProject/index.php#contact";
-        Materialize.toast('Your message was sent! Thank you!', 6000, 'orange darken-4 white-text');
-    }
-</script>
 <?php
 /**
  * Created by Ian Arsenault.
