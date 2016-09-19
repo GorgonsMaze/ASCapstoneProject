@@ -277,7 +277,7 @@ $action = $_REQUEST['action'];
                 <li><div class="divider"></div></li>
                 <li><a class="waves-effect" href="<?php if($action == 'checkoutCart' || $action == 'completePurchase') {echo "index.php#buy";} else {echo "#buy";}?>" id="buySidenav"><i class="material-icons left">shopping_cart left</i>Buy</a></li>
                 <?php
-                if ($action == '') {
+                if ($action == '' || $action == 'sendMessage') {
                     echo "<div class=\"hide-checkout\">";
                     echo "<li class=\"hidden-checkout-btn\"><a class=\"waves-effect\" href=\"index.php?action=checkoutCart\"><i class=\"material-icons left\">subdirectory_arrow_right</i>Checkout</a></li>";
                 } else {

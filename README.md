@@ -17,6 +17,10 @@ Javascript Demo Site
 * Download Application ability
  - [x] Contact form - need SMTP Server 
 * ~~hash cc numbers~~ added to future updates of project
+* Change responsiveness on complete.php
+* Get working demo video of ehr application
+* Upload screenshots of application to demo section
+* Update team developer summaries
 
 
 ##To-Do's

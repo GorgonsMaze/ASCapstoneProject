@@ -37,31 +37,35 @@ $order = get_OrderDetails($db);
                                         <div class="collapsible-body order-det-body">
                                             <div class="row">
                                                 <div class="col s12 m5 offset-m1">
+                                                    <div class="center-align" id="left-complete">
+                                                        <h6 class="detail-title">Buyer Address</h6>
+                                                        <ul>
+                                                            <li><?php echo $cust['fName'] . " " . $cust['lName']; ?></li>
+                                                            <li><?php echo $cust['address'] ." " . $cust['address2']; ?></li>
+                                                            <li><?php echo $cust['city'] . ", " . $cust['state'] . " " . $cust['zip']?></li>
+                                                            <li><?php echo $cust['country'] ?></li>
+                                                            <li>Email: <?php echo $cust['email'] ?></li>
+                                                            <li>Phone: <?php echo $cust['phoneNumber'] ?></li>
+                                                        </ul>
+                                                    </div>
                                                     <!-- Buyer Address -->
-                                                    <h6 class="detail-title">Buyer Address</h6>
-                                                    <ul>
-                                                        <li><?php echo $cust['fName'] . " " . $cust['lName']; ?></li>
-                                                        <li><?php echo $cust['address'] ." " . $cust['address2']; ?></li>
-                                                        <li><?php echo $cust['city'] . ", " . $cust['state'] . " " . $cust['zip']?></li>
-                                                        <li><?php echo $cust['country'] ?></li>
-                                                        <li>Email: <?php echo $cust['email'] ?></li>
-                                                        <li>Phone: <?php echo $cust['phoneNumber'] ?></li>
-                                                    </ul>
                                                 </div>
                                                 <div class="col s12 m5">
-                                                    <!-- Product Details -->
-                                                    <h6 class="detail-title">Product Details</h6>
-                                                    <ul>
-                                                        <li>Advanced EHR Suite</li>
-                                                        <li>Quantity: 1</li>
-                                                        <li>Order #: <?php echo $cust['orderID']; ?></li>
-                                                        <li>Date: <?php
-                                                            $dateTime = new DateTime('now', new DateTimeZone('America/New_York'));
-                                                            echo $dateTime->format("m-d-Y  H:i A");
-                                                            ?>
-                                                        </li>
-                                                        <?php endforeach; ?>
-                                                    </ul>
+                                                    <div class="center-align" id="right-complete">
+                                                        <!-- Product Details -->
+                                                        <h6 class="detail-title">Product Details</h6>
+                                                        <ul>
+                                                            <li>Advanced EHR Suite</li>
+                                                            <li>Quantity: 1</li>
+                                                            <li>Order #: <?php echo $cust['orderID']; ?></li>
+                                                            <li>Date: <?php
+                                                                $dateTime = new DateTime('now', new DateTimeZone('America/New_York'));
+                                                                echo $dateTime->format("m-d-Y  H:i A");
+                                                                ?>
+                                                            </li>
+                                                            <?php endforeach; ?>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
