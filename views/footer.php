@@ -27,69 +27,19 @@
                             <div class="col s12">
                                 <div class="card chat-box left-align">
                                     <div class="card-content black-text inconsolata">
-                                        <p><span class="rep-name">Tim:</span>&nbsp;I am a very simple card. I am good at
-                                            containing small bits of information.
-                                            I am convenient because I require little markup to use effectively.</p>
+                                        <p><span class="rep-name">Tim:</span>&nbsp;Hello! My name is Tim. How can I help
+                                            you today?</p>
 
-                                        <p><span class="cust-name">Customer24124:</span>&nbsp;I am a very simple card. I
-                                            am good at containing small bits of information.
-                                            I am convenient because I require little markup to use effectively.</p>
+                                        <p><span class="cust-name">You:</span>&nbsp; I have a couple questions about the
+                                            EHR Suite.</p>
 
-                                        <p><span class="rep-name">Tim:</span>&nbsp;I am a very simple card. I am good at
-                                            containing small bits of information.
-                                            I am convenient because I require little markup to use effectively.</p>
+                                        <p><span class="rep-name">Tim:</span>&nbsp;Ok , no problem. Let me know what
+                                            you're inquring about, and I'll be sure to help.</p>
 
-                                        <p><span class="cust-name">Customer24124:</span>&nbsp;I am a very simple card. I
-                                            am good at containing small bits of information.
-                                            I am convenient because I require little markup to use effectively.</p>
+                                        <p><span class="cust-name">You:</span>&nbsp;Thank you. Now is the EHR suite able
+                                            to transfer over existing Patient DB?</p>
 
-                                        <p><span class="rep-name">Tim:</span>&nbsp;I am a very simple card. I am good at
-                                            containing small bits of information.
-                                            I am convenient because I require little markup to use effectively.</p>
-
-                                        <p><span class="cust-name">Customer24124:</span>&nbsp;I am a very simple card. I
-                                            am good at containing small bits of information.
-                                            I am convenient because I require little markup to use effectively.</p>
-
-                                        <p><span class="rep-name">Tim:</span>&nbsp;I am a very simple card. I am good at
-                                            containing small bits of information.
-                                            I am convenient because I require little markup to use effectively.</p>
-
-                                        <p><span class="cust-name">Customer24124:</span>&nbsp;I am a very simple card. I
-                                            am good at containing small bits of information.
-                                            I am convenient because I require little markup to use effectively.</p>
-                                        <p><span class="rep-name">Tim:</span>&nbsp;I am a very simple card. I am good at
-                                            containing small bits of information.
-                                            I am convenient because I require little markup to use effectively.</p>
-
-                                        <p><span class="cust-name">Customer24124:</span>&nbsp;I am a very simple card. I
-                                            am good at containing small bits of information.
-                                            I am convenient because I require little markup to use effectively.</p>
-
-                                        <p><span class="rep-name">Tim:</span>&nbsp;I am a very simple card. I am good at
-                                            containing small bits of information.
-                                            I am convenient because I require little markup to use effectively.</p>
-
-                                        <p><span class="cust-name">Customer24124:</span>&nbsp;I am a very simple card. I
-                                            am good at containing small bits of information.
-                                            I am convenient because I require little markup to use effectively.</p>
-
-                                        <p><span class="rep-name">Tim:</span>&nbsp;I am a very simple card. I am good at
-                                            containing small bits of information.
-                                            I am convenient because I require little markup to use effectively.</p>
-
-                                        <p><span class="cust-name">Customer24124:</span>&nbsp;I am a very simple card. I
-                                            am good at containing small bits of information.
-                                            I am convenient because I require little markup to use effectively.</p>
-
-                                        <p><span class="rep-name">Tim:</span>&nbsp;I am a very simple card. I am good at
-                                            containing small bits of information.
-                                            I am convenient because I require little markup to use effectively.</p>
-
-                                        <p><span class="cust-name">Customer24124:</span>&nbsp;I am a very simple card. I
-                                            am good at containing small bits of information.
-                                            I am convenient because I require little markup to use effectively.</p>
-
+                                        <p><span class="rep-name">Tim:</span>$nbsp; </p>
 
                                         <div class="response-section">
 
@@ -106,7 +56,7 @@
                                     <input id="" type="text" length="255" placeholder="Write message here!">
                                 </div>
                                 <div class="col s2" style="margin-top: 10px;">
-                                    <button class="btn waves-effect waves-light blue darken-4  white-text" type="submit"
+                                    <button class="btn waves-effect waves-light blue darken-4  white-text" type="button"
                                             name="action">Send
                                         <i class="material-icons right">send</i>
                                     </button>
