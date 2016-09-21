@@ -612,12 +612,10 @@ if ($action == 'sendMessage') {
                     <div class="col s12">
                         <ul id="tabContent">
                             <li>
-                                <div id="test1" class="col s12 m10 offset-m1 l8 offset-l2">
+                                <div id="test1" class="col s12 m12 l8 offset-l2">
                                     <div class="card">
                                         <div class="card-content">
-                                            <iframe width="640" height="360"
-                                                    src="https://www.youtube.com/embed/nj7F8rcrW_Y?rel=0&amp;showinfo=0&modestbranding=1"
-                                                    frameborder="0" allowfullscreen></iframe>
+                                            <iframe width="640" height="360" src="https://www.youtube.com/embed/CUaswNFlCJ4?rel=0&amp;showinfo=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
                                         </div>
                                     </div>
                                 </div>
@@ -625,9 +623,10 @@ if ($action == 'sendMessage') {
                                     <div class="card">
                                         <div class="card-content">
                                             <div class="video-container">
-                                                <iframe width="640" height="360"
-                                                        src="https://www.youtube.com/embed/nj7F8rcrW_Y?rel=0&amp;showinfo=0&modestbranding=1"
-                                                        frameborder="0" allowfullscreen></iframe>
+                                                <iframe width="640" height="360" src="https://www.youtube.com/embed/RPTUlxeHgcs?rel=0&amp;showinfo=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
+<!--                                                <iframe width="640" height="360"-->
+<!--                                                        src="https://www.youtube.com/embed/nj7F8rcrW_Y?rel=0&amp;showinfo=0&modestbranding=1"-->
+<!--                                                        frameborder="0" allowfullscreen></iframe>-->
                                             </div>
                                             <!--                                            <video loop autoplay class="responsive-video" controls>-->
                                             <!--                                                <source src="assets/appdemo1.mp4" type="video/mp4">-->
@@ -680,12 +679,10 @@ if ($action == 'sendMessage') {
                                         </div>
                                     </div>
                                 </div>
-                                <div id="test3" class="col s12 m10 offset-m1 l8 offset-l2">
+                                <div id="test3" class="col s12 m12 l8 offset-l2">
                                     <div class="card">
                                         <div class="card-content">
-                                            <iframe width="640" height="360"
-                                                    src="https://www.youtube.com/embed/nj7F8rcrW_Y?rel=0&amp;showinfo=0&modestbranding=1"
-                                                    frameborder="0" allowfullscreen></iframe>
+                                            <iframe width="640" height="360" src="https://www.youtube.com/embed/CUaswNFlCJ4?rel=0&amp;showinfo=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
                                         </div>
                                     </div>
                                 </div>
