@@ -49,6 +49,10 @@ if ($action == 'sendMessage') {
     <main>
         <!-- Parallax Or Jumbotron Head -->
         <div class="parallax-container">
+            <div class="" >
+                <img class="responsive-img paraimg para-logo-transform " src="images/logos/logo.png" />
+                <h1 class="para-text anton left-align">Protech Solutions</h1>
+            </div>
             <!--<div class="parallax"><img src="https://rimbizblog.files.wordpress.com/2016/03/medical-computer.jpg"></div>-->
             <div class="parallax"><img src="images/images/backgroundskelcopy.jpeg"></div>
 
@@ -408,8 +412,8 @@ if ($action == 'sendMessage') {
                 </li>
             </ul>
 
-            <ul id="testimonialSlider">
-                <li>
+<!--            <ul id="testimonialSlider">-->
+<!--                <li>-->
                     <!-- CAROUSEL TESTIMONIAL - MED-UP -->
                     <div class="carousel carousel-slider center hide-on-small-and-down" data-indicators="true">
                         <div class="carousel-item first-title white-text" href="#one!">
@@ -419,6 +423,7 @@ if ($action == 'sendMessage') {
                                 </blockquote>
                             </div>
                         </div>
+                        <!-- First Quote Testimonial Slide -->
                         <div class="carousel-item one white-text" href="#two!">
                             <div class="slider-quotebox1">
                                 <blockquote>
@@ -429,6 +434,7 @@ if ($action == 'sendMessage') {
                                 </blockquote>
                             </div>
                         </div>
+                        <!-- Second Quote Testimonial Slide -->
                         <div class="carousel-item two white-text" href="#three!">
                             <div class="slider-quotebox2">
                                 <blockquote>
@@ -439,6 +445,7 @@ if ($action == 'sendMessage') {
                                 </blockquote>
                             </div>
                         </div>
+                        <!-- Third Quote Testimonial Slide -->
                         <div class="carousel-item three white-text" href="#four!">
                             <div class="slider-quotebox3">
                                 <blockquote>
@@ -450,6 +457,7 @@ if ($action == 'sendMessage') {
                                 </blockquote>
                             </div>
                         </div>
+                        <!-- Fourth Quote Testimonial Slide -->
                         <div class="carousel-item four white-text" href="#five!">
                             <div class="slider-quotebox4">
                                 <blockquote>
@@ -461,6 +469,7 @@ if ($action == 'sendMessage') {
                                 </blockquote>
                             </div>
                         </div>
+                        <!-- Fifth Quote Testimonial Slide -->
                         <div class="carousel-item five white-text" href="#six!">
                             <div class="slider-quotebox5">
                                 <blockquote>
@@ -472,8 +481,8 @@ if ($action == 'sendMessage') {
                             </div>
                         </div>
                     </div><!-- END SHOW ON MED-UP TESTIMONIALS -->
-                </li>
-            </ul>
+<!--                </li>-->
+<!--            </ul>-->
 
 
             <!-- SHOW ON SMALL TESTIMONIALS -->
