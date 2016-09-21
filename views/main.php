@@ -49,8 +49,8 @@ if ($action == 'sendMessage') {
     <main>
         <!-- Parallax Or Jumbotron Head -->
         <div class="parallax-container">
-            <div class="hide-on-small-only show-on-medium-and-up" >
-                <img class="responsive-img paraimg para-logo-transform " src="images/logos/logo.png" />
+            <div class="hide-on-small-only show-on-medium-and-up">
+                <img class="responsive-img paraimg para-logo-transform " src="images/logos/logo.png"/>
                 <h1 class="para-text anton left-align">Protech Solutions</h1>
             </div>
             <!--<div class="parallax"><img src="https://rimbizblog.files.wordpress.com/2016/03/medical-computer.jpg"></div>-->
@@ -414,77 +414,77 @@ if ($action == 'sendMessage') {
                 </li>
             </ul>
 
-<!--            <ul id="testimonialSlider">-->
-<!--                <li>-->
-                    <!-- CAROUSEL TESTIMONIAL - MED-UP -->
-                    <div class="carousel carousel-slider center hide-on-small-and-down" data-indicators="true">
-                        <div class="carousel-item first-title white-text" href="#one!">
-                            <div class="slider-quotebox-first">
-                                <blockquote>
-                                    <p class="test-titles">Testimonials</p>
-                                </blockquote>
-                            </div>
-                        </div>
-                        <!-- First Quote Testimonial Slide -->
-                        <div class="carousel-item one white-text" href="#two!">
-                            <div class="slider-quotebox1">
-                                <blockquote>
-                                    "Protech Solutions has provided my office with the best EHR application for my fast
-                                    paced environment.
-                                    They continue to work with it's customers to provide the best updates and support."
-                                    <cite class="kristi signature right"> - Alan Birche</cite>
-                                </blockquote>
-                            </div>
-                        </div>
-                        <!-- Second Quote Testimonial Slide -->
-                        <div class="carousel-item two white-text" href="#three!">
-                            <div class="slider-quotebox2">
-                                <blockquote>
-                                    "The Advanced EHR Suite from Protech Solutions makes keeping track of patient
-                                    records extremely easy. I would
-                                    not have it any other way."
-                                    <cite class="kristi signature right"> - Laura Hagan</cite>
-                                </blockquote>
-                            </div>
-                        </div>
-                        <!-- Third Quote Testimonial Slide -->
-                        <div class="carousel-item three white-text" href="#four!">
-                            <div class="slider-quotebox3">
-                                <blockquote>
-                                    "I've been a happy customer of Protech Solutions for the past year. They continue to
-                                    amaze me with their
-                                    ability to listen to what the user wants, and work on ways to make their
-                                    applications for us."
-                                    <cite class="kristi signature right"> - Rachel Dobbson</cite>
-                                </blockquote>
-                            </div>
-                        </div>
-                        <!-- Fourth Quote Testimonial Slide -->
-                        <div class="carousel-item four white-text" href="#five!">
-                            <div class="slider-quotebox4">
-                                <blockquote>
-                                    "Protech Solutions support gave me step-by-step instructions on how to set up my EHR
-                                    Suite, which allowed me and my office
-                                    to transition our existing patient records system over flawlessly. We're pleased
-                                    with the transition, and the outstanding support."
-                                    <cite class="kristi signature right"> - Joseph Dunn</cite>
-                                </blockquote>
-                            </div>
-                        </div>
-                        <!-- Fifth Quote Testimonial Slide -->
-                        <div class="carousel-item five white-text" href="#six!">
-                            <div class="slider-quotebox5">
-                                <blockquote>
-                                    "Advanced EHR Suite is a great application for any healthcare facility to use. I
-                                    oversee a few different locations in Southern New England,
-                                    and we're very happy with the application."
-                                    <cite class="kristi signature right"> - Tyrell Willard</cite>
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div><!-- END SHOW ON MED-UP TESTIMONIALS -->
-<!--                </li>-->
-<!--            </ul>-->
+            <!--            <ul id="testimonialSlider">-->
+            <!--                <li>-->
+            <!-- CAROUSEL TESTIMONIAL - MED-UP -->
+            <div class="carousel carousel-slider center hide-on-small-and-down" data-indicators="true">
+                <div class="carousel-item first-title white-text" href="#one!">
+                    <div class="slider-quotebox-first">
+                        <blockquote>
+                            <p class="test-titles">Testimonials</p>
+                        </blockquote>
+                    </div>
+                </div>
+                <!-- First Quote Testimonial Slide -->
+                <div class="carousel-item one white-text" href="#two!">
+                    <div class="slider-quotebox1">
+                        <blockquote>
+                            "Protech Solutions has provided my office with the best EHR application for my fast
+                            paced environment.
+                            They continue to work with it's customers to provide the best updates and support."
+                            <cite class="kristi signature right"> - Alan Birche</cite>
+                        </blockquote>
+                    </div>
+                </div>
+                <!-- Second Quote Testimonial Slide -->
+                <div class="carousel-item two white-text" href="#three!">
+                    <div class="slider-quotebox2">
+                        <blockquote>
+                            "The Advanced EHR Suite from Protech Solutions makes keeping track of patient
+                            records extremely easy. I would
+                            not have it any other way."
+                            <cite class="kristi signature right"> - Laura Hagan</cite>
+                        </blockquote>
+                    </div>
+                </div>
+                <!-- Third Quote Testimonial Slide -->
+                <div class="carousel-item three white-text" href="#four!">
+                    <div class="slider-quotebox3">
+                        <blockquote>
+                            "I've been a happy customer of Protech Solutions for the past year. They continue to
+                            amaze me with their
+                            ability to listen to what the user wants, and work on ways to make their
+                            applications for us."
+                            <cite class="kristi signature right"> - Rachel Dobbson</cite>
+                        </blockquote>
+                    </div>
+                </div>
+                <!-- Fourth Quote Testimonial Slide -->
+                <div class="carousel-item four white-text" href="#five!">
+                    <div class="slider-quotebox4">
+                        <blockquote>
+                            "Protech Solutions support gave me step-by-step instructions on how to set up my EHR
+                            Suite, which allowed me and my office
+                            to transition our existing patient records system over flawlessly. We're pleased
+                            with the transition, and the outstanding support."
+                            <cite class="kristi signature right"> - Joseph Dunn</cite>
+                        </blockquote>
+                    </div>
+                </div>
+                <!-- Fifth Quote Testimonial Slide -->
+                <div class="carousel-item five white-text" href="#six!">
+                    <div class="slider-quotebox5">
+                        <blockquote>
+                            "Advanced EHR Suite is a great application for any healthcare facility to use. I
+                            oversee a few different locations in Southern New England,
+                            and we're very happy with the application."
+                            <cite class="kristi signature right"> - Tyrell Willard</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div><!-- END SHOW ON MED-UP TESTIMONIALS -->
+            <!--                </li>-->
+            <!--            </ul>-->
 
 
             <!-- SHOW ON SMALL TESTIMONIALS -->
@@ -593,104 +593,105 @@ if ($action == 'sendMessage') {
             </div>
 
             <!-- Container tabs -->
-<!--            <div class="container">-->
-                <div class="row tabs-section">
-                    <div class="col s12">
-                        <div class="container">
-                            <!-- DEMO TABS -->
-                            <ul class="tabs" id="tabHeader">
-                                <li class="tab col s3"><a href="#test1"><i class="material-icons tab-icon">web</i>Patient
-                                        Portal</a></li>
-                                <li class="tab col s3"><a class="active" href="#test2"><i class="material-icons tab-icon">storage</i>Advanced
-                                        EHR</a></li>
-                                <!-- .disabled-->
-                                <li class="tab col s3"><a href="#test3"><i class="material-icons tab-icon">insert_chart</i>Billing
-                                        Suite</a></li>
-                            </ul> <!-- END DEMO TABS -->
-                        </div>
+            <!--            <div class="container">-->
+            <div class="row tabs-section">
+                <div class="col s12">
+                    <div class="container">
+                        <!-- DEMO TABS -->
+                        <ul class="tabs" id="tabHeader">
+                            <li class="tab col s3"><a href="#test1"><i class="material-icons tab-icon">web</i>Patient
+                                    Portal</a></li>
+                            <li class="tab col s3"><a class="active" href="#test2"><i class="material-icons tab-icon">storage</i>Advanced
+                                    EHR</a></li>
+                            <!-- .disabled-->
+                            <li class="tab col s3"><a href="#test3"><i class="material-icons tab-icon">insert_chart</i>Billing
+                                    Suite</a></li>
+                        </ul> <!-- END DEMO TABS -->
                     </div>
-                    <div class="col s12">
-                        <ul id="tabContent">
-                            <li>
-                                <div id="test1" class="col s12 m12 l8 offset-l2">
-                                    <div class="card">
-                                        <div class="card-content">
-                                            <iframe width="640" height="360" src="https://www.youtube.com/embed/CUaswNFlCJ4?rel=0&amp;showinfo=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
-                                        </div>
+                </div>
+                <div class="col s12">
+                    <ul id="tabContent">
+                        <li>
+                            <div id="test1" class="col s12 m12 l8 offset-l2">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <iframe width="640" height="360"
+                                                src="https://www.youtube.com/embed/CUaswNFlCJ4?rel=0&amp;showinfo=0&modestbranding=1"
+                                                frameborder="0" allowfullscreen></iframe>
                                     </div>
                                 </div>
-                                <div id="test2" class="col s12 m12 l8 offset-l2">
-                                    <div class="card">
-                                        <div class="card-content">
-                                            <div class="video-container">
-                                                <iframe width="640" height="360" src="https://www.youtube.com/embed/RPTUlxeHgcs?rel=0&amp;showinfo=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
-<!--                                                <iframe width="640" height="360"-->
-<!--                                                        src="https://www.youtube.com/embed/nj7F8rcrW_Y?rel=0&amp;showinfo=0&modestbranding=1"-->
-<!--                                                        frameborder="0" allowfullscreen></iframe>-->
-                                            </div>
-                                            <!--                                            <video loop autoplay class="responsive-video" controls>-->
-                                            <!--                                                <source src="assets/appdemo1.mp4" type="video/mp4">-->
-                                            <!--                                            </video>-->
+                            </div>
+                            <div id="test2" class="col s12 m12 l8 offset-l2">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <div class="video-container">
+                                            <iframe width="640" height="360"
+                                                    src="https://www.youtube.com/embed/RPTUlxeHgcs?rel=0&amp;showinfo=0&modestbranding=1"
+                                                    frameborder="0" allowfullscreen></iframe>
                                         </div>
+
                                     </div>
-                                    <!-- Images of CSharp App Demo -->
-                                    <div class="row">
-                                        <div class="col s12">
-                                            <div class="card">
-                                                <div class="card-content">
-                                                    <div class="row">
-                                                        <div class="col s12 m6 l6">
-                                                            <!-- Login Form -->
-                                                            <img class="responsive-img materialboxed"
-                                                                 src="images/images/login.png">
-                                                        </div>
-                                                        <div class="col s12 m6 l6">
-                                                            <!-- User is Logged In -->
-                                                            <img class="responsive-img materialboxed"
-                                                                 src="images/images/loggedin.png">
-                                                        </div>
+                                </div>
+                                <!-- Images of CSharp App Demo -->
+                                <div class="row">
+                                    <div class="col s12">
+                                        <div class="card">
+                                            <div class="card-content">
+                                                <div class="row">
+                                                    <div class="col s12 m6 l6">
+                                                        <!-- Login Form -->
+                                                        <img class="responsive-img materialboxed"
+                                                             src="images/images/login.png">
                                                     </div>
-                                                    <div class="row">
-                                                        <div class="col s12 m6 l6">
-                                                            <!--Filled in Patient Record -->
-                                                            <img class="responsive-img materialboxed"
-                                                                 src="images/images/FilledAddPatient.PNG">
-                                                        </div>
-                                                        <div class="col s12 m6 l6">
-                                                            <!-- Filled in Patient Insurance Form -->
-                                                            <img class="responsive-img materialboxed"
-                                                                 src="images/images/FilledInsurance.PNG">
-                                                        </div>
+                                                    <div class="col s12 m6 l6">
+                                                        <!-- User is Logged In -->
+                                                        <img class="responsive-img materialboxed"
+                                                             src="images/images/loggedin.png">
                                                     </div>
-                                                    <div class="row">
-                                                        <div class="col s12 m6 l6">
-                                                            <!-- Search Gridview -->
-                                                            <img class="responsive-img materialboxed"
-                                                                 src="images/images/Searched.PNG">
-                                                        </div>
-                                                        <div class="col s12 m6 l6">
-                                                            <!-- Patient Medical History Form-->
-                                                            <img class="responsive-img materialboxed"
-                                                                 src="images/images/MedHistory.PNG">
-                                                        </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col s12 m6 l6">
+                                                        <!--Filled in Patient Record -->
+                                                        <img class="responsive-img materialboxed"
+                                                             src="images/images/FilledAddPatient.PNG">
+                                                    </div>
+                                                    <div class="col s12 m6 l6">
+                                                        <!-- Filled in Patient Insurance Form -->
+                                                        <img class="responsive-img materialboxed"
+                                                             src="images/images/FilledInsurance.PNG">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col s12 m6 l6">
+                                                        <!-- Search Gridview -->
+                                                        <img class="responsive-img materialboxed"
+                                                             src="images/images/Searched.PNG">
+                                                    </div>
+                                                    <div class="col s12 m6 l6">
+                                                        <!-- Patient Medical History Form-->
+                                                        <img class="responsive-img materialboxed"
+                                                             src="images/images/MedHistory.PNG">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="test3" class="col s12 m12 l8 offset-l2">
-                                    <div class="card">
-                                        <div class="card-content">
-                                            <iframe width="640" height="360" src="https://www.youtube.com/embed/CUaswNFlCJ4?rel=0&amp;showinfo=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
-                                        </div>
+                            </div>
+                            <div id="test3" class="col s12 m12 l8 offset-l2">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <iframe width="640" height="360"
+                                                src="https://www.youtube.com/embed/CUaswNFlCJ4?rel=0&amp;showinfo=0&modestbranding=1"
+                                                frameborder="0" allowfullscreen></iframe>
                                     </div>
                                 </div>
-                            </li>
-                        </ul>
-                    </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-<!--            </div>-->
+            </div>
+            <!--            </div>-->
 
             <div class="center-align">
                 <a href="#topPage"><i class="material-icons fa-2x">arrow_upward</i></a>

@@ -1,6 +1,6 @@
 # CapstoneProject
 
-![Statys](https://img.shields.io/badge/Complete-95%25-orange.svg) [![CircleCI](https://img.shields.io/circleci/project/BrightFlair/PHP.Gt.svg?maxAge=2592000?style=flat-square)]()
+![Statys](https://img.shields.io/badge/Complete-99%25-orange.svg) [![CircleCI](https://img.shields.io/circleci/project/BrightFlair/PHP.Gt.svg?maxAge=2592000?style=flat-square)]()
 ![Statys](https://img.shields.io/badge/Team Members-Ian + Jameson-red.svg)
 ![Statys](https://img.shields.io/badge/Frameworks-Materialize CSS-blue.svg)
 
@@ -14,10 +14,6 @@ Javascript Demo Site
  Tools being used are Javascript > PHP > MySQL
 
 #To-Do's [Important]
-* Download Application ability
-* Buy - Download .exe
-* Get working demo video of ehr application
-
 
 ## Future To-Do's (Version 2.0)
 * Navigation
@@ -75,3 +71,5 @@ Javascript Demo Site
 - [x] Developer Team Summaries and social media
 - [x] Parallax Jumbotron logo with text
 - [x] Change responsiveness on complete.php
+- [x] Download Application ability
+- [x] Get working demo video of ehr application

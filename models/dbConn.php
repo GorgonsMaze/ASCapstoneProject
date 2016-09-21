@@ -1,10 +1,10 @@
 <?php
-$dsn = "mysql:host=localhost;dbname=protechdb";
-$username = "protechy";
-$pwd = "password";
-//$dsn = "mysql:host=localhost;dbname=db001241129";
-//$username = "db001241129";
+//$dsn = "mysql:host=localhost;dbname=protechdb";
+//$username = "protechy";
 //$pwd = "password";
+$dsn = "mysql:host=localhost;dbname=db001241129";
+$username = "db001241129";
+$pwd = "password";
 try {
     $db = new PDO($dsn, $username, $pwd);
    // echo "YOU GOT CONNECTED!";
