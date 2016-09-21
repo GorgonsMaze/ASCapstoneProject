@@ -53,7 +53,7 @@
                                     <div class="row">
                                         <!-- Address 1-->
                                         <div class="input-field col s12">
-                                            <input id="address_one" placeholder="123 Holiday Lane" type="text" pattern="^\s*\S+(?:\s+\S+){2}" name="address"  title="Enter your street address" class="validate" required="" aria-required="true">
+                                            <input id="address_one" placeholder="123 Holiday Lane" type="text" pattern="^\s*\S+(?:\s+\S+){2,5}" name="address"  title="Enter your street address" class="validate" required="" aria-required="true">
                                             <label for="address_one" data-error="Please fill in your address"><b>Address 1</b></label>
                                         </div>
                                     </div>

@@ -77,7 +77,7 @@ $order = get_OrderDetails($db);
                     <div class="card-action">
                         <div class="center-align">
                             <!-- .Executable File of EHR Application -->
-                            <a class="btn btn-large waves-effect waves-light download-btn" href="/assets/PatientRecords.exe" download="AdvancedEHR">Download Program</a>
+                            <a class="btn btn-large waves-effect waves-light download-btn" href="assets/PatientRecords.exe" download="">Download Program</a>
                         </div>
                     </div>
                 </div>
