@@ -49,7 +49,7 @@ if ($action == 'sendMessage') {
     <main>
         <!-- Parallax Or Jumbotron Head -->
         <div class="parallax-container">
-            <div class="" >
+            <div class="hide-on-small-only" >
                 <img class="responsive-img paraimg para-logo-transform " src="images/logos/logo.png" />
                 <h1 class="para-text anton left-align">Protech Solutions</h1>
             </div>
@@ -159,7 +159,7 @@ if ($action == 'sendMessage') {
                                 EHR Suite
                             </div>
                             <div class="collapsible-body">
-                                <img src="images/images/doc-tablet.jpg" class="responsive-img"/>
+                                <img src="images/images/ehrtab.jpg" class="responsive-img"/>
                                 <p>A intuitive, customizable, interconnected application that allows for instant
                                     information on patients. While allowing users to update records on the fly, pull
                                     patient information,
@@ -171,6 +171,7 @@ if ($action == 'sendMessage') {
                                 Medical Billing Suite<span class="new badge right-align"
                                                            data-badge-caption="Coming Soon"></span></div>
                             <div class="collapsible-body">
+                                <img src="images/images/doc-tablet.jpg" class="responsive-img"/>
                                 <p>A comprehensive cloud based application, that creates an easy, precise, billing
                                     experience,
                                     that supports claims management, insurance adjustments, and patient billing.
@@ -181,6 +182,7 @@ if ($action == 'sendMessage') {
                                 Patient Portal Suite<span class="new badge left-align"
                                                           data-badge-caption="Coming Soon"></span></div>
                             <div class="collapsible-body">
+                                <img src="images/images/portal.jpg" class="responsive-img"/>
                                 <p>A well designed application tool for your office and patients. Designed with ease in
                                     mind
                                     for any user. Easy access to update a patients record, billing, or medical history.
@@ -591,19 +593,21 @@ if ($action == 'sendMessage') {
             </div>
 
             <!-- Container tabs -->
-            <div class="container">
+<!--            <div class="container">-->
                 <div class="row tabs-section">
                     <div class="col s12">
-                        <!-- DEMO TABS -->
-                        <ul class="tabs" id="tabHeader">
-                            <li class="tab col s3"><a href="#test1"><i class="material-icons tab-icon">web</i>Patient
-                                    Portal</a></li>
-                            <li class="tab col s3"><a class="active" href="#test2"><i class="material-icons tab-icon">storage</i>Advanced
-                                    EHR</a></li>
-                            <!-- .disabled-->
-                            <li class="tab col s3"><a href="#test3"><i class="material-icons tab-icon">insert_chart</i>Billing
-                                    Suite</a></li>
-                        </ul> <!-- END DEMO TABS -->
+                        <div class="container">
+                            <!-- DEMO TABS -->
+                            <ul class="tabs" id="tabHeader">
+                                <li class="tab col s3"><a href="#test1"><i class="material-icons tab-icon">web</i>Patient
+                                        Portal</a></li>
+                                <li class="tab col s3"><a class="active" href="#test2"><i class="material-icons tab-icon">storage</i>Advanced
+                                        EHR</a></li>
+                                <!-- .disabled-->
+                                <li class="tab col s3"><a href="#test3"><i class="material-icons tab-icon">insert_chart</i>Billing
+                                        Suite</a></li>
+                            </ul> <!-- END DEMO TABS -->
+                        </div>
                     </div>
                     <div class="col s12">
                         <ul id="tabContent">
@@ -617,7 +621,7 @@ if ($action == 'sendMessage') {
                                         </div>
                                     </div>
                                 </div>
-                                <div id="test2" class="col s12 m12 offset-m1 l8 offset-l2">
+                                <div id="test2" class="col s12 m12 l8 offset-l2">
                                     <div class="card">
                                         <div class="card-content">
                                             <div class="video-container">
@@ -630,28 +634,45 @@ if ($action == 'sendMessage') {
                                             <!--                                            </video>-->
                                         </div>
                                     </div>
+                                    <!-- Images of CSharp App Demo -->
                                     <div class="row">
                                         <div class="col s12">
                                             <div class="card">
                                                 <div class="card-content">
                                                     <div class="row">
                                                         <div class="col s12 m6 l6">
+                                                            <!-- Login Form -->
                                                             <img class="responsive-img materialboxed"
                                                                  src="images/images/login.png">
                                                         </div>
                                                         <div class="col s12 m6 l6">
+                                                            <!-- User is Logged In -->
                                                             <img class="responsive-img materialboxed"
                                                                  src="images/images/loggedin.png">
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="col s12 m6 l6">
+                                                            <!--Filled in Patient Record -->
                                                             <img class="responsive-img materialboxed"
-                                                                 src="assets/patientdemo.png">
+                                                                 src="images/images/FilledAddPatient.PNG">
                                                         </div>
                                                         <div class="col s12 m6 l6">
+                                                            <!-- Filled in Patient Insurance Form -->
                                                             <img class="responsive-img materialboxed"
-                                                                 src="images/images/search.png">
+                                                                 src="images/images/FilledInsurance.PNG">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col s12 m6 l6">
+                                                            <!-- Search Gridview -->
+                                                            <img class="responsive-img materialboxed"
+                                                                 src="images/images/Searched.PNG">
+                                                        </div>
+                                                        <div class="col s12 m6 l6">
+                                                            <!-- Patient Medical History Form-->
+                                                            <img class="responsive-img materialboxed"
+                                                                 src="images/images/MedHistory.PNG">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -672,7 +693,7 @@ if ($action == 'sendMessage') {
                         </ul>
                     </div>
                 </div>
-            </div>
+<!--            </div>-->
 
             <div class="center-align">
                 <a href="#topPage"><i class="material-icons fa-2x">arrow_upward</i></a>

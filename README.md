@@ -1,6 +1,6 @@
 # CapstoneProject
 
-![Statys](https://img.shields.io/badge/Complete-90%25-orange.svg) [![CircleCI](https://img.shields.io/circleci/project/BrightFlair/PHP.Gt.svg?maxAge=2592000?style=flat-square)]()
+![Statys](https://img.shields.io/badge/Complete-95%25-orange.svg) [![CircleCI](https://img.shields.io/circleci/project/BrightFlair/PHP.Gt.svg?maxAge=2592000?style=flat-square)]()
 ![Statys](https://img.shields.io/badge/Team Members-Ian + Jameson-red.svg)
 ![Statys](https://img.shields.io/badge/Frameworks-Materialize CSS-blue.svg)
 
@@ -15,26 +15,26 @@ Javascript Demo Site
 
 #To-Do's [Important]
 * Download Application ability
- - [x] Contact form - need SMTP Server 
-* ~~hash cc numbers~~ added to future updates of project
-* Change responsiveness on complete.php
+* Buy - Download .exe
 * Get working demo video of ehr application
-* Finalized Help chat box (Extra)
 
 
-##To-Do's
+## Future To-Do's (Version 2.0)
 * Navigation
  * Hamburger Icon transition on click (* Extra)
-* Parallax Jumbotron
- * Final Image + Text
-- [x] Email Recipient 
-* Buy - Download .exe
- 
+* Contact form - need SMTP Server 
+* Email purchase details
+* AJAX for form data
+* hash cc numbers 
+* Create login and customer DB
+
  
 ## Weekly Breakdown
 * ~~Weeks 1-9~~ 
 * Week 10
-      * Clean up any dead links/page routes or missing content 
+      * Get download to work with exe file
+      * update images and demo video
+      * Finalize Overview website
 
 ## Deadline: September 21, 2016
 
@@ -73,3 +73,5 @@ Javascript Demo Site
 - [x] Clean page routes (last)
 - [x] Fix DB sizes for certain columns
 - [x] Developer Team Summaries and social media
+- [x] Parallax Jumbotron logo with text
+- [x] Change responsiveness on complete.php
