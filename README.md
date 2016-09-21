@@ -25,13 +25,6 @@ Javascript Demo Site
 * Create login and customer DB
 
  
-## Weekly Breakdown
-* ~~Weeks 1-9~~ 
-* Week 10
-      * Get download to work with exe file
-      * update images and demo video
-      * Finalize Overview website
-
 ## Deadline: September 21, 2016
 
 

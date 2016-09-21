@@ -95,7 +95,7 @@
                                     <div class="row">
                                         <div class="input-field col s12">
                                             <input id="zipcode" placeholder="03543 or 03543-1944" type="text" name="zip"  pattern="^\d{5}(?:[-\s]\d{4})?$" title="Enter your zipcode ex.03246" class="validate" required="" aria-required="true">
-                                            <label for="zipcode" data-error="Please fill in your zipcode"><b>Zip</b></label>
+                                            <label for="zipcode" data-error="Please fill in your zipcode ex. 00352 or 00352-23566"><b>Zip</b></label>
                                         </div>
                                     </div>
                                     <!-- Country -->
@@ -110,7 +110,7 @@
                                         <div class="input-field col s12">
                                             <!-- CHECK VALIDATION ******************* ^[\d]{3}-[\d]{3}-[\d]{4}$  ^\d{10}$-->
                                             <input id="phone_number" placeholder="123-456-7890" type="text" name="phoneNumber" pattern="^[\d]{3}-[\d]{3}-[\d]{4}$" title="Enter your 10 digit phone number with dashes ex. 508-234-1233" class="validate" required="" aria-required="true">
-                                            <label for="phone_number" data-error="Please fill in your phone number correctly"><b>Phone</b></label>
+                                            <label for="phone_number" data-error="Please fill in your phone number correctly ex. 888-888-8888"><b>Phone</b></label>
                                         </div>
                                     </div>
                                     <!-- EMAIL -->
@@ -118,7 +118,7 @@
                                         <div class="input-field col s12">
                                             <!-- placeholder="Name@yourdomain.com" -->
                                             <input  id="email_of" placeholder="example@yourdomain.com" type="text" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,4}$" title="Enter email address correctly ex. name@domain.com" class="validate" required="" aria-required="true">
-                                            <label for="email_of" data-erorr="Please fill in your email correctly"><b>Email</b></label>
+                                            <label for="email_of" data-erorr="Please fill in your email correctly ex name@domain.com"><b>Email</b></label>
                                         </div>
                                     </div>
                                 </div><!-- END ROW -->
