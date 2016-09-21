@@ -31,17 +31,10 @@ main {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
 }
-.raleway {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-}
+
 .ralewayBold {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
-}
-.ralewayXBold {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 900;
 }
 /* Abel Font */
 .abel {
@@ -72,6 +65,11 @@ main {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     color: #000000;
+}
+
+.anton {
+    font-weight: 800;
+    font-family: 'Anton', sans-serif;
 }
 
 /* Iconsolata Font -Chat */
@@ -430,17 +428,6 @@ and (max-width: 600px) {
 
 }
 
-/*@media only screen and (min-width: 993px) {*/
-    /*.navbar-fixed {*/
-        /*-webkit-transition: height .7s ease-in-out;*/
-        /*-moz-transition: height .7s ease-in-out;*/
-        /*-ms-transition: height .7s ease-in-out;*/
-        /*-o-transition: height .7s ease-in-out;*/
-        /*transition: height .7s ease-in-out;*/
-        /*height: 64px;*/
-    /*}*/
-/*}*/
-
 
 @media only screen
 and (min-width: 1550px) {
@@ -597,13 +584,6 @@ and (min-width: 1550px) {
 
 }
 
-/*#slide-out {*/
-    /*-webkit-transition: all 0.5s ease-in-out;*/
-    /*-moz-transition: all 0.5s ease-in-out;*/
-    /*-ms-transition: all 0.5s ease-in-out;*/
-    /*-o-transition: all 0.5s ease-in-out;*/
-    /*transition: all 0.5s ease-in-out;*/
-/*}*/
 @media only screen and (min-width: 1550px) {
     .hide-on-xlarge {
         display: none !important;
@@ -662,18 +642,6 @@ and (max-width: 1549px) {
     -o-transition: opacity 0.4s ease-in;
     transition: opacity 0.4s ease-in;
 }
-/*.hidden-checkout {*/
-    /*display: none;*/
-    /*-webkit-transition: all 0.3s ease-in-out;*/
-    /*-moz-transition: all 0.3s ease-in-out;*/
-    /*-ms-transition: all 0.3s ease-in-out;*/
-    /*-o-transition: all 0.3s ease-in-out;*/
-    /*transition: all 0.3s ease-in-out;*/
-/*}*/
-/*#buySidenav:hover .hidden-checkout {*/
-    /*display: block !important;*/
-/*}*/
-/* Breadcrumbs for Checkout and Complete Pages */
 
 .breadcrumb {
     font-size: 13px !important;
@@ -714,11 +682,6 @@ and (max-width: 1549px) {
     z-index: 100!important;
     margin-left: 25px!important;
 }
-
-
-/*.chkout-headder {*/
-    /*background-color: #f1f1f1 !important;*/
-/*}*/
 
 /* Adds inset bottom border to active scrollspy buttons */
 .active-nav {
@@ -796,6 +759,77 @@ hr {
     box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
 }
 
+/**Parallax Logo and Font */
+.para-text {
+    color: rgba(255, 255, 255, 0.23);
+    margin-top: 10px;
+    letter-spacing: 2px;
+    font-size:6vmax;
+}
+.paraimg {
+    transform: translateY(-450px);
+    position: relative;
+    left: 40px;
+}
+/** Parallax Logo Transform */
+.para-logo-transform {
+
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: imageDown;
+    -moz-animation-name: imageDown;
+    -o-animation-name: imageDown;
+    animation-name: imageDown;
+
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+
+    -webkit-animation-duration: 0.6s;
+    -moz-animation-duration: 0.6s;
+    -o-animation-duration: 0.6s;
+    animation-duration: 0.6s;
+
+    -webkit-animation-delay: 10s;
+    -moz-animation-delay: 10s;
+    -o-animation-delay: 10s;
+    animation-delay: 10s;
+
+}
+
+@-webkit-keyframes imageDown {
+    0% {
+        -webkit-transform: translateY(-450px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+    }
+}
+@-moz-keyframes imageDown {
+    0% {
+        -webkit-transform: translateY(-450px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+    }
+}
+@keyframes imageDown {
+    0% {
+        -webkit-transform: translateY(-450px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+    }
+}
 /*******************************************
 **           About  Styling             *
 ******************************************/
@@ -883,11 +917,11 @@ hr {
     vertical-align: top;
 }
 .top-dl-btn {
-    -webkit-transition: all .6s ease;
-    -moz-transition: all .6s ease;
-    -ms-transition: all .6s ease;
-    -o-transition: all .6s ease;
-    transition: all .6s ease ;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease ;
 }
 .top-dl-btn:hover {
     color: #2e7d32;

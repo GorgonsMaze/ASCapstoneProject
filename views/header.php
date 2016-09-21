@@ -22,7 +22,7 @@ $action = $_REQUEST['action'];
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Raleway Font -->
-    <link href='https://fonts.googleapis.com/css?family=Raleway:300,900,800,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,800' rel='stylesheet' type='text/css'>
     <!-- Abel Font -->
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <!-- Great Vibes Cursive -->
@@ -31,6 +31,8 @@ $action = $_REQUEST['action'];
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
     <!-- Open Sans -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <!-- Anton Font -->
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <!-- Chat text -->
     <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
     <!-- Kristi Font -->
@@ -215,14 +217,14 @@ $action = $_REQUEST['action'];
 
 </head>
 <?php if($action == 'checkoutCart' || $action == 'completePurchase' || $action == 'sendMessage')  {
-    echo "<body id=\"topPage\">";
+    echo "<body>";
 } else {
-    echo "<body class=\"stop-scrolling\" id=\"topPage\">";
+    echo "<body class=\"stop-scrolling\">";
 }
 ?>
 
 <!-- MAIN CONTENT -->
-<div class="main-section">
+<div class="main-section"  id="topPage">
     <header>
         <!-- Begin Navbar -->
         <div class="navbar-fixed home-nav open-sans3">
@@ -263,7 +265,7 @@ $action = $_REQUEST['action'];
                     <div class="center-align">
                         <img class="circle side-logo" src="images/logos/logo.png">
                     </div>
-                    <a href="#topPage"><span class="white-text name userview-link">Protech Solutions</span></a>
+                    <a href="<?php if ($action == '') {echo "#topPage";} else { echo "index.php#topPage";} ?>"><span class="white-text name userview-link">Protech Solutions</span></a>
                     <a href="mailto:protechsolutionsri@gmail.com?Subject=Hello%20Protech%20Solutions" target="_top"><span class="white-text email userview-link">ProtechSolutionsRI@gmail.com</span></a>
                 </div></li>
             <ul class="main-side-links">

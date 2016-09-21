@@ -9,6 +9,7 @@
     <div class="container">
         <div class="row">
             <div class="col l6 m6 s12 center-align foot-text">
+                <!-- Customer Suport Title -->
                 <h5 class="center-align">Have a question?</h5>
                 <!-- Help Chat Modal Trigger -->
                 <p class="center-align">You can reach us 24 hours a day, 7 days a week by connecting to our live <a
@@ -16,8 +17,9 @@
                 <!-- Modal Structure -->
                 <div id="modal-chat" class="modal modal-fixed-footer">
                     <div class="modal-content chat-content">
+                        <!-- Modal Minimize or Close buttons -->
                         <div class="modal-header right-align">
-                            <a href="#!" class="chat-action-icon"><i class="material-icons">remove</i></a>
+                            <a href="#!" class="chat-action-icon modal-action modal-close"><i class="material-icons">remove</i></a>
                             <a href="#!" class="chat-action-icon modal-action modal-close"><i class="material-icons">clear</i></a>
                         </div>
                         <h4>Live Customer Support</h4>
@@ -25,6 +27,7 @@
                             questions or issues you may be facing. Thank you!</p>
                         <div class="row">
                             <div class="col s12">
+                                <!-- Chatbox Card --- Customer Chat would go on here -->
                                 <div class="card chat-box left-align">
                                     <div class="card-content black-text inconsolata">
                                         <p><span class="rep-name">Tim:</span>&nbsp;Hello! My name is Tim. How can I help
@@ -39,8 +42,12 @@
                                         <p><span class="cust-name">You:</span>&nbsp;Thank you. Now is the EHR suite able
                                             to transfer over existing Patient DB?</p>
 
-                                        <p><span class="rep-name">Tim:</span>$nbsp; </p>
+                                        <p><span class="rep-name">Tim:</span>&nbsp;Yes, the EHR suite is able to transfer
+                                            over existing data from your current DB. We can set up a scheduled date to
+                                            set up logistics for what works good for you.</p>
 
+
+                                        <!-- Customer input and support responses here -->
                                         <div class="response-section">
 
                                         </div>
@@ -51,13 +58,13 @@
                     </div>
                     <div class="modal-footer chat-footer">
                         <div class="row">
-                            <form class="col s12">
+                            <form class="col s12" method="POST" action="">
                                 <div class="input-field col s10">
-                                    <input id="" type="text" length="255" placeholder="Write message here!">
+                                    <input id="custMsg" name="custMsg" type="text" length="255" placeholder="Write message here!">
                                 </div>
                                 <div class="col s2" style="margin-top: 10px;">
                                     <button class="btn waves-effect waves-light blue darken-4  white-text" type="button"
-                                            name="action">Send
+                                            name="action" id="supportBtn">Send
                                         <i class="material-icons right">send</i>
                                     </button>
                                 </div>
@@ -213,6 +220,7 @@
                 </div>
             </div>
             <div class="col l6 m6 s12">
+                <!-- Social Media Links -->
                 <h5 class="center-align">Social Media</h5>
                 <div class="col s2 offset-s1">
                     <a href="#!"><img src="images/blue-circle-icons/facebook-blue.png" alt="facebook icon"
@@ -335,6 +343,7 @@
 
 <!-- FIXED CHAT BUTTON -->
 <div class="fix-btn-transform" id="fixChatBtn">
+    <!-- Custome Support Button Fixed Lower Left -->
     <a href="#modal-chat" class="btn-floating btn-large modal-trigger">
         <i class="material-icons">message</i>
     </a>

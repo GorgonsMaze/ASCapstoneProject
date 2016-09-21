@@ -65,14 +65,13 @@ switch ($action) :
         mail($to, $subject, $body, $headers);
         include ("views/main.php");
         break;
+    /** Work In Progress - AJAX Portion */
     case 'ajaxOrderComplete':
         include ("views/complete.php");
         break;
-//    case 'checkoutAjax':
-//        include ("views/header.php");
-//        include ("views/checkout.php");
-//        include ("views/footer.php");
-//        break;
+    case 'customerSupport':
+        //include ("views/main.php");
+        break;
 endswitch;
 include_once ("views/footer.php");
 ?>
