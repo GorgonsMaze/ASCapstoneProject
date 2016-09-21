@@ -762,7 +762,7 @@ hr {
 /**Parallax Logo and Font */
 .para-text {
     color: rgba(255, 255, 255, 0.23);
-    margin-top: 10px;
+    margin-top: 0;
     letter-spacing: 2px;
     font-size:6vmax;
 }
@@ -1642,6 +1642,10 @@ and (max-width: 1799px) {
 #demoTitle li, #tabHeader li, #tabContent li  {
     opacity:0;
 }
+
+/*.materialboxed:hover:not(.active) {*/
+    /*opacity: 0.5 !important;*/
+/*}*/
 
 /* Icons in tabs header */
 .tab-icon {
