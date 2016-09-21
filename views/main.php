@@ -615,9 +615,11 @@ if ($action == 'sendMessage') {
                             <div id="test1" class="col s12 m12 l8 offset-l2">
                                 <div class="card">
                                     <div class="card-content">
-                                        <iframe width="640" height="360"
-                                                src="https://www.youtube.com/embed/CUaswNFlCJ4?rel=0&amp;showinfo=0&modestbranding=1"
-                                                frameborder="0" allowfullscreen></iframe>
+                                        <div class="video-container">
+                                            <iframe width="640" height="360"
+                                                    src="https://www.youtube.com/embed/CUaswNFlCJ4?rel=0&amp;showinfo=0&modestbranding=1"
+                                                    frameborder="0" allowfullscreen></iframe>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -681,9 +683,11 @@ if ($action == 'sendMessage') {
                             <div id="test3" class="col s12 m12 l8 offset-l2">
                                 <div class="card">
                                     <div class="card-content">
-                                        <iframe width="640" height="360"
-                                                src="https://www.youtube.com/embed/CUaswNFlCJ4?rel=0&amp;showinfo=0&modestbranding=1"
-                                                frameborder="0" allowfullscreen></iframe>
+                                        <div class="video-container">
+                                            <iframe width="640" height="360"
+                                                    src="https://www.youtube.com/embed/CUaswNFlCJ4?rel=0&amp;showinfo=0&modestbranding=1"
+                                                    frameborder="0" allowfullscreen></iframe>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
