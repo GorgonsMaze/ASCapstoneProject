@@ -49,7 +49,7 @@ if ($action == 'sendMessage') {
     <main>
         <!-- Parallax Or Jumbotron Head -->
         <div class="parallax-container">
-            <div class="hide-on-small-only" >
+            <div class="hide-on-small-only show-on-medium-and-up" >
                 <img class="responsive-img paraimg para-logo-transform " src="images/logos/logo.png" />
                 <h1 class="para-text anton left-align">Protech Solutions</h1>
             </div>
@@ -615,9 +615,9 @@ if ($action == 'sendMessage') {
                                 <div id="test1" class="col s12 m10 offset-m1 l8 offset-l2">
                                     <div class="card">
                                         <div class="card-content">
-                                            <video loop class="responsive-video" controls>
-                                                <source src="assets/appdemo2.mp4" type="video/mp4">
-                                            </video>
+                                            <iframe width="640" height="360"
+                                                    src="https://www.youtube.com/embed/nj7F8rcrW_Y?rel=0&amp;showinfo=0&modestbranding=1"
+                                                    frameborder="0" allowfullscreen></iframe>
                                         </div>
                                     </div>
                                 </div>
@@ -683,9 +683,9 @@ if ($action == 'sendMessage') {
                                 <div id="test3" class="col s12 m10 offset-m1 l8 offset-l2">
                                     <div class="card">
                                         <div class="card-content">
-                                            <video loop class="responsive-video" controls>
-                                                <source src="assets/appdemo2.mp4" type="video/mp4">
-                                            </video>
+                                            <iframe width="640" height="360"
+                                                    src="https://www.youtube.com/embed/nj7F8rcrW_Y?rel=0&amp;showinfo=0&modestbranding=1"
+                                                    frameborder="0" allowfullscreen></iframe>
                                         </div>
                                     </div>
                                 </div>

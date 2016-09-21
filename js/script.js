@@ -768,7 +768,6 @@ $(document).ready(function () {
 
     // Carousel Slider item change
     carouselChange();
-    $('.carousel').carousel();
 
     // Side nav checkout function
     sideNavTransform();
