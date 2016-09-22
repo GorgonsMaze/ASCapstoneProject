@@ -9,8 +9,8 @@ Documentation Site:
 Javascript Demo Site
  [Website](https://gorgonsmaze.github.io/CapstoneProject/)
  
- EHR Application 
-  [CSaharp Application](https://github.com/OverlordZoltron/CapstoneProjectCSharp)
+ EHR Portion 
+  [C_Sharp Application](https://github.com/OverlordZoltron/CapstoneProjectCSharp)
  
  
  This repository is for the website portion of our teams Capstone Project.
