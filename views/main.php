@@ -414,77 +414,77 @@ if ($action == 'sendMessage') {
                 </li>
             </ul>
 
-            <!--            <ul id="testimonialSlider">-->
-            <!--                <li>-->
-            <!-- CAROUSEL TESTIMONIAL - MED-UP -->
-            <div class="carousel carousel-slider center hide-on-small-and-down" data-indicators="true">
-                <div class="carousel-item first-title white-text" href="#one!">
-                    <div class="slider-quotebox-first">
-                        <blockquote>
-                            <p class="test-titles">Testimonials</p>
-                        </blockquote>
-                    </div>
-                </div>
-                <!-- First Quote Testimonial Slide -->
-                <div class="carousel-item one white-text" href="#two!">
-                    <div class="slider-quotebox1">
-                        <blockquote>
-                            "Protech Solutions has provided my office with the best EHR application for my fast
-                            paced environment.
-                            They continue to work with it's customers to provide the best updates and support."
-                            <cite class="kristi signature right"> - Alan Birche</cite>
-                        </blockquote>
-                    </div>
-                </div>
-                <!-- Second Quote Testimonial Slide -->
-                <div class="carousel-item two white-text" href="#three!">
-                    <div class="slider-quotebox2">
-                        <blockquote>
-                            "The Advanced EHR Suite from Protech Solutions makes keeping track of patient
-                            records extremely easy. I would
-                            not have it any other way."
-                            <cite class="kristi signature right"> - Laura Hagan</cite>
-                        </blockquote>
-                    </div>
-                </div>
-                <!-- Third Quote Testimonial Slide -->
-                <div class="carousel-item three white-text" href="#four!">
-                    <div class="slider-quotebox3">
-                        <blockquote>
-                            "I've been a happy customer of Protech Solutions for the past year. They continue to
-                            amaze me with their
-                            ability to listen to what the user wants, and work on ways to make their
-                            applications for us."
-                            <cite class="kristi signature right"> - Rachel Dobbson</cite>
-                        </blockquote>
-                    </div>
-                </div>
-                <!-- Fourth Quote Testimonial Slide -->
-                <div class="carousel-item four white-text" href="#five!">
-                    <div class="slider-quotebox4">
-                        <blockquote>
-                            "Protech Solutions support gave me step-by-step instructions on how to set up my EHR
-                            Suite, which allowed me and my office
-                            to transition our existing patient records system over flawlessly. We're pleased
-                            with the transition, and the outstanding support."
-                            <cite class="kristi signature right"> - Joseph Dunn</cite>
-                        </blockquote>
-                    </div>
-                </div>
-                <!-- Fifth Quote Testimonial Slide -->
-                <div class="carousel-item five white-text" href="#six!">
-                    <div class="slider-quotebox5">
-                        <blockquote>
-                            "Advanced EHR Suite is a great application for any healthcare facility to use. I
-                            oversee a few different locations in Southern New England,
-                            and we're very happy with the application."
-                            <cite class="kristi signature right"> - Tyrell Willard</cite>
-                        </blockquote>
-                    </div>
-                </div>
-            </div><!-- END SHOW ON MED-UP TESTIMONIALS -->
-            <!--                </li>-->
-            <!--            </ul>-->
+            <ul id="testimonialSlider">
+                <li>
+                    <!-- CAROUSEL TESTIMONIAL - MED-UP -->
+                    <div class="carousel carousel-slider center hide-on-small-and-down" data-indicators="true">
+                        <div class="carousel-item first-title white-text" href="#one!">
+                            <div class="slider-quotebox-first">
+                                <blockquote>
+                                    <p class="test-titles">Testimonials</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <!-- First Quote Testimonial Slide -->
+                        <div class="carousel-item one white-text" href="#two!">
+                            <div class="slider-quotebox1">
+                                <blockquote>
+                                    "Protech Solutions has provided my office with the best EHR application for my fast
+                                    paced environment.
+                                    They continue to work with it's customers to provide the best updates and support."
+                                    <cite class="kristi signature right"> - Alan Birche</cite>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <!-- Second Quote Testimonial Slide -->
+                        <div class="carousel-item two white-text" href="#three!">
+                            <div class="slider-quotebox2">
+                                <blockquote>
+                                    "The Advanced EHR Suite from Protech Solutions makes keeping track of patient
+                                    records extremely easy. I would
+                                    not have it any other way."
+                                    <cite class="kristi signature right"> - Laura Hagan</cite>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <!-- Third Quote Testimonial Slide -->
+                        <div class="carousel-item three white-text" href="#four!">
+                            <div class="slider-quotebox3">
+                                <blockquote>
+                                    "I've been a happy customer of Protech Solutions for the past year. They continue to
+                                    amaze me with their
+                                    ability to listen to what the user wants, and work on ways to make their
+                                    applications for us."
+                                    <cite class="kristi signature right"> - Rachel Dobbson</cite>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <!-- Fourth Quote Testimonial Slide -->
+                        <div class="carousel-item four white-text" href="#five!">
+                            <div class="slider-quotebox4">
+                                <blockquote>
+                                    "Protech Solutions support gave me step-by-step instructions on how to set up my EHR
+                                    Suite, which allowed me and my office
+                                    to transition our existing patient records system over flawlessly. We're pleased
+                                    with the transition, and the outstanding support."
+                                    <cite class="kristi signature right"> - Joseph Dunn</cite>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <!-- Fifth Quote Testimonial Slide -->
+                        <div class="carousel-item five white-text" href="#six!">
+                            <div class="slider-quotebox5">
+                                <blockquote>
+                                    "Advanced EHR Suite is a great application for any healthcare facility to use. I
+                                    oversee a few different locations in Southern New England,
+                                    and we're very happy with the application."
+                                    <cite class="kristi signature right"> - Tyrell Willard</cite>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div><!-- END SHOW ON MED-UP TESTIMONIALS -->
+                </li>
+            </ul>
 
 
             <!-- SHOW ON SMALL TESTIMONIALS -->
