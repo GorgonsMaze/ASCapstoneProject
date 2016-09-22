@@ -1,6 +1,6 @@
 # CapstoneProject
 
-![Statys](https://img.shields.io/badge/Complete-99%25-orange.svg) [![CircleCI](https://img.shields.io/circleci/project/BrightFlair/PHP.Gt.svg?maxAge=2592000?style=flat-square)]()
+![Statys](https://img.shields.io/badge/Complete-100%25-orange.svg) [![CircleCI](https://img.shields.io/circleci/project/BrightFlair/PHP.Gt.svg?maxAge=2592000?style=flat-square)]()
 ![Statys](https://img.shields.io/badge/Team Members-Ian + Jameson-red.svg)
 ![Statys](https://img.shields.io/badge/Frameworks-Materialize CSS-blue.svg)
 
@@ -8,6 +8,9 @@ Documentation Site:
  [Project Overview Website](https://gorgonsmaze.github.io/CapstoneOverview/)
 Javascript Demo Site
  [Website](https://gorgonsmaze.github.io/CapstoneProject/)
+ 
+ EHR Application 
+  [CSaharp Application](https://github.com/OverlordZoltron/CapstoneProjectCSharp)
  
  
  This repository is for the website portion of our teams Capstone Project.
